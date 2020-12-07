@@ -1,0 +1,27 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.5.19)  5 DEC 2020 16:40
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**"c:/Users/bushn/Home/Notes/MathNotes/MATH 260 Ordinary Differential Equations/math260-latex/LaplaceTransforms/LaplaceTransformTable.tex"
+(c:/Users/bushn/Home/Notes/MathNotes/MATH 260 Ordinary Differential Equations/math260-latex/LaplaceTransforms/LaplaceTransformTable.tex
+LaTeX2e <2020-02-02> patch level 5
+L3 programming layer <2020-05-15>
+c:/Users/bushn/Home/Notes/MathNotes/MATH 260 Ordinary Differential Equations/math260-latex/LaplaceTransforms/LaplaceTransformTable.tex:2: TeX capacity exceeded, sorry [parameter stack size=10000].
+\@onefilewithoptions #1[#2][#3]#4->
+                                   \pkgcls@debug {--- File loaded request (\...
+l.2 \usepackage[english]
+                        {babel}
+If you really absolutely need more capacity,
+you can ask a wizard to enlarge me.
+
+ 
+Here is how much of TeX's memory you used:
+ 17 strings out of 480476
+ 881 string characters out of 5903481
+ 262254 words of memory out of 5000000
+ 16144 multiletter control sequences out of 15000+600000
+ 532338 words of font info for 24 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 4287i,0n,10003p,182b,8s stack positions out of 5000i,500n,10000p,200000b,80000s
+c:/Users/bushn/Home/Notes/MathNotes/MATH 260 Ordinary Differential Equations/math260-latex/LaplaceTransforms/LaplaceTransformTable.tex:2:  ==> Fatal error occurred, no output PDF file produced!

@@ -1,0 +1,6 @@
+PWD c:/Users/bushn/Home/Notes/MathNotes/MATH 260 Ordinary Differential Equations/math260-latex/LaplaceTransforms
+INPUT c:/texlive/2020/texmf.cnf
+INPUT c:/texlive/2020/texmf-dist/web2c/texmf.cnf
+INPUT c:/texlive/2020/texmf-var/web2c/pdftex/pdflatex.fmt
+INPUT c:/Users/bushn/Home/Notes/MathNotes/MATH 260 Ordinary Differential Equations/math260-latex/LaplaceTransforms/LaplaceTransformTable.tex
+OUTPUT c:/Users/bushn/Home/Notes/MathNotes/MATH 260 Ordinary Differential Equations/math260-latex/LaplaceTransforms/LaplaceTransformTable.log

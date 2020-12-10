@@ -4,6 +4,7 @@
 \usepackage{amssymb,amsmath,amsfonts}  %%% for maths
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \usepackage{package/color-env}
+\usepackage{graphicx}
 \usepackage{lipsum}
 \renewcommand\qedsymbol{$\blacksquare$}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -40,7 +41,7 @@
 		%	Subtitle
 		%------------------------------------------------
 		
-		\LARGE{COURSE} 
+		\LARGE{AP CALCULUS NOTES} 
 		
 		\vspace*{3\baselineskip} % Whitespace under the subtitle
 		
@@ -48,11 +49,11 @@
 		
 		\vspace{0.5\baselineskip} 
 		
-		{\scshape   \LARGE Professor\\ } % Editor list
+		
 		
 		\vspace{0.5\baselineskip} 
 		
-		\textit{\Large affiliation} % affiliation
+		
 		
 		\vfill 
 		
@@ -64,44 +65,94 @@
 		\vspace{0.3\baselineskip} 
 		
 		
-		{\large Edited by\\  Your name} 
+		{\large Edited by\\  Trevor Bushnell } 
 		
 	\end{titlepage}
 	\tableofcontents
 %\newpage
-\chapter{Title 1}
+\chapter{Limits and Continuity}
 
-\section{Title 2}
-\subsection{Title 3}
+\section{Introducing Calculus: Can Change Occur at an Instant?}
+\begin{itemize}
+	\item Traditional algebra uses relationships such as $\frac{\Delta y}{\Delta x}$ to model relationships
+	\begin{itemize}
+		\item However, this model falls apart because if $\Delta y = 0$ and $\Delta x = 0$, then the result is $\frac{0}{0}$ which is indeterminant
+		\begin{itemize}
+			\item \textbf{indeterminant} means that there might be a possible solution, but we cannot determine what that possible solution could be based on the current problem solving method
+		\end{itemize}
+	\end{itemize}
 
-\begin{definition}[DEF NAME]{def:label} %%  [can be kept empty]
-	\lipsum[1][1-3]
+	\item We can use the \textbf{limit} to allow us to define change that occurs instantaneously in terms of incredibly small average rates in change (for example, doing $\Delta x = 0.000001$ instead of $\Delta x = 0$)
+	\item Calculus uses limits to understand and model more precise/instantaneous change that algebra cannot answer
+\end{itemize}
+
+\section{Defining Limits and Using Limit Notation}
+\begin{definition}
+	GGiven a function $f$, the limit of $f(x)$ as $x$ approaches $c$ is a real number $R$ if $f(x)$ can be made arbitrarily close to $R$ by taking $x$ extremely close to $c$ (but \textit{not equal to} $c$).
+	\newline\newline
+	If the limit exists and is a real number, then:
+	$$ \lim_{x\to c}f(x) = R$$
 \end{definition}
 
-\begin{theorem}[THM NAME]{thm:label}%%  [can be kept empty]
-	\lipsum[2][1-3]
-\end{theorem}
+\begin{itemize}
+	\item A limit can be expressed graphically, numerically, or analytically
+\end{itemize}
+\newpage
 
-\begin{lemma}[LEM NAME]{lem:label}%%  [can be kept empty]
-	\lipsum[3][1-3]
-\end{lemma}
+\section{Estimating Limits From Graphs}
 
-\begin{proposition}[PROP NAME]{prop:label}%%  [can be kept empty]
-	\lipsum[4][1-3]
-\end{proposition}
+\begin{itemize}
+	\item ONE SIDED LIMIT: A limit where you approach from a specific direction (either the left or the right)
+	\begin{itemize}
+		\item LHL (Left Hand Limit): $\lim_{x\to c^-} f(x) = L$
+		\item RHL (Right Hand Limit): $\lim_{x\to c^+} f(x) = L$
+		\item A limit exists if the left hand limit equals the right hand limit (LHL = RHL)
+	\end{itemize}
+	\item Using the information provided on a graph can help you interpret the limit of a function
+\end{itemize}
 
-\begin{corollary}[COR NAME]{cor:label}%%  [can be kept empty]
-	\lipsum[5][1-3]
-\end{corollary}
+\begin{figure*}[h]
+	\begin{center}
+		\includegraphics[width = 10cm]{images/1.2_Image.PNG}
+	\end{center}
+\end{figure*}
 
-\begin{problem}%%  [can be kept empty]
-	\lipsum[1][1-3]
-\end{problem}
-\begin{proof}[Proof Head]
-	\lipsum[1][1-10]
-\end{proof}
+\begin{itemize}
+	\item In the example above, the limit is 4 because the function output as you approach 2 from the left is equal to the function output as you approach 2 from the right
+	\item Because there can be possible issues with scale, graphical representations of limits can possibly be inaccurate and can miss important behaviors of functions if you're too far zoomed out
+	\item A limit can fail to exist at particular values of $x$ if LHL $\ne$ RHL, the function oscillates near $x$, or if the function is unbounded
+\end{itemize}
+\newpage
 
+\section{Estimating Limit Values From Tables}
 
+\begin{itemize}
+	\item Numerical information from tables can be used to estimate Limits
+\end{itemize}
+
+\begin{figure*}
+	\begin{center}
+		\includegraphics[width=10cm]{images/1.4_Image.PNG}
+	\end{center}
+\end{figure*}
+
+\begin{itemize}
+	\item As seen in the table, the output values for 1.75 and below all seem to be getting closer to 4 while $x$ gets larger,
+	while the output values for 2.25 and greater all have values approaching 4 as $x$ gets smaller. Since the LHL is equal to the RHL, we can conclude that the limit as $x$ approaches 2 is indeed 4 
+\end{itemize}
+
+\section{Determining Limits Using Algebraic Properties of Limits}
+% Maybe come back and make a prettier table in the future, but for now just keep the image
+
+\begin{figure*}
+	\begin{center}
+		\includegraphics[width=10cm]{images/1.5_Image.PNG}
+	\end{center}
+\end{figure*}
+
+\begin{itemize}
+	\item To evaluate a limit, simply substitute the desired value that you wish to find the limit at
+\end{itemize}
 
 \end{document}
 .

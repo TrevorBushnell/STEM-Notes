@@ -1,0 +1,87 @@
+
+\documentclass{package/notes}
+\usepackage[english]{babel}
+\usepackage{amssymb,amsmath,amsfonts}  %%% for maths
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{package/color-env}
+\usepackage{lipsum}
+\renewcommand\qedsymbol{$\blacksquare$}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+\textbf{Question 1:} Solve the following system of differential equations:
+
+\begin{equation*}
+	\begin{aligned}
+		y_1'(t) =&\: 5y_1(t) - 7y_2(t)\\
+		y_2'(t) =&\: 2y_1(t) - 4y_2(t)
+	\end{aligned}
+\end{equation*}\\
+
+\textbf{Step \#1: Create a matrix equation comprising of the two differential equations:}
+
+\begin{equation*}
+	\begin{aligned}
+		\mathbf{y'} =&\: A\mathbf{y}\\
+		\left[\begin{array}{c}
+			y_1'(t) \\ y_2'(t)
+		\end{array}\right] =&\: 
+		\left[\begin{array}{cc}
+			-5 & -7\\ -2 & -4
+		\end{array}\right]
+		\left[\begin{array}{c}
+			y_1(t) \\ y_2(t)
+	\end{array}\right]
+	\end{aligned}
+\end{equation*}
+
+\textbf{Step \#2: Calculate the determinant}\\
+
+\textbf{Step \#3: For each eigenvalue, calculate the eigenvectors:}\\
+
+In order to find the associated eigenvectors, we simply substitute $\lambda$ \\into $(A-I\lambda) = \vec 0$
+
+\textbf{Step \#4: }\\
+\textbf{Step \#5: Calculate the general solution:}\\
+\textbf{Step \#6: Given initial conditions $\mathbf{y} = \left[\begin{array}{c}16\\6\end{array}\right]$ solve for $c_1$ and $c_2$ to find the specific solution}
+
+\begin{equation*}
+	\begin{aligned}
+		16 =&\: 7c_1 + c_2\\
+		6 =&\: 2c_1 + c_2\\
+		(16-6) =&\: (7c_1-2c_2) + (c_2-c_2)\\
+		10 =&\: 5c_1\\
+		c_1 =&\: 2\\\\
+		6 =&\: 2(2) + c_2\\
+		6 =&\: 4 + c_2\\
+		2 =&\: c_2
+	\end{aligned}
+\end{equation*}
+
+\textbf{Step \#7: State the answer}
+
+Way \#1: Express as a system of equations:
+
+\begin{equation*}
+	\begin{aligned}
+		y_1(t) =&\: 14e^{3t} + 2e^{-2t}\\
+		y_2(t) = &\: 4e^{3t} + 2e^{-2t}\\
+	\end{aligned}
+\end{equation*}\\
+
+Way \#2: Express as an array:
+
+\begin{equation*}
+	\begin{aligned}
+		\left[\begin{array}{c} y_1(t) \\ y_2(t) \end{array}\right] 
+		= 2\left[\begin{array}{c} 7e^{3t} \\ 2e^{3t}\end{array}\right] 
+		+ 2\left[\begin{array}{c} e^{-2t}\\e^{-2t}\end{array}\right]
+	\end{aligned}
+\end{equation*}
+
+
+
+
+\end{document}
+.

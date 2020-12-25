@@ -289,7 +289,7 @@
 
 ### What Are Cylindrical Coordinates?
 
-* Cylindrical coordinates are represented by the ordered triple $(r,\theta,z)$, where $r$ and $\theta$ are polar coordinates of the projection of $P$ onto the $xy$-plane to $P
+* Cylindrical coordinates are represented by the ordered triple $(r,\theta,z)$, where $r$ and $\theta$ are polar coordinates of the projection of $P$ onto the $xy$-plane to $P$
 * $r$ is the radius of a circle in the $xy$-plane
 * $\theta$ is the angle of rotation in the $xy$-plane
 * To convert from cylindrical coordinates to rectangular coordinates (and vice-versa), use the following equations:

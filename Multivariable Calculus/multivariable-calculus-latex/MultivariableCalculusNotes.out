@@ -23,5 +23,110 @@
 \BOOKMARK [2][-]{subsection.1.5.1}{Lines in 3D}{section.1.5}% 23
 \BOOKMARK [2][-]{subsection.1.5.2}{Planes}{section.1.5}% 24
 \BOOKMARK [0][-]{chapter.2}{Partial Derivatives}{}% 25
-\BOOKMARK [0][-]{chapter.3}{Multiple Integrals}{}% 26
-\BOOKMARK [0][-]{chapter.4}{Vector Calculus}{}% 27
+\BOOKMARK [1][-]{section.2.1}{Functions of Several Variables}{chapter.2}% 26
+\BOOKMARK [2][-]{subsection.2.1.1}{Functions of Two Variables}{section.2.1}% 27
+\BOOKMARK [2][-]{subsection.2.1.2}{Graphs}{section.2.1}% 28
+\BOOKMARK [2][-]{subsection.2.1.3}{Level Curves}{section.2.1}% 29
+\BOOKMARK [2][-]{subsection.2.1.4}{Functions of Three or More Variables}{section.2.1}% 30
+\BOOKMARK [1][-]{section.2.2}{Limits and Continuity}{chapter.2}% 31
+\BOOKMARK [2][-]{subsection.2.2.1}{Limits of Multivariable Functions}{section.2.2}% 32
+\BOOKMARK [2][-]{subsection.2.2.2}{Continuity}{section.2.2}% 33
+\BOOKMARK [2][-]{subsection.2.2.3}{Functions of Three or More Variables}{section.2.2}% 34
+\BOOKMARK [1][-]{section.2.3}{Partial Derivatives}{chapter.2}% 35
+\BOOKMARK [2][-]{subsection.2.3.1}{Definition of a Partial Derivatives}{section.2.3}% 36
+\BOOKMARK [2][-]{subsection.2.3.2}{Interpretations of Partial Derivatives}{section.2.3}% 37
+\BOOKMARK [2][-]{subsection.2.3.3}{Functions of More Than Two Variables}{section.2.3}% 38
+\BOOKMARK [2][-]{subsection.2.3.4}{Higher Order Derivatives}{section.2.3}% 39
+\BOOKMARK [2][-]{subsection.2.3.5}{Partial Differential Equations}{section.2.3}% 40
+\BOOKMARK [1][-]{section.2.4}{Tangent Planes and Linear Approximations}{chapter.2}% 41
+\BOOKMARK [2][-]{subsection.2.4.1}{Tangent Planes}{section.2.4}% 42
+\BOOKMARK [2][-]{subsection.2.4.2}{Differentials}{section.2.4}% 43
+\BOOKMARK [2][-]{subsection.2.4.3}{Functions of Three or More Variables}{section.2.4}% 44
+\BOOKMARK [1][-]{section.2.5}{The Chain Rule}{chapter.2}% 45
+\BOOKMARK [2][-]{subsection.2.5.1}{Definition of the Chain Rule}{section.2.5}% 46
+\BOOKMARK [2][-]{subsection.2.5.2}{Implicit Differentiation}{section.2.5}% 47
+\BOOKMARK [1][-]{section.2.6}{Directional Derivatives and the Gradient Vector}{chapter.2}% 48
+\BOOKMARK [2][-]{subsection.2.6.1}{Directional Derivatives}{section.2.6}% 49
+\BOOKMARK [2][-]{subsection.2.6.2}{The Gradient Vector}{section.2.6}% 50
+\BOOKMARK [2][-]{subsection.2.6.3}{Functions of Three or More Variables}{section.2.6}% 51
+\BOOKMARK [2][-]{subsection.2.6.4}{Maximizing the Directional Derivative}{section.2.6}% 52
+\BOOKMARK [2][-]{subsection.2.6.5}{Tangent Planes to Level Surfaces}{section.2.6}% 53
+\BOOKMARK [2][-]{subsection.2.6.6}{Significance of the Gradient Vector}{section.2.6}% 54
+\BOOKMARK [1][-]{section.2.7}{Maximum and Minimum Values}{chapter.2}% 55
+\BOOKMARK [2][-]{subsection.2.7.1}{How to Find Local Maxima and Minima}{section.2.7}% 56
+\BOOKMARK [2][-]{subsection.2.7.2}{Absolute Maximum and Minimum Values}{section.2.7}% 57
+\BOOKMARK [1][-]{section.2.8}{Lagrange Multipliers}{chapter.2}% 58
+\BOOKMARK [2][-]{subsection.2.8.1}{Lagrange Multipliers with One Constraint}{section.2.8}% 59
+\BOOKMARK [2][-]{subsection.2.8.2}{Lagrange Multipliers with Two Constraints}{section.2.8}% 60
+\BOOKMARK [0][-]{chapter.3}{Multiple Integrals}{}% 61
+\BOOKMARK [1][-]{section.3.1}{Double Integrals Over Rectangles}{chapter.3}% 62
+\BOOKMARK [2][-]{subsection.3.1.1}{Review of Integrals}{section.3.1}% 63
+\BOOKMARK [2][-]{subsection.3.1.2}{Volumes and Double Integrals}{section.3.1}% 64
+\BOOKMARK [2][-]{subsection.3.1.3}{Average Value}{section.3.1}% 65
+\BOOKMARK [2][-]{subsection.3.1.4}{Properties of Double Integrals}{section.3.1}% 66
+\BOOKMARK [1][-]{section.3.2}{Iterated Integrals}{chapter.3}% 67
+\BOOKMARK [2][-]{subsection.3.2.1}{Definition of an Iterated Integral}{section.3.2}% 68
+\BOOKMARK [1][-]{section.3.3}{Double Integrals Over General Regions}{chapter.3}% 69
+\BOOKMARK [2][-]{subsection.3.3.1}{The Double Integral Dilemma}{section.3.3}% 70
+\BOOKMARK [2][-]{subsection.3.3.2}{Properties of Double Integrals}{section.3.3}% 71
+\BOOKMARK [1][-]{section.3.4}{Double Integrals in Polar Coordinates}{chapter.3}% 72
+\BOOKMARK [2][-]{subsection.3.4.1}{Review of Polar Coordinates}{section.3.4}% 73
+\BOOKMARK [2][-]{subsection.3.4.2}{Computing Double Integrals in Polar Coordinates}{section.3.4}% 74
+\BOOKMARK [1][-]{section.3.5}{Applications of Double Integrals}{chapter.3}% 75
+\BOOKMARK [2][-]{subsection.3.5.1}{Density and Mass}{section.3.5}% 76
+\BOOKMARK [2][-]{subsection.3.5.2}{Moments and Centers of Mass}{section.3.5}% 77
+\BOOKMARK [2][-]{subsection.3.5.3}{Moments of Inertia}{section.3.5}% 78
+\BOOKMARK [2][-]{subsection.3.5.4}{Probability}{section.3.5}% 79
+\BOOKMARK [2][-]{subsection.3.5.5}{Expected Values}{section.3.5}% 80
+\BOOKMARK [1][-]{section.3.6}{Triple Integrals}{chapter.3}% 81
+\BOOKMARK [2][-]{subsection.3.6.1}{Definition of the Triple Integral}{section.3.6}% 82
+\BOOKMARK [2][-]{subsection.3.6.2}{Applications of the Triple Integral}{section.3.6}% 83
+\BOOKMARK [1][-]{section.3.7}{Triple Integrals in Cylindrical Coordinates}{chapter.3}% 84
+\BOOKMARK [2][-]{subsection.3.7.1}{What Are Cylindrical Coordinates?}{section.3.7}% 85
+\BOOKMARK [2][-]{subsection.3.7.2}{Evaluating Triple Integrals with Cylindrical Coordinates}{section.3.7}% 86
+\BOOKMARK [1][-]{section.3.8}{Triple Integrals in Spherical Coordinates}{chapter.3}% 87
+\BOOKMARK [2][-]{subsection.3.8.1}{What Are Spherical Coordinates?}{section.3.8}% 88
+\BOOKMARK [2][-]{subsection.3.8.2}{Evaluating Triple Integrals With Spherical Coordinates}{section.3.8}% 89
+\BOOKMARK [1][-]{section.3.9}{Change of Variables in Multiple Integrals}{chapter.3}% 90
+\BOOKMARK [2][-]{subsection.3.9.1}{Taking What We Know and Extending to Generality}{section.3.9}% 91
+\BOOKMARK [2][-]{subsection.3.9.2}{The Jacobian}{section.3.9}% 92
+\BOOKMARK [2][-]{subsection.3.9.3}{The Jacobian and Triple Integrals}{section.3.9}% 93
+\BOOKMARK [0][-]{chapter.4}{Vector Calculus}{}% 94
+\BOOKMARK [1][-]{section.4.1}{Vector Fields}{chapter.4}% 95
+\BOOKMARK [2][-]{subsection.4.1.1}{About Vector Fields}{section.4.1}% 96
+\BOOKMARK [2][-]{subsection.4.1.2}{Gradient Fields}{section.4.1}% 97
+\BOOKMARK [2][-]{subsection.4.1.3}{Vector Field Vocabulary}{section.4.1}% 98
+\BOOKMARK [1][-]{section.4.2}{Line Integrals}{chapter.4}% 99
+\BOOKMARK [2][-]{subsection.4.2.1}{Definition of Line Integrals}{section.4.2}% 100
+\BOOKMARK [2][-]{subsection.4.2.2}{Computing Line Integrals in Different Ways}{section.4.2}% 101
+\BOOKMARK [2][-]{subsection.4.2.3}{Line Integrals in Space}{section.4.2}% 102
+\BOOKMARK [2][-]{subsection.4.2.4}{Line Integrals Over Vector Fields}{section.4.2}% 103
+\BOOKMARK [1][-]{section.4.3}{The Fundamental Theorem for Line Integrals}{chapter.4}% 104
+\BOOKMARK [2][-]{subsection.4.3.1}{Definition of the Fundamental Theorem for Line Integrals}{section.4.3}% 105
+\BOOKMARK [2][-]{subsection.4.3.2}{Independence of Path}{section.4.3}% 106
+\BOOKMARK [2][-]{subsection.4.3.3}{Application: Conservation of Energy}{section.4.3}% 107
+\BOOKMARK [1][-]{section.4.4}{Green's Theorem}{chapter.4}% 108
+\BOOKMARK [1][-]{section.4.5}{Curl and Divergence}{chapter.4}% 109
+\BOOKMARK [2][-]{subsection.4.5.1}{Curl}{section.4.5}% 110
+\BOOKMARK [2][-]{subsection.4.5.2}{Divergence}{section.4.5}% 111
+\BOOKMARK [2][-]{subsection.4.5.3}{Vector Forms of Green's Theorem}{section.4.5}% 112
+\BOOKMARK [1][-]{section.4.6}{Parametric Surfaces and Their Area}{chapter.4}% 113
+\BOOKMARK [2][-]{subsection.4.6.1}{Definition of a Parametric Surface}{section.4.6}% 114
+\BOOKMARK [2][-]{subsection.4.6.2}{Identifying and Creating Parametric Surfaces}{section.4.6}% 115
+\BOOKMARK [2][-]{subsection.4.6.3}{Surfaces of Revolution}{section.4.6}% 116
+\BOOKMARK [2][-]{subsection.4.6.4}{Tangent Planes to Parametric Surfaces}{section.4.6}% 117
+\BOOKMARK [2][-]{subsection.4.6.5}{Surface Area}{section.4.6}% 118
+\BOOKMARK [1][-]{section.4.7}{Surface Integrals}{chapter.4}% 119
+\BOOKMARK [2][-]{subsection.4.7.1}{Definition of a Surface Integral}{section.4.7}% 120
+\BOOKMARK [2][-]{subsection.4.7.2}{Surface Integrals and Graphs}{section.4.7}% 121
+\BOOKMARK [2][-]{subsection.4.7.3}{Oriented Surfaces}{section.4.7}% 122
+\BOOKMARK [2][-]{subsection.4.7.4}{Surface Integrals of Vector Fields}{section.4.7}% 123
+\BOOKMARK [1][-]{section.4.8}{Stokes' Theorem}{chapter.4}% 124
+\BOOKMARK [2][-]{subsection.4.8.1}{About Stokes' Theorem}{section.4.8}% 125
+\BOOKMARK [2][-]{subsection.4.8.2}{Definition of Stokes' Theorem}{section.4.8}% 126
+\BOOKMARK [2][-]{subsection.4.8.3}{Relationship Between Stokes' Theorem and the curl Operator}{section.4.8}% 127
+\BOOKMARK [1][-]{section.4.9}{The Divergence Theorem}{chapter.4}% 128
+\BOOKMARK [2][-]{subsection.4.9.1}{About the Divergence Theorem}{section.4.9}% 129
+\BOOKMARK [2][-]{subsection.4.9.2}{Definition of the Divergence Theorem}{section.4.9}% 130
+\BOOKMARK [2][-]{subsection.4.9.3}{Relationship With the Divergence Theorem and the div Operator}{section.4.9}% 131
+\BOOKMARK [1][-]{section.4.10}{Important Vector Calculus Theorems}{chapter.4}% 132

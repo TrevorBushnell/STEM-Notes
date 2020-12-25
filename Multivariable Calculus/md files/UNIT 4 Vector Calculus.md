@@ -6,7 +6,7 @@
 
 ## 4.1: Vector Fields
 
-
+$\R$
 
 ### About Vector Fields
 
@@ -65,7 +65,7 @@
 > $$
 > \int_Cf(x,y)\:ds = \lim_{n\to\infty}\sum_{i=1}^nf(x_i^*,y_i^*)\Delta s_i
 > $$
-> To evaluate the line integral, usethe following formula:
+> To evaluate the line integral, use the following formula:
 > $$
 > \int_Cf(x,y)\:ds=\int_a^bf(x(t),y(t))\sqrt{\left(\frac{dx}{dt}\right)^2+\left(\frac{dy}{dt}\right)^2}\:dt
 > $$
@@ -198,7 +198,7 @@ $$
 
 > If $\vec F = P\vec i + Q\vec j$ is a vector field on an open simply-connected region $D$ and $P$ and $Q$ have continuous first order partial derivatives and 
 > $$
-> \frac{\partial P}{\partial y} = \frac{\partial Q}{\partial x} \text{    throughout } D 
+> \frac{\partial P}{\partial y} = \frac{\partial Q}{\partial x} \text{    throughout } D
 > $$
 > then $\vec F$ is conservative.
 
@@ -290,7 +290,7 @@ $$
 
 * Curl and divergence allows us to rewrite Green's Theorem in other forms that can potentially be useful when solving problems
 * GREEN'S THEOREM (Vector Form): $\oint_C \vec F \cdot d\vec r = \iint_D (\text{curl }\vec F)\cdot \vec k \:dA$
-  * ine integral of the tangential component of $\vec F$ along $C$ is equal to the double integral of the vertical component of $\vec F$ over the region $D$ that is enclosed by $C$
+  * Line integral of the tangential component of $\vec F$ along $C$ is equal to the double integral of the vertical component of $\vec F$ over the region $D$ that is enclosed by $C$
 * GREEN'S THEOREM (Another Vector Form): $\oint_C \vec F \cdot \vec n \:ds = \iint_D \text{div }\vec F(x,y)\:dA$
   * The line integral of the normal component of $\vec F$ along $C$ is equal to the double integral of the divergence of $\vec F$ over the region $D$ enclosed by $C$
 
@@ -341,11 +341,15 @@ To find the tangent plane to a parametric surface...
 
 * Compute the partial derivatives of the parametric surface with respect to the parameters
   $$
+  \begin{aligned}
+  
   \frac{\partial\vec{r}}{\partial{u}}= \vec{r}_u= \frac{\partial{x}}{\partial{u}}\vec{i} + \frac{\partial{y}}{\partial{u}}\vec{j}+\frac{\partial{z}}{\partial{u}}\vec{k}\\
   
-  \frac{\partial\vec{r}}{\partial{v}}= \vec{r}_v= \frac{\partial{x}}{\partial{v}}\vec{i} + \frac{\partial{y}}{\partial{v}}\vec{j}+\frac{\partial{z}}{\partial{v}}\vec{k}
+\frac{\partial\vec{r}}{\partial{v}}= \vec{r}_v= \frac{\partial{x}}{\partial{v}}\vec{i} + \frac{\partial{y}}{\partial{v}}\vec{j}+\frac{\partial{z}}{\partial{v}}\vec{k}
+  
+  \end{aligned}
   $$
-
+  
 * Take the cross-product of the partial derivatives ($\vec{r}_u \times \vec{r}_v$) and use the parameters to compute the resulting vector
 
   * The coefficients of the resulting vector are the slopes of the tangent plane in each direction
@@ -416,7 +420,7 @@ To find the tangent plane to a parametric surface...
 
 > **The surface integral for a surface $S$ defined parametrically as a graph where $z=g(x,y)$ is:**
 >$$
-> \iint_S f(x,y,z)dS = \iint f(x,y,g(x,y))\sqrt{(\frac{\partial{z}}{\partial{x}})^2+(\frac{\partial{z}}{\partial{y}})^2+1}\text{ }dA
+> \iint_S f(x,y,z)dS = \iint f(x,y,g(x,y))\sqrt{\left(\frac{\partial{z}}{\partial{x}}\right)^2+\left(\frac{\partial{z}}{\partial{y}}\right)^2+1}\text{ }dA
 > $$
 
 

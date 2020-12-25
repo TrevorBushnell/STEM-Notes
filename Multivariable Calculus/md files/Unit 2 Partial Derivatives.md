@@ -450,7 +450,7 @@
 >    $$
 >    \nabla f(x,y,z) = \lambda \nabla g(x,y,z)\\
 >    AND\\
->    g(x,y,z)=k
+>    g(x,y,z)=k
 >    $$
 >
 > 2. Evaluate $f$ at all the points $(x,y,z)$ that result from the first step. The largest of these values is the maximum value of $f$ and the smallest is the minimum value of $f$.

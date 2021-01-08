@@ -1,12 +1,12 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.12.19)  7 JAN 2021 17:11
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.12.19)  6 JAN 2021 20:54
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"c:/Users/bushn/Home/Notes/MathNotes/AP Calculus/ap-calculus-latex/APCalculusNotes.tex"
-(c:/Users/bushn/Home/Notes/MathNotes/AP Calculus/ap-calculus-latex/APCalculusNotes.tex
+**"c:/Users/bushn/Home/Notes/MathNotes/AP Physics 1/ap-physics-1-latex/APPhysics1Notes.tex"
+(c:/Users/bushn/Home/Notes/MathNotes/AP Physics 1/ap-physics-1-latex/APPhysics1Notes.tex
 LaTeX2e <2020-10-01> patch level 2
-L3 programming layer <2020-12-07> xparse <2020-03-03> (c:/Users/bushn/Home/Notes/MathNotes/AP Calculus/ap-calculus-latex/package/notes.cls
+L3 programming layer <2020-12-07> xparse <2020-03-03> (c:/Users/bushn/Home/Notes/MathNotes/AP Physics 1/ap-physics-1-latex/package/notes.cls
 
 LaTeX Warning: You have requested document class `package/notes',
                but the document class provides `notes'.
@@ -232,7 +232,7 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
 \mathdisplay@stack=\toks22
 LaTeX Info: Redefining \[ on input line 2923.
 LaTeX Info: Redefining \] on input line 2924.
-) (c:/Users/bushn/Home/Notes/MathNotes/AP Calculus/ap-calculus-latex/package/color-env.sty
+) (c:/Users/bushn/Home/Notes/MathNotes/AP Physics 1/ap-physics-1-latex/package/color-env.sty
 
 LaTeX Warning: You have requested package `package/color-env',
                but the package provides `color-env'.
@@ -589,8 +589,15 @@ Package: amsthm 2020/05/29 v2.20.6
 Package: lipsum 2019/01/02 v2.2 150 paragraphs of Lorem Ipsum dummy text
  (c:/texlive/2020/texmf-dist/tex/latex/lipsum/lipsum.ltd.tex
 File: lipsum.ltd.tex 2019/01/02 v2.2 The Lorem ipsum dummy text
-)) (c:/Users/bushn/Home/Notes/MathNotes/AP Calculus/ap-calculus-latex/APCalculusNotes.aux)
-\openout1 = `APCalculusNotes.aux'.
+)) (c:/Users/bushn/Home/Notes/MathNotes/AP Physics 1/ap-physics-1-latex/APPhysics1Notes.aux
+
+LaTeX Warning: Label `def:label' multiply defined.
+
+
+LaTeX Warning: Label `def:label' multiply defined.
+
+)
+\openout1 = `APPhysics1Notes.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 12.
 LaTeX Font Info:    ... okay on input line 12.
@@ -621,8 +628,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 12.
 LaTeX Info: Redefining \pageref on input line 12.
 LaTeX Info: Redefining \nameref on input line 12.
+ (c:/Users/bushn/Home/Notes/MathNotes/AP Physics 1/ap-physics-1-latex/APPhysics1Notes.out) (c:/Users/bushn/Home/Notes/MathNotes/AP Physics 1/ap-physics-1-latex/APPhysics1Notes.out)
 \@outlinefile=\write4
-\openout4 = `APCalculusNotes.out'.
+\openout4 = `APPhysics1Notes.out'.
 
 
 *geometry* driver: auto-detecting
@@ -680,17 +688,30 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 )) [1
 
 
-{c:/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+{c:/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (c:/Users/bushn/Home/Notes/MathNotes/AP Physics 1/ap-physics-1-latex/APPhysics1Notes.toc
+LaTeX Font Info:    Trying to load font information for U+msa on input line 3.
+ (c:/texlive/2020/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 3.
+ (c:/texlive/2020/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+))
 \tf@toc=\write5
-\openout5 = `APCalculusNotes.toc'.
+\openout5 = `APPhysics1Notes.toc'.
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.75 \chapter
+l.73 \chapter
              *{Introduction} [1
 
 ]
+Underfull \hbox (badness 10000) in paragraph at lines 75--76
+
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 77--78
 
  []
@@ -700,89 +721,70 @@ Underfull \hbox (badness 10000) in paragraph at lines 79--80
 
  []
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 81.
-(c:/texlive/2020/texmf-dist/tex/latex/amsfonts/umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Trying to load font information for U+msb on input line 81.
- (c:/texlive/2020/texmf-dist/tex/latex/amsfonts/umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-Underfull \hbox (badness 10000) in paragraph at lines 81--82
-
- []
-
 [2
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 88--89
-
- []
-
-[3]
 Chapter 1.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 116.
-
-Underfull \hbox (badness 10000) in paragraph at lines 117--118
-
- []
-
+(mdframed)              on input line 107.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 122.
-[4
+(mdframed)              on input line 110.
+[3
 
 ]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 124.
+(mdframed)              on input line 117.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 152.
-Package mdframed Info: Not enough space on this page on input line 152.
+(mdframed)              on input line 122.
+Package mdframed Info: Not enough space on this page on input line 122.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 157.
+(mdframed)              on input line 135.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 161.
+(mdframed)              on input line 140.
 
-c:/Users/bushn/Home/Notes/MathNotes/AP Calculus/ap-calculus-latex/APCalculusNotes.tex:164: Missing $ inserted.
-<inserted text> 
-                $
-l.164 
-      
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
+Overfull \hbox (4.42839pt too wide) in paragraph at lines 149--150
+[]\OT1/cmr/m/n/10 your frame of ref-er-ence will de-ter-mine what you per-ceive to be pos-i-tive/negative
+ []
 
-[5] (c:/Users/bushn/Home/Notes/MathNotes/AP Calculus/ap-calculus-latex/APCalculusNotes.aux)
 
-Package rerunfilecheck Warning: File `APCalculusNotes.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
+Overfull \hbox (8.84521pt too wide) in paragraph at lines 150--151
+[]\OT1/cmr/m/n/10 EXAMPLE: view-ing mo-tion left and right ver-sus view-ing mo-tion in front/behind
+ []
 
-Package rerunfilecheck Info: Checksums for `APCalculusNotes.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  2C8D80728A3B55A2E7C0E3A1ACDA1812;294.
+[4]
+LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 175.
+ (c:/texlive/2020/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 175.
+ [5] (c:/Users/bushn/Home/Notes/MathNotes/AP Physics 1/ap-physics-1-latex/APPhysics1Notes.aux)
+Package rerunfilecheck Info: File `APPhysics1Notes.out' has not changed.
+(rerunfilecheck)             Checksum: A5B8A6BC4D12CAFEFB4111F0AC42154D;424.
 
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 19352 strings out of 479382
- 360502 string characters out of 5873307
- 855626 words of memory out of 5000000
- 36056 multiletter control sequences out of 15000+600000
+ 19429 strings out of 479382
+ 362588 string characters out of 5873307
+ 855620 words of memory out of 5000000
+ 36129 multiletter control sequences out of 15000+600000
  411078 words of font info for 54 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 113i,10n,119p,883b,986s stack positions out of 5000i,500n,10000p,200000b,80000s
-{c:/texlive/2020/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on "c:/Users/bushn/Home/Notes/MathNotes/AP Calculus/ap-calculus-latex/APCalculusNotes.pdf" (6 pages, 178638 bytes).
+ 113i,10n,119p,885b,1116s stack positions out of 5000i,500n,10000p,200000b,80000s
+{c:/texlive/2020/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
+Output written on "c:/Users/bushn/Home/Notes/MathNotes/AP Physics 1/ap-physics-1-latex/APPhysics1Notes.pdf" (6 pages, 165614 bytes).
 PDF statistics:
- 122 PDF objects out of 1000 (max. 8388607)
- 97 compressed objects within 1 object stream
- 24 named destinations out of 1000 (max. 500000)
- 13 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 135 PDF objects out of 1000 (max. 8388607)
+ 111 compressed objects within 2 object streams
+ 19 named destinations out of 1000 (max. 500000)
+ 61 words of extra memory for PDF output out of 10000 (max. 10000000)
 

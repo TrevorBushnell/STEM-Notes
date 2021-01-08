@@ -28,7 +28,7 @@
 		
 		\vspace{0.75\baselineskip} % Whitespace above the title
 		
-		{\huge TITLE\\} % Title
+		{\huge AP CALCULUS NOTES\\} % Title
 		
 		\vspace{0.75\baselineskip} % Whitespace below the title
 		
@@ -41,7 +41,7 @@
 		%	Subtitle
 		%------------------------------------------------
 		
-		\LARGE{AP CALCULUS NOTES} 
+		\LARGE{Comprehensive Notes for both AP Calculus AB and AP Calculus BC} 
 		
 		\vspace*{3\baselineskip} % Whitespace under the subtitle
 		
@@ -70,6 +70,28 @@
 	\end{titlepage}
 	\tableofcontents
 %\newpage
+
+
+\chapter*{Introduction}
+
+This document aims to highlight the important content of the AP Calculus course in traditional notes format. These notes are completely open-source, which means anyone is allowed to use these notes for their own personal benefit without having to seek permission from myself. \newline
+
+While these notes are designed for an AP Calculus course, all of the content seen in the AP Calculus Course and Exam Description document written by College Board will be included within these notes. However, this does \textit{not} mean that the content will be covered in the same way or order that is laid out in the Course and Exam Description. Additionally, the AP Calculus course is designed to be equivalent to either a one-semester Calculus I (in the case of AB) and/or a one-semester Calculus II (in the case of BC) course at the collegiate level. As such, these notes can be equally as useful to any student taking either of these classes at a university level.\newline
+
+Due to the open-source nature of these notes, anyone is allowed to contribute to improving these notes as they see fit. Since I am using \LaTeX to write these notes and I am using GitHub to distribute these notes easily, you must request all changes through the repository website on GitHub, which you can find \textbf{here}. If you are interested in contributing to these notes, then there are a few ways that you can do so:\newline
+
+\begin{enumerate}
+	\item \textbf{Open and submit an issue on my GitHub repository:} I write all my notes in \LaTeX, which is a typesetting language that is really helpful when it comes to typing and rendering math equations quickly and easily. If you do not know how to write \LaTeX code but are still interested in making a change to the notes, you can open an issue by going to the MathNotes repo on GitHub, and clicking on the button labeled "New Issue." From there, you can type out the change that you wish to see in the notes. It would be helpful if you would indicate what course you would like to see changed so that I can understand what you are referring to. I will then update the code to include your issue so that you don't have to worry about writing the code yourself.
+	\item \textbf{Create and submit a pull request:} If you know how to write LaTeX code and you understand how GitHub works, you can submit a pull request where you can write the code that you want to change yourself. I will then review the code and either submit the code to be incorporated into the notes OR provide some comments on your code if I wish for something to be different. 
+\end{enumerate}\newpage
+
+A final note about the AP Calculus content specifically: these notes will work for \textbf{both} AP Calculus AB AND AP Calculus BC. AB and BC overlap with the same content except for two extra units that BC tacks on at the end of the course (as well as a few individual lessons scattered throughout the course). As such, if a topic is marked with \textbf{BC} in the title of the unit/lesson, then the content addressed in that unit/lesson is content that will \textit{only be tested on the BC exam}.\newline
+
+Thank you so much for using these notes. I hope that the information is provided in such a way that it can help you when reviewing content for you AP test/class exam and just in general when it comes to learning the content for the course. Happy studying!
+
+
+
+
 \chapter{Limits and Continuity}
 
 \section{Introducing Calculus: Can Change Occur at an Instant?}
@@ -86,73 +108,65 @@
 	\item Calculus uses limits to understand and model more precise/instantaneous change that algebra cannot answer
 \end{itemize}
 
-\section{Defining Limits and Using Limit Notation}
-\begin{definition}
-	GGiven a function $f$, the limit of $f(x)$ as $x$ approaches $c$ is a real number $R$ if $f(x)$ can be made arbitrarily close to $R$ by taking $x$ extremely close to $c$ (but \textit{not equal to} $c$).
-	\newline\newline
-	If the limit exists and is a real number, then:
-	$$ \lim_{x\to c}f(x) = R$$
-\end{definition}
 
-\begin{itemize}
-	\item A limit can be expressed graphically, numerically, or analytically
-\end{itemize}
-\newpage
 
-\section{Estimating Limits From Graphs}
+\section{The Limit of a Function}
 
-\begin{itemize}
-	\item ONE SIDED LIMIT: A limit where you approach from a specific direction (either the left or the right)
-	\begin{itemize}
-		\item LHL (Left Hand Limit): $\lim_{x\to c^-} f(x) = L$
-		\item RHL (Right Hand Limit): $\lim_{x\to c^+} f(x) = L$
-		\item A limit exists if the left hand limit equals the right hand limit (LHL = RHL)
-	\end{itemize}
-	\item Using the information provided on a graph can help you interpret the limit of a function
-\end{itemize}
 
-\begin{figure*}[h]
-	\begin{center}
-		\includegraphics[width = 10cm]{images/1.2_Image.PNG}
-	\end{center}
-\end{figure*}
+\begin{definition}[Definition of a Limit]{def:label}
+	If $f$ is a function defined on an open interval containing $a$ (execpt possibly at $a$ itself), then the \textbf{limit of $f$ as $x$ approaches $a$} is equal to some constant $L$ if for any $\epsilon > 0$, there exists a $\delta > 0$ such that $|f(x) - L| < \epsilon$ whenever $|x-a| < \delta$.\\
+	
+	The notation for a limit is listed below:
 
-\begin{itemize}
-	\item In the example above, the limit is 4 because the function output as you approach 2 from the left is equal to the function output as you approach 2 from the right
-	\item Because there can be possible issues with scale, graphical representations of limits can possibly be inaccurate and can miss important behaviors of functions if you're too far zoomed out
-	\item A limit can fail to exist at particular values of $x$ if LHL $\ne$ RHL, the function oscillates near $x$, or if the function is unbounded
-\end{itemize}
-\newpage
+	$$\lim_{x \to a} f(x) = L$$
+\end{definition}\newpage
 
-\section{Estimating Limit Values From Tables}
+\begin{proposition}[Properties of Limits]{prop:label}
+	Given that $\lim_{x\to a}f(x) = L$ and $\lim_{x\to a} g(x) = M$, $L,M,a,c,n$ are real numbers.
+	\begin{enumerate}
+		\item $\lim_{x\to a} c = c$
+		\begin{itemize}
+			\item limit of a constant is that constant
+		\end{itemize}
+		\item $\lim_{x\to a} cf(x) = cL$
+		\begin{itemize}
+			\item limit of a constant times a function is equal to that same constant times the limit of the function
+		\end{itemize}
+		\item $\lim_{x\to a} f(x) \pm g(x) = \lim_{x \to a} f(x) \pm \lim_{x\to a} g(x) = L \pm M$
+		\begin{itemize}
+			\item limit of a sum is equal to the sum of the limits
+		\end{itemize}
+		\item $\lim_{x\to a} f(x) \cdot g(x) = \lim_{x \to a} f(x) \cdot \lim_{x\to a} g(x) = L \cdot M$
+		\begin{itemize}
+			\item limit of a product is equal to the product of the limits
+		\end{itemize}
+		\item $\lim_{x\to a} \frac{f(x)}{g(x)} = \frac{\lim_{x \to a} f(x)}{\lim_{x\to a} g(x)} = \frac{L}{M}$
+		\begin{itemize}
+			\item limit of a quotient is equal to the quotient of the limits
+		\end{itemize}
+		\item $\lim_{x \to a} \left[f(x)\right]^n = \left(\lim_{x \to a} f(x)\right)^n = L^n$
+		\begin{itemize}
+			\item limit of a function raised to a power is equal to the limit of a function then raised to that power
+		\end{itemize}
+	\end{enumerate}
+\end{proposition}
 
-\begin{itemize}
-	\item Numerical information from tables can be used to estimate Limits
-\end{itemize}
 
-\begin{figure*}
-	\begin{center}
-		\includegraphics[width=10cm]{images/1.4_Image.PNG}
-	\end{center}
-\end{figure*}
+\subsection{Evaluating Limits}
 
-\begin{itemize}
-	\item As seen in the table, the output values for 1.75 and below all seem to be getting closer to 4 while $x$ gets larger,
-	while the output values for 2.25 and greater all have values approaching 4 as $x$ gets smaller. Since the LHL is equal to the RHL, we can conclude that the limit as $x$ approaches 2 is indeed 4 
-\end{itemize}
+\begin{proposition}[Evaluating Limits of Continuous Functions]{prop:label}
+	If $f$ is a continuous function on an open interval containing a number $a$, then:
 
-\section{Determining Limits Using Algebraic Properties of Limits}
-% Maybe come back and make a prettier table in the future, but for now just keep the image
+	$$\lim_{x \to a} f(x) = f(a)$$
+\end{proposition}
 
-\begin{figure*}
-	\begin{center}
-		\includegraphics[width=10cm]{images/1.5_Image.PNG}
-	\end{center}
-\end{figure*}
+The following are some common techniques used to evaluate limits. Start with the first option and then move on to other options only after subsitution shows that the limit evaluates to an indeterminant form ($)
 
-\begin{itemize}
-	\item To evaluate a limit, simply substitute the desired value that you wish to find the limit at
-\end{itemize}
+\begin{enumerate}
+	\item \textbf{Substitute directly:} Always start with this option to evaluate
+\end{enumerate}
+	
+
 
 \end{document}
 .

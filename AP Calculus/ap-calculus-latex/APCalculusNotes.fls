@@ -776,8 +776,18 @@ INPUT c:/texlive/2020/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 INPUT c:/texlive/2020/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 INPUT c:/texlive/2020/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 INPUT c:/texlive/2020/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
-OUTPUT c:/Users/bushn/Home/Notes/MathNotes/AP Calculus/ap-calculus-latex/APCalculusNotes.out
+INPUT c:/Users/bushn/Home/Notes/MathNotes/AP Calculus/ap-calculus-latex/APCalculusNotes.out
+INPUT c:/Users/bushn/Home/Notes/MathNotes/AP Calculus/ap-calculus-latex/APCalculusNotes.out
+INPUT c:/Users/bushn/Home/Notes/MathNotes/AP Calculus/ap-calculus-latex/APCalculusNotes.out
+INPUT c:/Users/bushn/Home/Notes/MathNotes/AP Calculus/ap-calculus-latex/APCalculusNotes.out
+INPUT c:/Users/bushn/Home/Notes/MathNotes/AP Calculus/ap-calculus-latex/APCalculusNotes.out
+INPUT c:/Users/bushn/Home/Notes/MathNotes/AP Calculus/ap-calculus-latex/APCalculusNotes.out
+INPUT c:/Users/bushn/Home/Notes/MathNotes/AP Calculus/ap-calculus-latex/APCalculusNotes.out
+INPUT c:/Users/bushn/Home/Notes/MathNotes/AP Calculus/ap-calculus-latex/APCalculusNotes.out
 OUTPUT c:/Users/bushn/Home/Notes/MathNotes/AP Calculus/ap-calculus-latex/APCalculusNotes.pdf
+INPUT c:/Users/bushn/Home/Notes/MathNotes/AP Calculus/ap-calculus-latex/APCalculusNotes.out
+INPUT c:/Users/bushn/Home/Notes/MathNotes/AP Calculus/ap-calculus-latex/APCalculusNotes.out
+OUTPUT c:/Users/bushn/Home/Notes/MathNotes/AP Calculus/ap-calculus-latex/APCalculusNotes.out
 INPUT c:/texlive/2020/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 INPUT c:/texlive/2020/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 INPUT c:/texlive/2020/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
@@ -805,8 +815,10 @@ INPUT c:/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmr17.tfm
 INPUT c:/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map
 INPUT c:/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmr17.tfm
 INPUT c:/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
-OUTPUT c:/Users/bushn/Home/Notes/MathNotes/AP Calculus/ap-calculus-latex/APCalculusNotes.toc
-INPUT c:/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmti10.tfm
+INPUT c:/Users/bushn/Home/Notes/MathNotes/AP Calculus/ap-calculus-latex/APCalculusNotes.toc
+INPUT c:/Users/bushn/Home/Notes/MathNotes/AP Calculus/ap-calculus-latex/APCalculusNotes.toc
+INPUT c:/Users/bushn/Home/Notes/MathNotes/AP Calculus/ap-calculus-latex/APCalculusNotes.toc
+INPUT c:/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm
 INPUT c:/texlive/2020/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
 INPUT c:/texlive/2020/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
 INPUT c:/texlive/2020/texmf-dist/tex/latex/amsfonts/umsa.fd
@@ -823,7 +835,8 @@ INPUT c:/texlive/2020/texmf-dist/tex/latex/amsfonts/umsb.fd
 INPUT c:/texlive/2020/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT c:/texlive/2020/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
 INPUT c:/texlive/2020/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm5.tfm
-INPUT c:/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm
+OUTPUT c:/Users/bushn/Home/Notes/MathNotes/AP Calculus/ap-calculus-latex/APCalculusNotes.toc
+INPUT c:/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmti10.tfm
 INPUT c:/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmsl10.tfm
 INPUT c:/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmr17.tfm
 INPUT c:/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm

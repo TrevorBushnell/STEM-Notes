@@ -1,10 +1,11 @@
 # Fdb version 3
-["pdflatex"] 1610068301 "c:/Users/bushn/Home/Notes/MathNotes/AP Calculus/ap-calculus-latex/APCalculusNotes.tex" "c:/Users/bushn/Home/Notes/MathNotes/AP Calculus/ap-calculus-latex/APCalculusNotes.pdf" "APCalculusNotes" 1610068301
-  "APCalculusNotes.aux" 0 -1 0 "pdflatex"
-  "APCalculusNotes.out" 0 -1 0 "pdflatex"
-  "APCalculusNotes.tex" 1610068297 8734 f4585cfac15d26f4eea585d3fbfe1620 ""
-  "c:/Users/bushn/Home/Notes/MathNotes/AP Calculus/ap-calculus-latex/APCalculusNotes.aux" 1610068301 9 a94a2480d3289e625eea47cd1b285758 ""
-  "c:/Users/bushn/Home/Notes/MathNotes/AP Calculus/ap-calculus-latex/APCalculusNotes.tex" 1610068297 8734 f4585cfac15d26f4eea585d3fbfe1620 ""
+["pdflatex"] 1610505671 "c:/Users/bushn/Home/Notes/MathNotes/AP Calculus/ap-calculus-latex/APCalculusNotes.tex" "c:/Users/bushn/Home/Notes/MathNotes/AP Calculus/ap-calculus-latex/APCalculusNotes.pdf" "APCalculusNotes" 1610505673
+  "APCalculusNotes.aux" 1610505672 1743 7bf6dbeee2df1b66bc4b5b224fcd9240 "pdflatex"
+  "APCalculusNotes.out" 1610505672 294 2c8d80728a3b55a2e7c0e3a1acda1812 "pdflatex"
+  "APCalculusNotes.tex" 1610505668 9418 c2a3f62b0f66d1012315dc0d5847f539 ""
+  "APCalculusNotes.toc" 1610505672 383 a8101910107fb83de2bc1e6ec4cef3a3 "pdflatex"
+  "c:/Users/bushn/Home/Notes/MathNotes/AP Calculus/ap-calculus-latex/APCalculusNotes.aux" 1610505672 1743 7bf6dbeee2df1b66bc4b5b224fcd9240 ""
+  "c:/Users/bushn/Home/Notes/MathNotes/AP Calculus/ap-calculus-latex/APCalculusNotes.tex" 1610505668 9418 c2a3f62b0f66d1012315dc0d5847f539 ""
   "c:/texlive/2020/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1608425790 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "c:/texlive/2020/texmf-dist/fonts/map/fontname/texfonts.map" 1608428179 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "c:/texlive/2020/texmf-dist/fonts/tfm/jknappen/ec/tcbx1200.tfm" 1608427239 1536 c09172c8f235393e6235bb4758357c41 ""
@@ -180,10 +181,10 @@
   "package/color-env.sty" 1608492912 5364 1098a0652d98515b933b0e6b55aaf3c7 ""
   "package/notes.cls" 1608492912 720 7ff793663dee895118c56d8cb8643ac7 ""
   (generated)
-  "APCalculusNotes.log"
-  "c:/Users/bushn/Home/Notes/MathNotes/AP Calculus/ap-calculus-latex/APCalculusNotes.log"
-  "APCalculusNotes.toc"
-  "APCalculusNotes.pdf"
-  "APCalculusNotes.out"
   "APCalculusNotes.aux"
+  "APCalculusNotes.out"
+  "APCalculusNotes.pdf"
+  "APCalculusNotes.log"
+  "APCalculusNotes.toc"
   "c:/Users/bushn/Home/Notes/MathNotes/AP Calculus/ap-calculus-latex/APCalculusNotes.pdf"
+  "c:/Users/bushn/Home/Notes/MathNotes/AP Calculus/ap-calculus-latex/APCalculusNotes.log"

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.12.19)  7 JAN 2021 17:11
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.12.19)  12 JAN 2021 18:41
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -589,7 +589,11 @@ Package: amsthm 2020/05/29 v2.20.6
 Package: lipsum 2019/01/02 v2.2 150 paragraphs of Lorem Ipsum dummy text
  (c:/texlive/2020/texmf-dist/tex/latex/lipsum/lipsum.ltd.tex
 File: lipsum.ltd.tex 2019/01/02 v2.2 The Lorem ipsum dummy text
-)) (c:/Users/bushn/Home/Notes/MathNotes/AP Calculus/ap-calculus-latex/APCalculusNotes.aux)
+)) (c:/Users/bushn/Home/Notes/MathNotes/AP Calculus/ap-calculus-latex/APCalculusNotes.aux
+
+LaTeX Warning: Label `prop:label' multiply defined.
+
+)
 \openout1 = `APCalculusNotes.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 12.
@@ -621,6 +625,7 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 12.
 LaTeX Info: Redefining \pageref on input line 12.
 LaTeX Info: Redefining \nameref on input line 12.
+ (c:/Users/bushn/Home/Notes/MathNotes/AP Calculus/ap-calculus-latex/APCalculusNotes.out) (c:/Users/bushn/Home/Notes/MathNotes/AP Calculus/ap-calculus-latex/APCalculusNotes.out)
 \@outlinefile=\write4
 \openout4 = `APCalculusNotes.out'.
 
@@ -680,7 +685,15 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 )) [1
 
 
-{c:/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+{c:/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (c:/Users/bushn/Home/Notes/MathNotes/AP Calculus/ap-calculus-latex/APCalculusNotes.toc
+LaTeX Font Info:    Trying to load font information for U+msa on input line 3.
+ (c:/texlive/2020/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 3.
+ (c:/texlive/2020/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+))
 \tf@toc=\write5
 \openout5 = `APCalculusNotes.toc'.
 
@@ -700,14 +713,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 79--80
 
  []
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 81.
-(c:/texlive/2020/texmf-dist/tex/latex/amsfonts/umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Trying to load font information for U+msb on input line 81.
- (c:/texlive/2020/texmf-dist/tex/latex/amsfonts/umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
+
 Underfull \hbox (badness 10000) in paragraph at lines 81--82
 
  []
@@ -749,40 +755,31 @@ Package mdframed Info: mdframed detected package amsthm
  changed the theorem header of amsthm
 (mdframed)              on input line 161.
 
-c:/Users/bushn/Home/Notes/MathNotes/AP Calculus/ap-calculus-latex/APCalculusNotes.tex:164: Missing $ inserted.
-<inserted text> 
-                $
-l.164 
-      
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
+Overfull \hbox (35.51926pt too wide) in paragraph at lines 167--168
+[]\OT1/cmr/bx/n/10 Factoring and sim-pli-fy-ing: \OT1/cmr/m/n/10 if you have a quadratic in your nu-mer-a-tor/denominator,
+ []
 
 [5] (c:/Users/bushn/Home/Notes/MathNotes/AP Calculus/ap-calculus-latex/APCalculusNotes.aux)
+Package rerunfilecheck Info: File `APCalculusNotes.out' has not changed.
+(rerunfilecheck)             Checksum: 2C8D80728A3B55A2E7C0E3A1ACDA1812;294.
 
-Package rerunfilecheck Warning: File `APCalculusNotes.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
 
-Package rerunfilecheck Info: Checksums for `APCalculusNotes.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  2C8D80728A3B55A2E7C0E3A1ACDA1812;294.
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 19352 strings out of 479382
- 360502 string characters out of 5873307
- 855626 words of memory out of 5000000
- 36056 multiletter control sequences out of 15000+600000
+ 19365 strings out of 479382
+ 361083 string characters out of 5873307
+ 857626 words of memory out of 5000000
+ 36061 multiletter control sequences out of 15000+600000
  411078 words of font info for 54 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  113i,10n,119p,883b,986s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/texlive/2020/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on "c:/Users/bushn/Home/Notes/MathNotes/AP Calculus/ap-calculus-latex/APCalculusNotes.pdf" (6 pages, 178638 bytes).
+Output written on "c:/Users/bushn/Home/Notes/MathNotes/AP Calculus/ap-calculus-latex/APCalculusNotes.pdf" (6 pages, 181102 bytes).
 PDF statistics:
- 122 PDF objects out of 1000 (max. 8388607)
- 97 compressed objects within 1 object stream
- 24 named destinations out of 1000 (max. 500000)
- 13 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 143 PDF objects out of 1000 (max. 8388607)
+ 117 compressed objects within 2 object streams
+ 26 named destinations out of 1000 (max. 500000)
+ 45 words of extra memory for PDF output out of 10000 (max. 10000000)
 

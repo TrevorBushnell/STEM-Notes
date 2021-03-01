@@ -1,12 +1,12 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.12.19)  26 FEB 2021 12:22
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.12.19)  1 MAR 2021 08:49
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"c:/Users/bushn/Home/Notes/MathNotes/PHYS103 General Physics I/PHYS103_General_Physics_I.tex"
-(c:/Users/bushn/Home/Notes/MathNotes/PHYS103 General Physics I/PHYS103_General_Physics_I.tex
+**"c:/Users/bushn/Home/Notes/STEM-Notes/PHYS103 General Physics I/PHYS103_General_Physics_I.tex"
+(c:/Users/bushn/Home/Notes/STEM-Notes/PHYS103 General Physics I/PHYS103_General_Physics_I.tex
 LaTeX2e <2020-10-01> patch level 2
-L3 programming layer <2020-12-07> xparse <2020-03-03> (c:/Users/bushn/Home/Notes/MathNotes/PHYS103 General Physics I/package/notes.cls
+L3 programming layer <2020-12-07> xparse <2020-03-03> (c:/Users/bushn/Home/Notes/STEM-Notes/PHYS103 General Physics I/package/notes.cls
 
 LaTeX Warning: You have requested document class `package/notes',
                but the document class provides `notes'.
@@ -232,7 +232,7 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
 \mathdisplay@stack=\toks22
 LaTeX Info: Redefining \[ on input line 2923.
 LaTeX Info: Redefining \] on input line 2924.
-) (c:/Users/bushn/Home/Notes/MathNotes/PHYS103 General Physics I/package/color-env.sty
+) (c:/Users/bushn/Home/Notes/STEM-Notes/PHYS103 General Physics I/package/color-env.sty
 
 LaTeX Warning: You have requested package `package/color-env',
                but the package provides `color-env'.
@@ -589,7 +589,17 @@ Package: amsthm 2020/05/29 v2.20.6
 Package: lipsum 2019/01/02 v2.2 150 paragraphs of Lorem Ipsum dummy text
  (c:/texlive/2020/texmf-dist/tex/latex/lipsum/lipsum.ltd.tex
 File: lipsum.ltd.tex 2019/01/02 v2.2 The Lorem ipsum dummy text
-)) (c:/Users/bushn/Home/Notes/MathNotes/PHYS103 General Physics I/PHYS103_General_Physics_I.aux)
+)) (c:/Users/bushn/Home/Notes/STEM-Notes/PHYS103 General Physics I/PHYS103_General_Physics_I.aux
+
+LaTeX Warning: Label `def:label' multiply defined.
+
+
+LaTeX Warning: Label `def:label' multiply defined.
+
+
+LaTeX Warning: Label `def:label' multiply defined.
+
+)
 \openout1 = `PHYS103_General_Physics_I.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 20.
@@ -621,7 +631,7 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 20.
 LaTeX Info: Redefining \pageref on input line 20.
 LaTeX Info: Redefining \nameref on input line 20.
- (c:/Users/bushn/Home/Notes/MathNotes/PHYS103 General Physics I/PHYS103_General_Physics_I.out) (c:/Users/bushn/Home/Notes/MathNotes/PHYS103 General Physics I/PHYS103_General_Physics_I.out)
+ (c:/Users/bushn/Home/Notes/STEM-Notes/PHYS103 General Physics I/PHYS103_General_Physics_I.out) (c:/Users/bushn/Home/Notes/STEM-Notes/PHYS103 General Physics I/PHYS103_General_Physics_I.out)
 \@outlinefile=\write4
 \openout4 = `PHYS103_General_Physics_I.out'.
 
@@ -681,12 +691,12 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 )) [1
 
 
-{c:/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (c:/Users/bushn/Home/Notes/MathNotes/PHYS103 General Physics I/PHYS103_General_Physics_I.toc
-LaTeX Font Info:    Trying to load font information for U+msa on input line 7.
+{c:/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (c:/Users/bushn/Home/Notes/STEM-Notes/PHYS103 General Physics I/PHYS103_General_Physics_I.toc
+LaTeX Font Info:    Trying to load font information for U+msa on input line 3.
  (c:/texlive/2020/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 7.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 3.
  (c:/texlive/2020/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ))
@@ -718,41 +728,146 @@ Underfull \hbox (badness 10000) in paragraph at lines 85--86
 
 ] [3]
 Chapter 1.
-[4
+(c:/Users/bushn/Home/Notes/STEM-Notes/PHYS103 General Physics I/chapters/Unit1.tex [4
 
 ]
+Underfull \hbox (badness 10000) in paragraph at lines 32--33
+
+ []
+
+) [5]
 Chapter 2.
-[5
+(c:/Users/bushn/Home/Notes/STEM-Notes/PHYS103 General Physics I/chapters/Unit2.tex) [6
 
 ]
 Chapter 3.
-[6
+(c:/Users/bushn/Home/Notes/STEM-Notes/PHYS103 General Physics I/chapters/Unit3.tex
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 1.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 12.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 22.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 39.
+ [7
 
 ]
+Underfull \hbox (badness 10000) in paragraph at lines 59--60
+
+ []
+
+[8]
+Underfull \hbox (badness 10000) in paragraph at lines 130--131
+
+ []
+
+[9] [10]
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 256.
+
+Underfull \hbox (badness 10000) in paragraph at lines 272--273
+
+ []
+
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 276.
+
+Underfull \hbox (badness 10000) in paragraph at lines 279--280
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 281--282
+
+ []
+
+[11]
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 326.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 335.
+ [12] [13]
+Underfull \hbox (badness 10000) in paragraph at lines 362--363
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 386--387
+
+ []
+
+[14]) [15]
 Chapter 4.
-[7
+(c:/Users/bushn/Home/Notes/STEM-Notes/PHYS103 General Physics I/chapters/Unit4.tex
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 3.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 14.
+
+Overfull \vbox (22.54567pt too high) detected at line 56
+ []
+
+[16
 
 ]
-Chapter 5.
-[8
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 64.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 74.
 
-] (c:/Users/bushn/Home/Notes/MathNotes/PHYS103 General Physics I/PHYS103_General_Physics_I.aux)
+
+LaTeX Font Warning: Font shape `OT1/cmr/bx/sc' undefined
+(Font)              using `OT1/cmr/bx/n' instead on input line 77.
+
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 81.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 85.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 91.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 95.
+) [17] (c:/Users/bushn/Home/Notes/STEM-Notes/PHYS103 General Physics I/PHYS103_General_Physics_I.aux)
 Package rerunfilecheck Info: File `PHYS103_General_Physics_I.out' has not changed.
-(rerunfilecheck)             Checksum: 6200B1F733C9EEB101AF62B776007FED;302.
+(rerunfilecheck)             Checksum: E0244C52E3E3294BD2035BA9717375FD;945.
+
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
  ) 
 Here is how much of TeX's memory you used:
- 19166 strings out of 479382
- 355953 string characters out of 5873307
- 848630 words of memory out of 5000000
- 35872 multiletter control sequences out of 15000+600000
- 409451 words of font info for 49 fonts, out of 8000000 for 9000
+ 19479 strings out of 479382
+ 363385 string characters out of 5873307
+ 859630 words of memory out of 5000000
+ 36119 multiletter control sequences out of 15000+600000
+ 412135 words of font info for 57 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 113i,5n,119p,889b,404s stack positions out of 5000i,500n,10000p,200000b,80000s
-{c:/texlive/2020/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb>
-Output written on "c:/Users/bushn/Home/Notes/MathNotes/PHYS103 General Physics I/PHYS103_General_Physics_I.pdf" (9 pages, 96238 bytes).
+ 113i,14n,119p,890b,1011s stack positions out of 5000i,500n,10000p,200000b,80000s
+{c:/texlive/2020/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmti7.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
+Output written on "c:/Users/bushn/Home/Notes/STEM-Notes/PHYS103 General Physics I/PHYS103_General_Physics_I.pdf" (18 pages, 272593 bytes).
 PDF statistics:
- 117 PDF objects out of 1000 (max. 8388607)
- 98 compressed objects within 1 object stream
- 19 named destinations out of 1000 (max. 500000)
- 61 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 287 PDF objects out of 1000 (max. 8388607)
+ 245 compressed objects within 3 object streams
+ 66 named destinations out of 1000 (max. 500000)
+ 133 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,7 +1,16 @@
 \babel@toc {english}{}
-\contentsline {chapter}{\numberline {1}Measurement}{4}{chapter.1}%
-\contentsline {chapter}{\numberline {2}1D Motion}{5}{chapter.2}%
-\contentsline {chapter}{\numberline {3}Vectors and Vector Notation}{6}{chapter.3}%
-\contentsline {chapter}{\numberline {4}2D Motion}{7}{chapter.4}%
-\contentsline {chapter}{\numberline {5}Forces}{8}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Newton's Second Law}{8}{section.5.1}%
+\contentsline {chapter}{\numberline {1}Measurement and Vectors}{4}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Units and Unit Conversions}{4}{section.1.1}%
+\contentsline {section}{\numberline {1.2}EXAMPLES: Unit Conversions}{4}{section.1.2}%
+\contentsline {chapter}{\numberline {2}Kinematics}{6}{chapter.2}%
+\contentsline {chapter}{\numberline {3}Forces}{7}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Common Forces}{7}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Free Body Diagrams (FBD)}{8}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Other Posssible Scenarios and Their FBDs}{9}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Frictional Force}{11}{section.3.4}%
+\contentsline {section}{\numberline {3.5}Air Drag}{12}{section.3.5}%
+\contentsline {section}{\numberline {3.6}Centripetal Forces}{14}{section.3.6}%
+\contentsline {chapter}{\numberline {4}Work and Energy}{16}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Introduction to Work}{16}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Energy}{17}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}The Usefulness of Energy and Work}{17}{subsection.4.2.1}%

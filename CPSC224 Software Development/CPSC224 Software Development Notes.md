@@ -64,6 +64,10 @@
 
 
 
+
+
+
+
 ## Code Style in Software Development
 
 
@@ -111,6 +115,10 @@
 > **REMEMBER: Always code as if the person maintaining your code would be a violent psychopath and they know where they live**
 >
 > Write code for *maintenance*
+
+
+
+
 
 
 
@@ -240,8 +248,6 @@
 
 
 
-
-
 ### Polymorphism
 
 * **OBJECTS OF DIFFERENT TYPES BEING ACCESSED THROUGH THE SAME INTERFACE**
@@ -269,6 +275,10 @@
 
 * done vis subclassing
 * allows redefining through inheritance
+
+
+
+
 
 
 
@@ -397,7 +407,7 @@
 #### Stakeholders
 
 * **stakeholder:** someone who has a vested interest in the product
-  * *TEXTBOOK DEVINIFTION*: Anyone who is benefits in a direct or indirect way from the system being developed."
+  * *TEXTBOOK DEFINITION*: Anyone who is benefits in a direct or indirect way from the system being developed."
 * stakeholders are the people who are involved and whose inputs/outputs matter and are effected
 
 > **FINDING STAKEHOLDERS:**
@@ -430,3 +440,77 @@
 * what are the main tasks?
 * what exceptions should be considered?
 * does the actor want to be informed about unexpected changes?
+
+
+
+
+
+### Specifications: SRS Documents
+
+* **SRS Document:** Describes what the software will do and how it will be expected to perform. May also include details on functionality of the project and how the functionality fulfills the needs of every stakeholder
+* SRS Documents contains all of the following elements:
+  * purpose for the project
+  * overall description
+  * specific requirements
+* SRS is the documentation that summarizes *who* the project is for, *how* the needs are satisfied, and the *formal requirements* that define the success of the project
+
+
+
+### Specifications: Project Requirements
+
+
+
+#### Functional Requirements
+
+* The requirements/behaviors that ensure that 
+* If they are not implemented, ***THE SOFTWARE WILL NOT WORK***
+* are product features and usually focus on user requirements
+* can be thought of as how the system responds to certain inputs
+* **this is where you can specify the solution**
+
+
+
+> **EXAMPLES OF FUNCTIONAL REQUIREMENTS:**
+>
+> * Search option given to user to search from various invoices
+> * User should be able to mail any report to management
+> * Users can be divided into groups and groups can be given separate rights
+> * Software is developed keeping downward compatibility intact
+>   * older versions should still work
+>   * basically: "it will be backwards compatible"
+
+
+
+#### Non-Functional Requirements
+
+* Requirements that specify *how* the system should implement the functional requirements
+* these requirements do *not* affect the basic functionality of the system
+* we care about non-functional requirements because these requirements talk about *usability*
+* these requirements talk about issues like security, accessibility, storage, logging, config, performance/cost, etc.
+
+> **EXAMPLES OF NON-FUNCTIONAL REQUIREMENTS**
+>
+> * Database security shall meet HIPAA requirements
+> * The background color for all screens shall be `#fff4b6`
+> * System programming shall not use deprecated code
+> * Pages should take 2-4 seconds to load
+
+
+
+#### Functional VS Non-Functional Requirements
+
+| FUNCTIONAL REQUIREMENTS | NON-FUNCTIONAL REQUIREMENTS |
+| ----------------------- | --------------------------- |
+| Product ***Features***  | Product ***Properties***    |
+| User ***Requirements*** | User ***Expectations***     |
+
+
+
+### Requirement Priorities
+
+* Each requirement should be prioritized in the following way:
+  * MUST HAVE: software cannot be operational without it
+  * SHOULD HAVE: enhancing functionality
+  * COULD HAVE: software can still function without these requirements
+  * WISH LIST: Do not map to any objectives, would be sick if you could do it but ain't nobody got no time for that
+* For your final projects, what would be a feature you could put into each of these categories?

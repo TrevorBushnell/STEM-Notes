@@ -37,6 +37,7 @@
 		\sum F_y = m\frac{d\vec{v_y}}{dt}
 	$$
 \end{definition}
+\newpage
 
 \section{Common Forces}
 
@@ -51,6 +52,11 @@ There are many common forces that we will talk about in physics:
 	\item \textbf{FRICTION:} If an object is on the ground, the frictional force is the force that always acts opposite to the direction of motion (will talk about frictional force in a later section).
 	\item \textbf{TENSION:} The force exterted by a string or similar type of object that holds an object in place. No clear cut formula for finding this force, but drawing a free-body diagram and isolating the tension force will allow you to find the magnitude of the tension force. 
 	\item \textbf{SPRING:} The force a spring exterts on an object. Can find the magnitude of the force of a spring by using $F_s = -kx$ where $k$ is the spring constant and $x$ is the distance the string was stretched/compressed.
+	\item \item \textbf{AIRDRAG:} The force of air on an object when an object is in free-fall or moving through the air.
+	\item \textbf{CENTRIPETAL:} The force that keeps an object moving in a circle.
+	\begin{itemize}
+		\item We've talked about centripetal acceleration, and if you have acceleration then you have force.
+	\end{itemize}
 \end{itemize}
 
 
@@ -68,8 +74,9 @@ A \textbf{free body diagram} is a visual representation of all of the forces tha
 \begin{problem}
 	A block with mass $m$ is sitting on a table. Draw the FBD of the block and calculate the net force that the block experiences.
 
-	\textbf{INSERT FIGURE HERE}
-
+	\begin{center}
+		\includegraphics[width=0.5\textwidth]{chapters/ch3/images/fig3_1.PNG}
+	\end{center}
 	First we can algebraically analyze the forces in the $x$-direction. Since the object is not moving, its acceleration must be 0. There are also no forces being acted on the block in the $x$-direction. Therefore:
 	$$
 		\begin{aligned}
@@ -98,7 +105,10 @@ While many systems are just on the ground, there are many other physical situati
 
 \subsection*{Hanging From a Rope}
 
-\textbf{INSERT FIGURE HERE}
+\begin{center}
+	\includegraphics[width=0.5\textwidth]{chapters/ch3/images/fig3_2.PNG}
+\end{center}
+
 In the FBD pictured above, notice how there is no normal force because a normal force ony exists if an object is resting on a surface (in this case the object is airborne). We can also solve this algebraically:
 
 $$
@@ -113,9 +123,11 @@ Keep in mind that $F_T$ is the \textit{tension force}, which is the force that t
 
 \subsection*{On a Pulley}
 
-\textbf{INSERT FIGURE HERE}
+\begin{center}
+	\includegraphics[width=0.5\textwidth]{chapters/ch3/images/fig3_3.PNG}
+\end{center}
 
-In the FBD pictured above, despite the rope changing direction multiple times across the pulley, it is still the same rope. Therefore, the tension force of the rope will be the same across the entire rope, and we can simply represent the tension force by one vector in the FBD. Aslgebraically solving this system results in the following:
+In the FBD pictured above, despite the rope changing direction multiple times across the pulley, it is still the same rope. Therefore, the tension force of the rope will be the same across the entire rope, and we can simply represent the tension force by one vector in the FBD. Algebraically solving this system results in the following:
 
 $$
 	\begin{aligned}
@@ -127,11 +139,13 @@ $$
 
 \subsection*{On A Ramp}
 
-Before drawing the FBD, it is important to note that the easiest way to solve this is to change your coordinate system to match your ramp/inclined plane. To do this, line the x-axis up with the ramp. By doing this, the acceleration is only facing in the direction of the ramp (VS having to find acceleration in both the $x$ and $y$ components and combining them together to find the magnitude).\\
+Before drawing the FBD, it is important to note that the easiest way to solve this is to change your coordinate system to match your ramp/inclined plane. To do this, line the x-axis up with the ramp. By doing this, the acceleration is only facing in the direction of the ramp (VS having to find acceleration in both the $x$ and $y$ components and combining them together to find the magnitude).\newpage
 
 The FBD looks like the following:
 
-\textbf{INSERT FIGURE HERE}
+\begin{center}
+	\includegraphics[width=0.5\textwidth]{chapters/ch3/images/fig3_4.PNG}
+\end{center}
 
 We can then solve this system algebraically:
 
@@ -159,8 +173,14 @@ $$
 	\end{aligned}
 $$
 
+\subsection*{Example Problems}
+
 \begin{problem}
-	SEE HOCKEY PUCK
+	A hockey puck experiences two forces, $\vec{F_1}$ and $\vec{F_2}$. Find the magnitude and angle of the acceleration of the hockey puck.
+
+	\begin{center}
+		\includegraphics[width=0.5\textwidth]{chapters/ch3/images/fig3_5.PNG}
+	\end{center}
 
 	$$
 		\begin{aligned}
@@ -173,10 +193,14 @@ $$
 	$$
 \end{problem}
 
-\begin{problem}
-	SEE PULLY PROBLEM FOR DIAGRAM
 
-	Find the tension force and the acceleration of the third block.
+
+\begin{problem}
+	A block of mass $m_1$ is attached to a pulley and sits on a slope with angle of inclination $\theta$. Two additional masses $m_2$ and $m_3$ are hanging off the side of the slope and are also attached to the pulley. All three masses are attached to the same string. Find the tension force and the acceleration of the third block.
+
+	\begin{center}
+		\includegraphics[width=0.5\textwidth]{chapters/ch3/images/fig3_6.PNG}
+	\end{center}
 
 	For \#1:
 	$$
@@ -203,54 +227,8 @@ $$
 \end{problem}
 
 
-\begin{problem}
-	SEE FRICTION PROBLEM:
-
-	Kinetic Friction (object is moving):
-	$$
-		\begin{aligned}
-			\sum F_x = ma = F_A - F_f\\
-			ma = F_a - \mu_kF_N
-		\end{aligned}
-	$$
-
-	Static Friction (object is not moving):
-	$$
-		\begin{aligned}
-			\sum F_x = 0 = F_A - F_f\\
-			F_f \le \mu_s F_N
-		\end{aligned}
-	$$
-\end{problem}
-
-\begin{problem}
-	SEE FRICTION RAMP PROBLEM
-
-	Find $\mu_s$:
-
-	$$
-		\begin{aligned}
-			\sum F_y = 0 = F_N - mg\cos\theta\\
-			mg\cos\theta = F_N\\
-			\sum F_x = ma_x = mg\sin\theta - \mu_sF_N\\
-			\mu_s = \frac{mg\sin\theta - ma_x}{F_N} = \frac{mg\sin\theta ma_x}{mg\cos\theta}\\
-			\mu_s = \frac{mg\sin\theta}{mg\cos\theta} = \frac{\sin\theta}{\cos\theta}=\tan\theta
-		\end{aligned}
-	$$
-\end{problem}
-
 
 \section{Frictional Force}
-
-\textbf{THREE (MORE) COMMON FORCES:}
-\begin{itemize}
-	\item \textbf{FRICTION:} A force that opposes the motion of objects on the ground.
-	\item \textbf{AIRDRAG:} The force of air on an object when an object is in free-fall or moving through the air.
-	\item \textbf{CENTRIPETAL:} The force that keeps an object moving in a circle.
-	\begin{itemize}
-		\item We've talked about centripetal acceleration, and if you have acceleration then you have force.
-	\end{itemize}
-\end{itemize}
 	
 	
 \begin{definition}[Frictional Force]{def:label}
@@ -267,11 +245,11 @@ $$
 		
 		$$F_{f} = \mu_k F_N$$
 
-		\textit{INSERT GRAPH HERE}
-
 		In all cases, $\mu$ is the coefficient of friction (which is a constant that varies depending on the surface that the object is on).\\
 
-		Another thing to note is that $\mu_k < \mu_s < 1$.
+		Another thing to note is that $\mu_k < \mu_s < 1$.\\
+
+		If the system is at rest or has no acceleration, use \textbf{static coefficient of friction}. If the system is accelerating, use the \textbf{kinetic coefficient of friction}.
 	\end{itemize}
 \end{definition}
 

@@ -514,3 +514,109 @@
   * COULD HAVE: software can still function without these requirements
   * WISH LIST: Do not map to any objectives, would be sick if you could do it but ain't nobody got no time for that
 * For your final projects, what would be a feature you could put into each of these categories?
+
+
+
+
+
+## Software Testing
+
+> Software testing is a process of executing a program/application with the intent of finding the software bugs
+
+* Is the software gonna work right
+
+* As a developer, you have to *write your own tests* and use those tests on a **daily basis**
+
+* Agile Development Cycle really encourages continuous testing and integration
+* **NOTE: THE TESTING LANGUAGE/TERMS/DEFINITIONS ARE CONSTANTLY IN FLUX**
+  * be prepared for new stuff- maybe even do it yourself :wink:
+* Software testing should generally take around 10 minutes before the dev gets distracted with other things
+
+
+
+### Why Testing in This Class?
+
+* Other classes/courses that use testing (if you are a student)
+* Need to start developing your software dev skills
+* Modern software engineering philosophy get good results from leveraging testing systems and tools continually and formally
+  * IBM estimates that their devs spend 40% of their time testing
+
+
+
+### What is Testing For?
+
+* Detect software failures so that defects can be discovered/corrected
+* establishes whether a project is complete
+  * how to we know that we have satisfied the system requirements?
+* integrate the work of different devs/dev groups
+
+* Develop quality software that is relatively bug-free
+* Identify good design/functionality and whether the system is durable
+
+
+
+### Software Verification VS Validation
+
+* Makes sure that the product is designed to deliver all the functionality (make sure that the system requirements are satisfied)
+* Verification is going through code reviews/documentation to make sure that the project is going in the right track
+* Validation is ensuring that the code is correct
+
+
+
+### Basic Testing Cycle
+
+> Requirements Analysis/Test Planning/Test Development/Test Execution/Test Reporting/Test Result Analysis/Defect Retesting/Regression Testing/Test Closure
+
+* Regression Testing: Validating that all code works in the face of new code
+  * as your project gets bigger, you need to make sure that your previous code also works in the face of new changes
+
+
+
+### Testing Methods
+
+* **STATIC TESTING:** Give you reports about your code without running your code (linters)
+  * Don't necessarily need a computer- code reviews are a form of software testing!
+  * done during the verification process
+* **DYNAMIC TESTING:** Build the code, run the code, and look at how the code runs
+  * tested by executing on a computer
+  * done during the verification process
+* **BLACKBOX TESTING:** Only care about inputs/outputs (don't care about internals)
+  * the tester is only aware of what the software is supposed to do, not how it does it
+* **WHITEBOX TESTING**: Looking at the member variables, implementation, algorithms and making sure that the code is correct
+  * tester needs to concentrate on how the software does it
+* **GUI TESTING:** testing a GUI to ensure it meets written specs
+  * test images and button alignment on a webpage
+* [insert graphic here from slides]
+
+
+
+### Testing Levels
+
+* **UNIT TESTS:** Test done on one unit within the project (ex test on one class in Java)
+  * Tests written by the devs that wrote those units
+  * a "unit" is the smallest testable part of an application like functions/procedures, classes, interfaces
+* **COMPONENT TEST:** Test individual chunks of a project (ex. `.jar` files in Java)
+  * individual modules are tested to find defects in the module
+  * testing can be done in isolation of the system
+* **INTEGRATION TEST:** Tests that different modules/chunks of the project work together in the way they are intended
+  * same types of tests but across developers/dev groups
+  * test writing requires communication/collaboration
+  * some people on a team simply write integration tests within an organization
+* **SYSTEM TESTING:** conducted on a complete integration system to evaluate whether the requirements are met
+  * **API TESTS:** Tests on the API to make sure it is working correctly
+  * **FUNCTIONAL TESTS (GUI):** Making sure the entire software is correct
+* **ACCEPTANCE TESTING:** Give the software to your client and ask if the software is done
+  * done entirely by the user/customer 
+* **ALPHA TESTING:** give the software to someone not on the dev team (usually really friendly people) before the software is ready
+  * people who are familiar with the technology look at the code
+  * ready for the tech to not work but able to give good feedback
+* **BETA TESTING:** send the software to people who will use the software and run the software under normal conditions
+  * released to a limited audience outside of the programming team
+  * people WILL try to use the software as intended in this case (as opposed to alpha)
+
+> With every commit to the repo, you run the unit and integration tests and generate the reports
+
+
+
+
+

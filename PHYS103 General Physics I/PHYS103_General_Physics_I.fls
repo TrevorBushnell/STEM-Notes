@@ -839,10 +839,10 @@ OUTPUT c:/Users/bushn/Home/Notes/STEM-Notes/PHYS103 General Physics I/PHYS103_Ge
 INPUT c:/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmsl10.tfm
 INPUT c:/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmr17.tfm
 INPUT c:/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
-INPUT c:/Users/bushn/Home/Notes/STEM-Notes/PHYS103 General Physics I/chapters/Unit1.tex
-INPUT c:/Users/bushn/Home/Notes/STEM-Notes/PHYS103 General Physics I/chapters/Unit1.tex
-INPUT c:/Users/bushn/Home/Notes/STEM-Notes/PHYS103 General Physics I/chapters/Unit1.tex
-INPUT c:/Users/bushn/Home/Notes/STEM-Notes/PHYS103 General Physics I/chapters/Unit1.tex
+INPUT c:/Users/bushn/Home/Notes/STEM-Notes/PHYS103 General Physics I/chapters/ch1/Unit1.tex
+INPUT c:/Users/bushn/Home/Notes/STEM-Notes/PHYS103 General Physics I/chapters/ch1/Unit1.tex
+INPUT c:/Users/bushn/Home/Notes/STEM-Notes/PHYS103 General Physics I/chapters/ch1/Unit1.tex
+INPUT c:/Users/bushn/Home/Notes/STEM-Notes/PHYS103 General Physics I/chapters/ch1/Unit1.tex
 INPUT c:/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmr12.tfm
 INPUT c:/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
 INPUT c:/texlive/2020/texmf-dist/fonts/tfm/jknappen/ec/tcbx1440.tfm
@@ -850,10 +850,10 @@ INPUT c:/texlive/2020/texmf-dist/fonts/tfm/jknappen/ec/tcrm1000.tfm
 INPUT c:/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmti10.tfm
 INPUT c:/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmti7.tfm
 INPUT c:/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmti7.tfm
-INPUT c:/Users/bushn/Home/Notes/STEM-Notes/PHYS103 General Physics I/chapters/Unit2.tex
-INPUT c:/Users/bushn/Home/Notes/STEM-Notes/PHYS103 General Physics I/chapters/Unit2.tex
-INPUT c:/Users/bushn/Home/Notes/STEM-Notes/PHYS103 General Physics I/chapters/Unit2.tex
-INPUT c:/Users/bushn/Home/Notes/STEM-Notes/PHYS103 General Physics I/chapters/Unit2.tex
+INPUT c:/Users/bushn/Home/Notes/STEM-Notes/PHYS103 General Physics I/chapters/ch2/Unit2.tex
+INPUT c:/Users/bushn/Home/Notes/STEM-Notes/PHYS103 General Physics I/chapters/ch2/Unit2.tex
+INPUT c:/Users/bushn/Home/Notes/STEM-Notes/PHYS103 General Physics I/chapters/ch2/Unit2.tex
+INPUT c:/Users/bushn/Home/Notes/STEM-Notes/PHYS103 General Physics I/chapters/ch2/Unit2.tex
 INPUT c:/Users/bushn/Home/Notes/STEM-Notes/PHYS103 General Physics I/chapters/Unit3.tex
 INPUT c:/Users/bushn/Home/Notes/STEM-Notes/PHYS103 General Physics I/chapters/Unit3.tex
 INPUT c:/Users/bushn/Home/Notes/STEM-Notes/PHYS103 General Physics I/chapters/Unit3.tex
@@ -890,12 +890,32 @@ INPUT c:/Users/bushn/Home/Notes/STEM-Notes/PHYS103 General Physics I/chapters/ch
 INPUT c:/Users/bushn/Home/Notes/STEM-Notes/PHYS103 General Physics I/chapters/ch3/images/fig3_6.PNG
 INPUT c:/Users/bushn/Home/Notes/STEM-Notes/PHYS103 General Physics I/chapters/ch3/images/fig3_6.PNG
 INPUT c:/Users/bushn/Home/Notes/STEM-Notes/PHYS103 General Physics I/chapters/ch3/images/fig3_6.PNG
+INPUT c:/Users/bushn/Home/Notes/STEM-Notes/PHYS103 General Physics I/chapters/ch3/images/fig3_8.PNG
+INPUT c:/Users/bushn/Home/Notes/STEM-Notes/PHYS103 General Physics I/chapters/ch3/images/fig3_8.PNG
+INPUT c:/Users/bushn/Home/Notes/STEM-Notes/PHYS103 General Physics I/chapters/ch3/images/fig3_8.PNG
+INPUT c:/Users/bushn/Home/Notes/STEM-Notes/PHYS103 General Physics I/chapters/ch3/images/fig3_8.PNG
+INPUT c:/Users/bushn/Home/Notes/STEM-Notes/PHYS103 General Physics I/chapters/ch3/images/fig3_8.PNG
 INPUT c:/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmbxti10.tfm
-INPUT c:/Users/bushn/Home/Notes/STEM-Notes/PHYS103 General Physics I/chapters/Unit4.tex
-INPUT c:/Users/bushn/Home/Notes/STEM-Notes/PHYS103 General Physics I/chapters/Unit4.tex
-INPUT c:/Users/bushn/Home/Notes/STEM-Notes/PHYS103 General Physics I/chapters/Unit4.tex
-INPUT c:/Users/bushn/Home/Notes/STEM-Notes/PHYS103 General Physics I/chapters/Unit4.tex
+INPUT c:/Users/bushn/Home/Notes/STEM-Notes/PHYS103 General Physics I/chapters/ch4/Unit4.tex
+INPUT c:/Users/bushn/Home/Notes/STEM-Notes/PHYS103 General Physics I/chapters/ch4/Unit4.tex
+INPUT c:/Users/bushn/Home/Notes/STEM-Notes/PHYS103 General Physics I/chapters/ch4/Unit4.tex
+INPUT c:/Users/bushn/Home/Notes/STEM-Notes/PHYS103 General Physics I/chapters/ch4/Unit4.tex
 INPUT c:/texlive/2020/texmf-dist/fonts/tfm/jknappen/ec/tcbx1200.tfm
+INPUT c:/Users/bushn/Home/Notes/STEM-Notes/PHYS103 General Physics I/chapters/ch4/images/fig4_5.PNG
+INPUT c:/Users/bushn/Home/Notes/STEM-Notes/PHYS103 General Physics I/chapters/ch4/images/fig4_5.PNG
+INPUT c:/Users/bushn/Home/Notes/STEM-Notes/PHYS103 General Physics I/chapters/ch4/images/fig4_5.PNG
+INPUT c:/Users/bushn/Home/Notes/STEM-Notes/PHYS103 General Physics I/chapters/ch4/images/fig4_5.PNG
+INPUT c:/Users/bushn/Home/Notes/STEM-Notes/PHYS103 General Physics I/chapters/ch4/images/fig4_5.PNG
+INPUT c:/Users/bushn/Home/Notes/STEM-Notes/PHYS103 General Physics I/chapters/ch4/images/fig4_6.PNG
+INPUT c:/Users/bushn/Home/Notes/STEM-Notes/PHYS103 General Physics I/chapters/ch4/images/fig4_6.PNG
+INPUT c:/Users/bushn/Home/Notes/STEM-Notes/PHYS103 General Physics I/chapters/ch4/images/fig4_6.PNG
+INPUT c:/Users/bushn/Home/Notes/STEM-Notes/PHYS103 General Physics I/chapters/ch4/images/fig4_6.PNG
+INPUT c:/Users/bushn/Home/Notes/STEM-Notes/PHYS103 General Physics I/chapters/ch4/images/fig4_6.PNG
+INPUT c:/Users/bushn/Home/Notes/STEM-Notes/PHYS103 General Physics I/chapters/ch4/images/fig4_7.PNG
+INPUT c:/Users/bushn/Home/Notes/STEM-Notes/PHYS103 General Physics I/chapters/ch4/images/fig4_7.PNG
+INPUT c:/Users/bushn/Home/Notes/STEM-Notes/PHYS103 General Physics I/chapters/ch4/images/fig4_7.PNG
+INPUT c:/Users/bushn/Home/Notes/STEM-Notes/PHYS103 General Physics I/chapters/ch4/images/fig4_7.PNG
+INPUT c:/Users/bushn/Home/Notes/STEM-Notes/PHYS103 General Physics I/chapters/ch4/images/fig4_7.PNG
 INPUT c:/Users/bushn/Home/Notes/STEM-Notes/PHYS103 General Physics I/PHYS103_General_Physics_I.aux
 INPUT c:/Users/bushn/Home/Notes/STEM-Notes/PHYS103 General Physics I/PHYS103_General_Physics_I.out
 INPUT c:/Users/bushn/Home/Notes/STEM-Notes/PHYS103 General Physics I/PHYS103_General_Physics_I.out

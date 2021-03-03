@@ -98,7 +98,63 @@ Energy comes in many different forms. The main forms of energy (as well as the p
     PROOF OF SPRING ENERGY HERE
 \end{proof}
 
-
 \subsection{The Usefulness of Energy and Work}
 
-While we have an equation for the work if we know the applied forces, if we know other elements about the system (how fast )
+While we have an equation for the work if we know the applied forces, if we know other elements about the system (how fast ) [FINISH THIS LATER]
+
+
+\begin{problem}
+    ADD PROBLEM TEXT LATER
+
+    \begin{center}
+        \includegraphics[width=0.5\textwidth]{chapters/ch4/images/fig4_5.PNG}
+    \end{center}
+
+    While this problem could be solved using kinematics and Newton's second law, we can also use the Work-Energy theorem. 
+
+    $$
+    \begin{aligned}
+        W_{in} &= \Delta KE + \delta PE\\
+        F_T \cdot L &= \frac{1}{2}m(v_f - v_i)^2 + mg(h_f - h_i)\\
+        F_T \cdot L &= \frac{1}{2}mv_f^2 + mgh_f\\
+        v_f = \sqrt{\frac{2(F_TL - mgh_f)}{m}}\\
+        v_f = \sqrt{\frac{2(F_TL - mg(L\sin\theta))}{m}}
+    \end{aligned}
+    $$
+\end{problem}
+
+\begin{problem}
+    A skiier starts at the top of a mountain and is attached a spring at the bottom of the cliff. The skiier will also experience friction for 15m at the bottom of the slope right before the spring. How far was the spring compressed when the skiier reaches the bottom of the slope?
+
+    \begin{center}
+        \includegraphics[width=0.5\textwidth]{chapters/ch4/images/fig4_6.PNG}
+    \end{center}
+
+    $$
+    \begin{aligned}
+        W_{in} = 0 &= \Delta PE + \Delta E_s + \Delta E_{T}\\
+        0 &= mg(h_f-h_i) + \frac{1}{2}k(x_f-x_i)^2 + \mu_kmgD\\
+        0 &= -mgh_i + \frac{1}{2}kx_f^2 + \mu_kmgD\\
+        x_f &= \sqrt{\frac{(mgh_i-\mu_kmgD)^2}{k}}\\
+        x_f &= \sqrt{\frac{((70\kg)(9.81\frac{\m}{\s^2})(50\m)-(0.15)(70\kg)(9.81\frac{\m}{\s^2})(15\m))^2}{150 \frac{\N}{\m}}}\\
+    \end{aligned}
+    $$
+\end{problem}
+
+
+\begin{problem}
+    A stunt artist was launched out of a cannon on a 20m pedestal. He will land in a bucket attached to a pulley. The pulley also has a 50kg mass attached to it, and the bucket is 10m above the ground. Assume the bucket has no mass and the pulley exerts no friction on the string wrapped around the pulley. What is the speed of the stunt artist right when he lands in the bucket? 
+    
+    \begin{center}
+        \includegraphics[width=0.5\textwidth]{chapters/ch4/images/fig4_7.PNG}
+    \end{center}
+
+    $$
+    \begin{aligned}
+        W = 0 &= \Delta KE_1 + \Delta PE_1 + \Delta KE_2 + \Delta PE_2\\
+        0 &= \frac{1}{2}m(v_{f1}-v_{i1})^2 + \frac{1}{2}m_2(v_{f2}-v_{i2})^2 + m_1g(H_{f1} - H_{i1}) + m_2g(H_{f2} - H_{i2})\\
+    \end{aligned}
+    $$
+
+    ANSWER: $41.3 \frac{\m}{\s}$
+\end{problem}

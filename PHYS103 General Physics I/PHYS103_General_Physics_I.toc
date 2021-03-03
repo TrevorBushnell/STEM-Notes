@@ -7,10 +7,10 @@
 \contentsline {section}{\numberline {3.1}Common Forces}{8}{section.3.1}%
 \contentsline {section}{\numberline {3.2}Free Body Diagrams (FBD)}{8}{section.3.2}%
 \contentsline {section}{\numberline {3.3}Other Posssible Scenarios and Their FBDs}{9}{section.3.3}%
-\contentsline {section}{\numberline {3.4}Frictional Force}{12}{section.3.4}%
+\contentsline {section}{\numberline {3.4}Frictional Force}{13}{section.3.4}%
 \contentsline {section}{\numberline {3.5}Air Drag}{14}{section.3.5}%
-\contentsline {section}{\numberline {3.6}Centripetal Forces}{14}{section.3.6}%
-\contentsline {chapter}{\numberline {4}Work and Energy}{16}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Introduction to Work}{16}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Energy}{17}{section.4.2}%
-\contentsline {subsection}{\numberline {4.2.1}The Usefulness of Energy and Work}{17}{subsection.4.2.1}%
+\contentsline {section}{\numberline {3.6}Centripetal Forces}{15}{section.3.6}%
+\contentsline {chapter}{\numberline {4}Work and Energy}{17}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Introduction to Work}{17}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Energy}{18}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}The Usefulness of Energy and Work}{18}{subsection.4.2.1}%

@@ -1,0 +1,73 @@
+\section{Mathematical Induction}
+
+To prove the statement $P(n)$ is true for all $n = 1,2,3,...$, we must show:
+
+    \begin{enumerate}
+        \item Base Case Step: Verify that $P(1)$ is true
+        \item Inductive Step: Show the conditional statement $P(k) \implies P(k+1)$ is true for all $k = 1,2,3,...$
+        \item Conclusion: $P(n)$ is true for all $n=1,2,3,...$
+    \end{enumerate}
+
+\begin{problem}
+    Prove that $1+2+3+...+n=\frac{n(n+1)}{2}$ is true for all positive integers $n$ using mathematicl induction.
+
+    \begin{proof}
+        \textbf{BASE CASE:} If $n=1$, we see that $1 = \frac{1(1+1)}{2}=\frac{2}{2}$.\\
+
+        \textbf{INDUCTION STEP:} Suppose for some $k \in \Z^+$, that $1+2+3+...+k=\frac{k(k+1)}{2}$. Then, 
+
+        $$
+        \begin{aligned}
+            1+2+3+...+k+(k+1)&=\frac{k(k+1)}{2}+(k+1)\\
+            &= \frac{k(k+1)}{2} + \frac{2(k+1)}{2}\\
+            &=\frac{k(k+1)+2(k+1)}{2}\\
+            &=\frac{(k+1)(k+2)}{2} = \frac{(k+1)((k+1)+1)}{2}
+        \end{aligned}
+        $$
+
+        \textbf{CONCLUSION:} By induction, we know that for any $n \in \Z^+$, $1+2+3+...+n=\frac{n(n+1)}{2}$.
+    \end{proof}
+\end{problem}\newpage
+
+
+\begin{problem}
+    Use mathematical induction to prove that for $n\in\Z$, $2^n < n!$ for all $n > 3$.
+
+    \begin{proof}
+        \textbf{BASE CASE:} If $n = 4$, then $2^4=16<4!=24$.\\
+
+        \textbf{INDUCTION STEP;} Suppose that for some $k\in\Z$  and $k > 3$ that $2^k < k!$. Then:
+
+        $$
+        \begin{aligned}
+            2^{k+1} < (k+1)!\\
+            2(2^k) < (k+1)k!
+        \end{aligned}
+        $$
+
+        Since $k\ge 4$, the factor $(k+1)>2$, the factor being added with the next term will be greater than the factor of $2$ being added on the left side, which means that the righ side will always be greater than the left side.
+    \end{proof}
+\end{problem}
+
+
+\section{Strong Induction}
+
+To prove the statement $P(n)$ is true for all $n=1,2,3,...$, we show the following:
+    
+    \begin{enumerate}
+        \item Base Case Step: Verify that $P(1)$ is true
+        \item Inductive Step: Show that the conditional statement $$[P(1) \wedge P(2) \wedge... \wedge P(k)] \implies P(k+1)$$ is true for all $k = 1,2,3,...$
+        \item Conclusion: $P(n)$ is true for all $n=1,2,3...$
+    \end{enumerate}
+
+\begin{problem}
+    Prove that every integer greater than one can be written as the product of primes.
+
+    \begin{proof}
+        \textbf{BASE CASE:} If $n = 2$, then since $2$ is prime, it is trivially a product of two primes (being 2 and 1).\\
+
+        \textbf{INDUCTION STEP:} Suppose for some $k \in \Z$ that all integers between 2 and $k-1$ can be written as a product of primes. If $k$ is prime, then it is trivially a product of two primse (being $k$ and 1). If $k$ is not prime, then $k = ab$ where $a$ and $b$ are between $2$ and $k-1$. Then $a$ and $b$ can be written as a product of primes. Since $k=ab$, then $k$ can be written as a product of primes. 
+
+        Therefore by strong induction, we know that every integer greater than one can be written as the product of two primes.
+    \end{proof}
+\end{problem}

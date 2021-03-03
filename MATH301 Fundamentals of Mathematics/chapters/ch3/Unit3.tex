@@ -1,4 +1,6 @@
+\section{Helpful Definitions for Direct Proofs}
 
+The following are definitions that will be useful when constructing direct proofs (and any proof from this point forward). Many of these defintions have to do with even/odd numbers, divisibility, and prime numbers.
 
 \begin{definition}[Definition of Even and Odd Numbers]{def3.1:label}
     An integer $n$ is \textbf{even} if $n=2k$ for some $k \in \Z$\\
@@ -7,4 +9,117 @@
 
     Two integers have the same \textbf{parity} if both integers are even/odd, otherwise they have the opposite parity.
 \end{definition}
+
+\begin{definition}[Definition of Divisibility]{def3.2:label}
+    Suppose $a$ and $b$ are integers. Then $a$ \textbf{divides} $b$ (written $a|b$) if $b = ac$ for some $c\in \Z$. We would also say that $a$ is a \textbf{divisor} of $b$ and that $b$ is a \textbf{multiple} of $a$. 
+\end{definition}
+
+\begin{definition}[Prime Numbers]{def3.3:label}
+    A natural number $n$ is \textbf{prime} if it has exactly \textit{two} positive divisors, 1 and $n$.\\
+
+    A natural number $n$ is \textbf{composite} if it factors as $n=ab$ where $a,b>1$.
+\end{definition}
+
+\textbf{NOTE:} Do not use the statements $a/b$ or $a/b \in \Z$ because without careful planning of your argument, you might be making claims about rational numbers rather than integers!
+\newpage
+
+\begin{definition}[$\gcd$ and $\lcm$]{def3..4:label}
+    The \textbf{greatest common divisor} of two integers $a$ and $b$ (notation: $\gcd(a,b)$) is the largest integer that divides both $a$ and $b$. \\
+
+    The \textbf{least common multiple} of nonzero integers $a$ and $b$ (denoted $\lcm(a,b)$) is the smallest positive integer that is a multiple of both $a$ and $b$.
+\end{definition}
+
+\begin{definition}[The Dvision Algorithm]{def3.5:label}
+    Given integers $a$ and $b$ with $b>0$, there exist unique integers $q$ and $r$ for which $a=qb+r$ and $0 \le r < b$.\\
+
+    Also, any integer greater than 1 can be uniquely factored as a product of primes (prime factorization).
+\end{definition}
+
+\section{Outline for a Direct Proof}
+
+To prove the statement $P\implies Q$, go through the following outline in your proof:
+
+\begin{itemize}
+    \item "Suppose $P$ is true"
+    \item INSERT YOU MATH WORK/LOGIC/EXPLANATIONS
+    \item Final step where you end up with $Q$
+    \item $\therefore$ Q is true
+    \item $\therefore P \implies Q$ is true
+    \item \textbf{End of proof.} 
+\end{itemize}
+\newpage
+
+\section{Direct Proof Examples}
+
+\begin{proposition}{prop3.1:label}
+    If $x$ is odd, then $x^2$ is odd.
+\end{proposition}
+
+\begin{proof}
+    Suppose $x$ is odd. Then for some $a \in \Z$, we have $x = 2a+1$. As such, we have the following:
+
+    $$
+    \begin{aligned}
+        x^2 &= (2a+1)^2\\
+        &= 4a^2 + 4a + 1\\
+        &= 2(2a^2+2a)+1
+    \end{aligned}
+    $$
+
+    Since $a \in \Z$, then $2a^2+2a \in \Z$. Therefore, $x^2$ is odd.\\
+
+    $\therefore$ if $x$ is odd, then $x^2$ is odd.
+\end{proof}
+
+
+\begin{proposition}{prop3.2:label}
+    Let $a,b,c$ be integers. Then if $a|b$ and $b|c$, then $a|c$. 
+\end{proposition}
+
+\begin{proof}
+    Suppose that the statements $a|b$ and $b|c$ are true. Then there is some integer $m$ such that $am = b$ and there is some integer $n$ such that $bn = c$. By substituting $am = b$ into $bn = c$, we get the following:
+
+    $$
+    \begin{aligned}
+        c = (am)n\\
+        c = a(mn)
+    \end{aligned}
+    $$
+
+    Since $m$ and $n$ are both integers, then $mn$ must be an integer. Since $a$ times some integer equals $c$, then $a$ divides $c$.\\
+
+    $\therefore$ if $a|b$ and $b|c$, then $a|c$.
+\end{proof}
+
+\begin{proposition}{prop3.3:label}
+    If $a,b,c \in \Z^+$, then $\lcm(ca,cb) = c\lcm(a,b)$
+\end{proposition}
+
+\begin{proof}
+    \textbf{INSERT PROOF HERE}
+\end{proof}
+
+\section{Proof By Cases}
+
+Many times, an effective proof must consider all possible forms that a statement can take on. For example, if your statement in a proof is something along the lines of "$n \in \Z$", there might be different outcomes depending on whether $n$ is positive, negative, or zero. If you can effectively "cover all the bases" and prove each case individually, then you can more effectively make a conslucion about the statement as a whole.\\
+
+When you use cases, ensure that you do the following:
+\begin{itemize}
+    \item clearly state what the cases are
+    \item cover all the possible cases in your proof
+\end{itemize}
+
+\begin{proposition}{prop3.4.1:label}
+    If $n \in \N$, then $1 + (-1)^n(2n-1)$ is a multiple of 4.
+\end{proposition}
+
+\begin{proof}
+    Suppose $n \in \N$. Then $n$ is either even or odd. Consider these two cases:\\
+
+    \textbf{Case 1- $n$ is even:} If $n$ is even, then there is some integer  $k$ such that $n = 2k$. \\
+
+    \textbf{Case 2- $n$ is odd:} \\
+
+    $\therefore$ if $n \in \N$, then $1 + (-1)^n(2n-1)$ is a multiple of 4. (\textit{finish this proof later})
+\end{proof}
 

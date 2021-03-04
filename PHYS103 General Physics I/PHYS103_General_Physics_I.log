@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.12.19)  3 MAR 2021 09:38
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.12.19)  4 MAR 2021 08:49
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -602,23 +602,23 @@ LaTeX Warning: Label `def:label' multiply defined.
 )
 \openout1 = `PHYS103_General_Physics_I.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-Package hyperref Info: Link coloring ON on input line 20.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+Package hyperref Info: Link coloring ON on input line 21.
  (c:/texlive/2020/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
  (c:/texlive/2020/texmf-dist/tex/latex/refcount/refcount.sty
@@ -628,9 +628,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count315
 )
-LaTeX Info: Redefining \ref on input line 20.
-LaTeX Info: Redefining \pageref on input line 20.
-LaTeX Info: Redefining \nameref on input line 20.
+LaTeX Info: Redefining \ref on input line 21.
+LaTeX Info: Redefining \pageref on input line 21.
+LaTeX Info: Redefining \nameref on input line 21.
  (c:/Users/bushn/Home/Notes/STEM-Notes/PHYS103 General Physics I/PHYS103_General_Physics_I.out) (c:/Users/bushn/Home/Notes/STEM-Notes/PHYS103 General Physics I/PHYS103_General_Physics_I.out)
 \@outlinefile=\write4
 \openout4 = `PHYS103_General_Physics_I.out'.
@@ -706,21 +706,21 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.79 \chapter
+l.80 \chapter
              *{Introduction} [1
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 81--82
+Underfull \hbox (badness 10000) in paragraph at lines 82--83
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 83--84
+Underfull \hbox (badness 10000) in paragraph at lines 84--85
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 85--86
+Underfull \hbox (badness 10000) in paragraph at lines 86--87
 
  []
 
@@ -762,35 +762,35 @@ Underfull \hbox (badness 10000) in paragraph at lines 65--66
  []
 
 [8]
-<chapters/ch3/images/fig3_1.PNG, id=145, 472.164pt x 409.83113pt>
+<chapters/ch3/images/fig3_1.PNG, id=155, 472.164pt x 409.83113pt>
 File: chapters/ch3/images/fig3_1.PNG Graphic file (type png)
 <use chapters/ch3/images/fig3_1.PNG>
 Package pdftex.def Info: chapters/ch3/images/fig3_1.PNG  used on input line 79.
 (pdftex.def)             Requested size: 180.67499pt x 156.8193pt.
-<chapters/ch3/images/fig3_2.PNG, id=147, 532.389pt x 330.93637pt>
+<chapters/ch3/images/fig3_2.PNG, id=157, 532.389pt x 330.93637pt>
 File: chapters/ch3/images/fig3_2.PNG Graphic file (type png)
 <use chapters/ch3/images/fig3_2.PNG>
 Package pdftex.def Info: chapters/ch3/images/fig3_2.PNG  used on input line 110.
 (pdftex.def)             Requested size: 180.67499pt x 112.30983pt.
  [9 <c:/Users/bushn/Home/Notes/STEM-Notes/PHYS103 General Physics I/chapters/ch3/images/fig3_1.PNG>]
-<chapters/ch3/images/fig3_3.PNG, id=154, 835.62187pt x 500.77087pt>
+<chapters/ch3/images/fig3_3.PNG, id=165, 835.62187pt x 500.77087pt>
 File: chapters/ch3/images/fig3_3.PNG Graphic file (type png)
 <use chapters/ch3/images/fig3_3.PNG>
 Package pdftex.def Info: chapters/ch3/images/fig3_3.PNG  used on input line 128.
 (pdftex.def)             Requested size: 180.67499pt x 108.27492pt.
  [10 <c:/Users/bushn/Home/Notes/STEM-Notes/PHYS103 General Physics I/chapters/ch3/images/fig3_2.PNG> <c:/Users/bushn/Home/Notes/STEM-Notes/PHYS103 General Physics I/chapters/ch3/images/fig3_3.PNG>]
-<chapters/ch3/images/fig3_4.PNG, id=165, 456.20438pt x 389.0535pt>
+<chapters/ch3/images/fig3_4.PNG, id=175, 456.20438pt x 389.0535pt>
 File: chapters/ch3/images/fig3_4.PNG Graphic file (type png)
 <use chapters/ch3/images/fig3_4.PNG>
 Package pdftex.def Info: chapters/ch3/images/fig3_4.PNG  used on input line 148.
 (pdftex.def)             Requested size: 180.67499pt x 154.07515pt.
  [11 <c:/Users/bushn/Home/Notes/STEM-Notes/PHYS103 General Physics I/chapters/ch3/images/fig3_4.PNG>]
-<chapters/ch3/images/fig3_5.PNG, id=171, 403.20638pt x 220.4235pt>
+<chapters/ch3/images/fig3_5.PNG, id=181, 403.20638pt x 220.4235pt>
 File: chapters/ch3/images/fig3_5.PNG Graphic file (type png)
 <use chapters/ch3/images/fig3_5.PNG>
 Package pdftex.def Info: chapters/ch3/images/fig3_5.PNG  used on input line 184.
 (pdftex.def)             Requested size: 180.67499pt x 98.76923pt.
-<chapters/ch3/images/fig3_6.PNG, id=172, 636.87938pt x 422.47838pt>
+<chapters/ch3/images/fig3_6.PNG, id=182, 636.87938pt x 422.47838pt>
 File: chapters/ch3/images/fig3_6.PNG Graphic file (type png)
 <use chapters/ch3/images/fig3_6.PNG>
 Package pdftex.def Info: chapters/ch3/images/fig3_6.PNG  used on input line 204.
@@ -817,7 +817,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 259--260
 
  []
 
-<chapters/ch3/images/fig3_8.PNG, id=183, 225.54262pt x 160.49962pt>
+<chapters/ch3/images/fig3_8.PNG, id=193, 225.54262pt x 160.49962pt>
 File: chapters/ch3/images/fig3_8.PNG Graphic file (type png)
 <use chapters/ch3/images/fig3_8.PNG>
 Package pdftex.def Info: chapters/ch3/images/fig3_8.PNG  used on input line 262.
@@ -878,18 +878,18 @@ Package mdframed Info: mdframed detected package amsthm
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 95.
-<chapters/ch4/images/fig4_5.PNG, id=218, 834.7185pt x 347.19713pt>
+<chapters/ch4/images/fig4_5.PNG, id=228, 834.7185pt x 347.19713pt>
 File: chapters/ch4/images/fig4_5.PNG Graphic file (type png)
 <use chapters/ch4/images/fig4_5.PNG>
 Package pdftex.def Info: chapters/ch4/images/fig4_5.PNG  used on input line 110.
 (pdftex.def)             Requested size: 180.67499pt x 75.14922pt.
 [18 <c:/Users/bushn/Home/Notes/STEM-Notes/PHYS103 General Physics I/chapters/ch4/images/fig4_5.PNG>]
-<chapters/ch4/images/fig4_6.PNG, id=231, 876.27374pt x 470.9595pt>
+<chapters/ch4/images/fig4_6.PNG, id=241, 876.27374pt x 470.9595pt>
 File: chapters/ch4/images/fig4_6.PNG Graphic file (type png)
 <use chapters/ch4/images/fig4_6.PNG>
 Package pdftex.def Info: chapters/ch4/images/fig4_6.PNG  used on input line 130.
 (pdftex.def)             Requested size: 180.67499pt x 97.10066pt.
-<chapters/ch4/images/fig4_7.PNG, id=232, 651.03226pt x 396.88275pt>
+<chapters/ch4/images/fig4_7.PNG, id=242, 651.03226pt x 396.88275pt>
 File: chapters/ch4/images/fig4_7.PNG Graphic file (type png)
 <use chapters/ch4/images/fig4_7.PNG>
 Package pdftex.def Info: chapters/ch4/images/fig4_7.PNG  used on input line 149.
@@ -898,9 +898,22 @@ Package pdftex.def Info: chapters/ch4/images/fig4_7.PNG  used on input line 149.
 Underfull \vbox (badness 1603) detected at line 160
  []
 
-[19 <c:/Users/bushn/Home/Notes/STEM-Notes/PHYS103 General Physics I/chapters/ch4/images/fig4_6.PNG>]) [20 <c:/Users/bushn/Home/Notes/STEM-Notes/PHYS103 General Physics I/chapters/ch4/images/fig4_7.PNG>] (c:/Users/bushn/Home/Notes/STEM-Notes/PHYS103 General Physics I/PHYS103_General_Physics_I.aux)
+[19 <c:/Users/bushn/Home/Notes/STEM-Notes/PHYS103 General Physics I/chapters/ch4/images/fig4_6.PNG>]
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 187.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 195.
+ [20 <c:/Users/bushn/Home/Notes/STEM-Notes/PHYS103 General Physics I/chapters/ch4/images/fig4_7.PNG>]
+<chapters/ch4/images/fig4_8.png, id=258, 707.94487pt x 369.48038pt>
+File: chapters/ch4/images/fig4_8.png Graphic file (type png)
+<use chapters/ch4/images/fig4_8.png>
+Package pdftex.def Info: chapters/ch4/images/fig4_8.png  used on input line 202.
+(pdftex.def)             Requested size: 180.67499pt x 94.29236pt.
+) [21 <c:/Users/bushn/Home/Notes/STEM-Notes/PHYS103 General Physics I/chapters/ch4/images/fig4_8.png>] (c:/Users/bushn/Home/Notes/STEM-Notes/PHYS103 General Physics I/PHYS103_General_Physics_I.aux)
 Package rerunfilecheck Info: File `PHYS103_General_Physics_I.out' has not changed.
-(rerunfilecheck)             Checksum: E0244C52E3E3294BD2035BA9717375FD;945.
+(rerunfilecheck)             Checksum: 371AD73A09A0F67E96046C56B3AF09E9;1061.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
@@ -910,18 +923,18 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 19536 strings out of 479382
- 365156 string characters out of 5873307
+ 19560 strings out of 479382
+ 365619 string characters out of 5873307
  858630 words of memory out of 5000000
- 36152 multiletter control sequences out of 15000+600000
+ 36167 multiletter control sequences out of 15000+600000
  412135 words of font info for 57 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  113i,14n,119p,890b,990s stack positions out of 5000i,500n,10000p,200000b,80000s
-{c:/texlive/2020/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmti7.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on "c:/Users/bushn/Home/Notes/STEM-Notes/PHYS103 General Physics I/PHYS103_General_Physics_I.pdf" (21 pages, 1102275 bytes).
+{c:/texlive/2020/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmti7.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
+Output written on "c:/Users/bushn/Home/Notes/STEM-Notes/PHYS103 General Physics I/PHYS103_General_Physics_I.pdf" (22 pages, 1223289 bytes).
 PDF statistics:
- 324 PDF objects out of 1000 (max. 8388607)
- 259 compressed objects within 3 object streams
- 71 named destinations out of 1000 (max. 500000)
- 183 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 350 PDF objects out of 1000 (max. 8388607)
+ 281 compressed objects within 3 object streams
+ 78 named destinations out of 1000 (max. 500000)
+ 204 words of extra memory for PDF output out of 10000 (max. 10000000)
 

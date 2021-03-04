@@ -14,3 +14,5 @@
 \contentsline {section}{\numberline {4.1}Introduction to Work}{17}{section.4.1}%
 \contentsline {section}{\numberline {4.2}Energy}{18}{section.4.2}%
 \contentsline {subsection}{\numberline {4.2.1}The Usefulness of Energy and Work}{18}{subsection.4.2.1}%
+\contentsline {section}{\numberline {4.3}Work and Calculus}{20}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Power}{20}{section.4.4}%

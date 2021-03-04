@@ -114,11 +114,11 @@ While we have an equation for the work if we know the applied forces, if we know
 
     $$
     \begin{aligned}
-        W_{in} &= \Delta KE + \delta PE\\
+        W_{in} &= \Delta KE + \Delta PE\\
         F_T \cdot L &= \frac{1}{2}m(v_f - v_i)^2 + mg(h_f - h_i)\\
         F_T \cdot L &= \frac{1}{2}mv_f^2 + mgh_f\\
-        v_f = \sqrt{\frac{2(F_TL - mgh_f)}{m}}\\
-        v_f = \sqrt{\frac{2(F_TL - mg(L\sin\theta))}{m}}
+        v_f &= \sqrt{\frac{2(F_TL - mgh_f)}{m}}\\
+        v_f &= \sqrt{\frac{2(F_TL - mg(L\sin\theta))}{m}}
     \end{aligned}
     $$
 \end{problem}
@@ -157,4 +157,72 @@ While we have an equation for the work if we know the applied forces, if we know
     $$
 
     ANSWER: $41.3 \frac{\m}{\s}$
+\end{problem}
+
+
+\section{Work and Calculus}
+
+\begin{itemize}
+    \item Sometimes, the force being applied to an object over a given distance is variable
+    \item If you are given an equation for what the force is (dependent on distance), then $W = \int_{x_i}^{x_f} F(x) dx$
+\end{itemize}
+
+
+\begin{problem}
+    If the force applied to an object (as a function of distance) is $F(x) = 5 - 2x$, what is the work done on the object if the object moves 3 \m?
+
+    $$
+    \begin{aligned}
+        W &= \int_{x_i}^{x_f} F(x) \: dx\\
+        W &= \int_{0}^{3} 5-2x \: dx\\
+        W &= (5-2(3))-(5-2(0)) = -1-5
+        W &= -6 \J
+    \end{aligned}
+    $$
+\end{problem}
+
+
+\section{Power}
+
+\begin{definition}[Power]{def4.5:label}
+    \textbf{Power:} How much energy is expended over a given time interval.
+
+    $$
+    P = \frac{\Delta E}{\Delta t} = \frac{W}{t}
+    $$
+
+    \textbf{SI Units:} Watts (W)
+\end{definition}
+
+
+\begin{problem}
+    A block of mass 1000 kg is attached to a pulley at the top of a building. The pulley is attached to a motor that uses 200 kW. What is the final velocity of the block the moment it reaches the top of the building?
+
+    \begin{center}
+        \includegraphics[width=0.5\textwidth]{chapters/ch4/images/fig4_8}
+    \end{center}
+
+    $$
+    \begin{aligned}
+        P &= \frac{\Delta E}{\Delta t}\\
+        P &= \frac{\Delta KE + \Delta PE}{\Delta t}\\
+        P &= \frac{\frac{1}{2}mv^2+mgh}{\Delta t}\\
+        v_f &= \sqrt{\frac{2(-mgh+\Delta T P)}{m}}
+    \end{aligned}
+    $$
+\end{problem}
+
+
+\begin{problem}
+    A truck drives up a ramp with an angle of inclination of $15^\circ$. If the truck drives 200 meters in 20 seconds, what is the power of the truck (in kW) after the truck has moved 200 meters? Assume that 10\% of the total energy is lost to the environment.
+
+    $$
+    \begin{aligned}
+        P &= \frac{\Delta E}{t}\\
+        P &= \frac{\Delta KE + \Delta PE}{t}+ 10\%\text{ energy}\\
+        P &= \frac{\frac{1}{2}mv^2 + mgh}{t} + 10\%\text{ energy}\\
+        P &= \left[\frac{\frac{1}{2}m\left(\frac{\Delta x}{t}\right)^2 + mgL\sin\theta}{t}\right]\frac{1}{0.9}\\
+        P &= 98.3 \text{ kW}
+    \end{aligned}
+    $$
 \end{problem}

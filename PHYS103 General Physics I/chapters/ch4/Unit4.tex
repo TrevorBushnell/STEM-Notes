@@ -226,3 +226,67 @@ While we have an equation for the work if we know the applied forces, if we know
     \end{aligned}
     $$
 \end{problem}
+
+
+\begin{problem}
+    A person with mass 80 kg is on a scooter on top of a hill that is 30 m tall. The person is pushed off by a spring with a spring coefficient of 1500 N/m. The spring is compressed 2.5 m. The person will then go down a hill and launch into the air, then land in a pit of tar with a coefficient of kinetic friction of 0.8. \\
+
+    a) Find the velocity of the person right after the spring pushes him off.\\
+
+    b) Find the distance the person will travel after he lands in the tar. 
+
+    \begin{center}
+        \includegraphics[width=0.75\textwidth]{chapters/ch4/images/fig4_10.PNG}
+    \end{center}
+
+    a)
+
+    $$
+    \begin{aligned}
+        W &= \Delta KE + \Delta E_s\\
+        0 &= \frac{1}{2}mv_i^2+\frac{1}{2}k(-x_i)^2\\
+        v_i = \sqrt{\frac{kx_i^2}{m}}\\
+        v_i = 10.8 \frac{\m}{\s}
+    \end{aligned}
+    $$
+
+    b)
+    $$
+    \begin{aligned}
+        W &= -\frac{1}{2}m(v_i)^2 + mg(-h_i) + F_fd\\
+        0 &= -\frac{1}{2}mv_i^2 + - mgh_i + \mu_kF_Nd\\
+        d &= \frac{mgh_i + \frac{1}{2}mv_i^2}{\mu_kmg}\\
+        d &= 44.9 \m
+    \end{aligned}
+    $$
+\end{problem}
+
+
+\begin{problem}
+    A ball with mass 2 kg is placed inside a cannon that is launched using a spring with spring constant 200 N/m. The spring is compressed 2 m and is compressed all the way to the ground (so that $PE_i = 0$). The cannon is at an angle of $20^\circ$. What is the maximum height that the ball is launched?
+
+    \begin{center}
+        \includegraphics[width=0.75\textwidth]{chapters/ch4/images/fig4_11.PNG}
+    \end{center}
+
+    We first need the velocity right when the ball leaves the spring. We can set up a mini Work-Energy problem:
+    $$
+    \begin{aligned}
+        W &= \Delta KE + \Delta PE + \Delta E_s\\
+        0 &= \frac{1}{2}mv_i^2 + mgL\sin\theta + \frac{1}{2}k(-(L^2))\\
+        \frac{1}{2}mv_i^2 &= \frac{1}{2}kL^2 - mgl\sin\theta\\
+        v_i &= \sqrt{\frac{2\left(\frac{1}{2}kL^2 - mgl\sin\theta\right)}{m}}
+    \end{aligned}
+    $$
+
+
+    Now we can use the x-component of that velocity to get the final velocity in the overall Work-Energy problem.
+    $$
+    \begin{aligned}
+        W &= \Delta KE + \Delta PE + \Delta E_s\\
+        0 &= \frac{1}{2}mv_x^2 + mgh_f + \frac{1}{2}k(-(x^2))\\
+        mgh_f &= \frac{1}{2}mv_x^2 -\frac{1}{2}kx^2\\
+        h_f &= \frac{\frac{1}{2}mv_x^2 -\frac{1}{2}kx^2}{mg}
+    \end{aligned}
+    $$
+\end{problem}

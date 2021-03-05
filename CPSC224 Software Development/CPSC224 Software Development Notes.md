@@ -620,3 +620,40 @@
 
 
 
+### Deep Dive: Unit Testing
+
+* Units are the parts of the project that you have the most control over
+* Unit testing asks: "do the parts perform correctly alone?"
+  * also "will these parts continue to perform correctly as the project evolves?" (avoids regression)
+* Unit tests allow for faster debugging and development and also contribute to better to design and possibly reduce future costs
+* one function can potentially have multiple unit tests according to the usage and outputs of the function
+* Unit tests should be able to execute either manually or automatically
+* BENEFITS
+  * allows programmer to refactor code at a later time while still ensuring that the code works properly
+  * if you test the parts of the program first, then integration testing becomes much easier
+  * units can be a form of documentation because the tests can show the most important behaviors
+
+
+
+#### Guidelines for Unit Tests
+
+* Keep unit tests *small* and *fast*
+* Tests should be fully automated and non-interactive
+* Make tests simple to run
+* Find a way to measure success
+* Keep tests at the unit level
+  * there should be one test class per ordinary class- class behavior should be tested in isolation
+* Create mock-objects with the correct API so that you can test in isolation and not depend on other Objects whose code might change thanks to other devs changing the code on the Object
+
+
+
+#### Unit Test Pattern: AAA
+
+1. **ARRANGE** the test's needs
+2. **ACT** -> this is where you would be doing the testing
+3. **ASSERT** what the value should be
+   * These are the checks that determine if the test passes or fails
+   * You want **one assertion per test**
+
+
+

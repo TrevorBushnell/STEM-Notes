@@ -1,10 +1,10 @@
 # Fdb version 3
-["pdflatex"] 1614962820 "c:/Users/bushn/Home/Notes/STEM-Notes/PHYS103 General Physics I/PHYS103_General_Physics_I.tex" "c:/Users/bushn/Home/Notes/STEM-Notes/PHYS103 General Physics I/PHYS103_General_Physics_I.pdf" "PHYS103_General_Physics_I" 1614962829
-  "PHYS103_General_Physics_I.aux" 1614962827 4074 81a2c87223eca966d8ed59bf7885d041 "pdflatex"
-  "PHYS103_General_Physics_I.out" 1614962827 1061 371ad73a09a0f67e96046c56b3af09e9 "pdflatex"
+["pdflatex"] 1615221597 "c:/Users/bushn/Home/Notes/STEM-Notes/PHYS103 General Physics I/PHYS103_General_Physics_I.tex" "c:/Users/bushn/Home/Notes/STEM-Notes/PHYS103 General Physics I/PHYS103_General_Physics_I.pdf" "PHYS103_General_Physics_I" 1615221611
+  "PHYS103_General_Physics_I.aux" 1615221609 4199 c7382f36b861f2f66993176af8aa7b70 "pdflatex"
+  "PHYS103_General_Physics_I.out" 1615221609 1131 641856fe52f16b3bef4215a02c2c17d3 "pdflatex"
   "PHYS103_General_Physics_I.tex" 1614875074 5057 6d21bcbc297c6cf3a1ffae147d8b987c ""
-  "PHYS103_General_Physics_I.toc" 1614962827 1352 2fa1663f9c445768ad9eb600f7dcf091 "pdflatex"
-  "c:/Users/bushn/Home/Notes/STEM-Notes/PHYS103 General Physics I/PHYS103_General_Physics_I.aux" 1614962827 4074 81a2c87223eca966d8ed59bf7885d041 ""
+  "PHYS103_General_Physics_I.toc" 1615221609 1436 c9465f059ed5a66775900f6c52039577 "pdflatex"
+  "c:/Users/bushn/Home/Notes/STEM-Notes/PHYS103 General Physics I/PHYS103_General_Physics_I.aux" 1615221609 4199 c7382f36b861f2f66993176af8aa7b70 ""
   "c:/Users/bushn/Home/Notes/STEM-Notes/PHYS103 General Physics I/PHYS103_General_Physics_I.tex" 1614875074 5057 6d21bcbc297c6cf3a1ffae147d8b987c ""
   "c:/texlive/2020/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1608425790 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "c:/texlive/2020/texmf-dist/fonts/map/fontname/texfonts.map" 1608428179 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -194,7 +194,7 @@
   "chapters/ch3/images/fig3_5.PNG" 1614755661 72961 a410b58f37a6f708751e74400f996dc2 ""
   "chapters/ch3/images/fig3_6.PNG" 1614756126 168822 6b3dd8f233491d99cd15dd131da7f752 ""
   "chapters/ch3/images/fig3_8.PNG" 1614787397 24479 e50ed5b41917bb95d9e52bc6b5182787 ""
-  "chapters/ch4/Unit4.tex" 1614962802 9715 d39cceab7cbd6088575831de1a6226a4 ""
+  "chapters/ch4/Unit4.tex" 1615221570 11492 86a686c2b37c171440a0282dd1762678 ""
   "chapters/ch4/images/fig4_10.PNG" 1614960415 109076 64352ff8d8162efc66af1f209800ef50 ""
   "chapters/ch4/images/fig4_11.PNG" 1614962098 111088 b13c8535813a653bb8b2a8402bb200b9 ""
   "chapters/ch4/images/fig4_5.PNG" 1614788027 153805 7cb02461e53cf34a4076d379afdafda9 ""
@@ -204,10 +204,10 @@
   "package/color-env.sty" 1614379316 5364 1098a0652d98515b933b0e6b55aaf3c7 ""
   "package/notes.cls" 1614379316 720 7ff793663dee895118c56d8cb8643ac7 ""
   (generated)
-  "c:/Users/bushn/Home/Notes/STEM-Notes/PHYS103 General Physics I/PHYS103_General_Physics_I.log"
-  "PHYS103_General_Physics_I.aux"
   "c:/Users/bushn/Home/Notes/STEM-Notes/PHYS103 General Physics I/PHYS103_General_Physics_I.pdf"
+  "PHYS103_General_Physics_I.out"
+  "c:/Users/bushn/Home/Notes/STEM-Notes/PHYS103 General Physics I/PHYS103_General_Physics_I.log"
   "PHYS103_General_Physics_I.pdf"
+  "PHYS103_General_Physics_I.aux"
   "PHYS103_General_Physics_I.log"
   "PHYS103_General_Physics_I.toc"
-  "PHYS103_General_Physics_I.out"

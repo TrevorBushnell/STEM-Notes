@@ -98,6 +98,8 @@ Energy comes in many different forms. The main forms of energy (as well as the p
     PROOF OF SPRING ENERGY HERE
 \end{proof}
 
+\textbf{NOTE:} Energy is \textit{positive} if energy is being stored and \textit{negative} if energy is being released.
+
 \subsection{The Usefulness of Energy and Work}
 
 While we have an equation for the work if we know the applied forces, if we know other elements about the system (how fast ) [FINISH THIS LATER]
@@ -287,6 +289,53 @@ While we have an equation for the work if we know the applied forces, if we know
         0 &= \frac{1}{2}mv_x^2 + mgh_f + \frac{1}{2}k(-(x^2))\\
         mgh_f &= \frac{1}{2}mv_x^2 -\frac{1}{2}kx^2\\
         h_f &= \frac{\frac{1}{2}mv_x^2 -\frac{1}{2}kx^2}{mg}
+    \end{aligned}
+    $$
+\end{problem}
+
+
+\section{Non-Conservative Energy}
+
+Not all energy is conserved and remained in the system - sometimes the energy is lost to the environment as thermal energy and sound energy
+
+
+\begin{problem}
+    A skiier skiis down a ramp in two parts. On the first part, the angle of elevation is $30^\circ$ and the kinetic coefficient of friction is 0.2. Once the skiier reaches the bottom of the slope, the new coefficient of kinetic friction is 0.3. The slope is 70m tall.\\
+
+    a) What is the velocity of the skiier at the bottom of the slope?\\
+
+    b) What is the acceleration of the skiier while he is on the slope?\\
+
+    c) What is the distance the skiier will slide once he hits the bottom of the slope?\\
+
+    To solve part a):
+    $$
+    \begin{aligned}
+        W &= \Delta KE + \Delta PE + \Delta E_s + E_{TH}\\
+        0 &= \frac{1}{2}m(v_f^2-0) + mg(0-h_i) + F_f\cdot\frac{h_i}{\sin\theta}\\
+        v_f^2 &= 2\left(gh_i - g\cos\theta\mu_k\frac{h_i}{\sin\theta}\right)\\
+        v_f &= \sqrt{2\left(gh_i - g\cos\theta\mu_k\frac{h_i}{\sin\theta}\right)}\\
+        v_f &= \sqrt{2\left(gh_i - g\mu_k\frac{h_i}{\tan\theta}\right)}\\
+        v_f &= 36.374 \frac{\m}{\s}
+    \end{aligned}
+    $$
+
+    To solve part b):
+    $$
+    \begin{aligned}
+        v_f^2 = v_i^2 + 2aL\\
+        a = \frac{v_f^2}{2L}\\
+        a = \frac{\m}{\s^2}
+    \end{aligned}
+    $$
+
+    To solve part c):
+    $$
+    \begin{aligned}
+        W &= \Delta KE + \Delta PE + \Delta E_s + E_{TH}\\
+        0 &= \frac{1}{2}m(-v_i^2)+F_fD\\
+        D &= \frac{v_i^2}{2\mu_kg}\\
+        D &= 240.619\m
     \end{aligned}
     $$
 \end{problem}

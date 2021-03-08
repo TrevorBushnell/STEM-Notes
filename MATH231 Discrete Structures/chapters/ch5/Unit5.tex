@@ -1,0 +1,56 @@
+\section{The Basics of Counting}
+
+\begin{definition}[The Product Rule]{def5.1:label}
+    Suppose that a prodecure can be broken down into a sequence of two tasks (task 1 then task 2). If there are $n_1$ ways to do the first task and $n_2$ ways to do the second task following the first task, then tehre are $n_1\cdot n_2$ ways to do the procedure.
+\end{definition}
+
+\begin{problem}
+    a) How many two letter strings can be made from the letters from the set $S \{A,B,C\}$?\\
+
+    \begin{itemize}
+        \item $AA,AB,AC$
+        \item $BA,BB,BC$
+        \item $CA,CB,CC$
+    \end{itemize}
+
+    Therefore there are a total of 9 ways that two letter strings can be made from the elements of the set $S$. Notice how the first choice was counting the "rows" and the second choice was counting the "columns."\\
+
+    b) What happens if the letters cannot be repeated?
+
+    \begin{itemize}
+        \item $AB,AC$
+        \item $BA,BC$
+        \item $CA,CB$
+    \end{itemize}
+
+    Therefore there are a total of 6 ways that two letter strings without letter repeats can be made from the elements of the set $S$. Notice again how the first choice was counting the "rows" and the second choice was counting the "columns."
+\end{problem}
+
+\begin{problem}
+    A multiple choice exam contains 10 questions. There are four possible answers for each question.\\
+
+    \textbf{1) How many ways can a student answer the questions if every question is answered?} $4^10$
+
+    \textbf{2) H}
+\end{problem}
+
+
+\begin{definition}[The Sum Rule]{def5.2:label}
+    Suppose that there are $n_1$ ways to do task 1 and $n_2$ ways to do task 2. If thereis no overlap between the two tassk, then there are $n_1+n_2$ ways to do either task 1 OR task 2 (this means that task 1 and task 2 must be independent of each other).
+\end{definition}
+
+\begin{problem}
+    A class has 4 freshman, 6 sophomores, 3 juniors, and 5 seniors. An upper-classmen must be selected to represent the class. 
+    
+    \textbf{In how many ways can this be done?:} $3 + 5 = 8$ total ways to do this.\\
+
+    \textbf{How many bit strings are there of length 4 or less?:} $2 + 2^2 + 2^3 + 2^4$\\
+\end{problem}
+
+\begin{problem}
+    How many license plates can be made with either 4 digits (0-9) followed by 2 letters (A-Z) or 3 digits followed by 3 letters?
+
+    $$
+    10^4 \cdot 36^2 + 10^3 \cdot 26^3
+    $$
+\end{problem}

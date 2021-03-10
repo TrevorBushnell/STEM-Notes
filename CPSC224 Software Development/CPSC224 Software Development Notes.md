@@ -657,3 +657,58 @@
 
 
 
+
+
+## GUIs
+
+* Most software that is common use is now interacted with in a GUI
+
+> Fun fact: GUIs used to be called WIMPs
+
+ 
+
+> **GUI STRUCTURE:** user <-> GUI <-> Display Server (w/ Window Manager) <-> kernel <-> hardware
+
+* Most languages come with a GUI toolkit - in this class we will use Swing 
+
+
+
+### Standard GUI Elements
+
+* dropdown menus, mutliline/singleline textboxes, buttons, checkboxes, sliders, lists, progress bars, etc.
+* each element has it's own features
+
+
+
+### "Widget": Definition
+
+* A control element that renders in a GUI as a way to interact with a controller
+* all of the standard GUI elements are considered widgets
+* widgets can vary in look but are normally very similar in behavior
+
+
+
+### What is an "Event"?
+
+* Events are delivered by the operating system (NOT the program) and can include things like mouse movements/clicks, keyboard input, timer events, controller inputs, OS requests, etc.
+* Events are essentially methods that are called when something happens
+
+
+
+### Event Driven Applications
+
+* NOTHING HAPPENS UNTIL AN EVENT OCCURS
+* By default, nothing happens when your GUI loads
+* EventLoop() that constantly checks for Events, then calls the right methods to respond to the event, then goes back to check for more events
+* Event loops are more efficient then pulling
+
+
+
+| Events                                                     | Polling                                                      |
+| ---------------------------------------------------------- | ------------------------------------------------------------ |
+| **Blocking and waiting for a signal**                      | **Repeatedly checking for a resource to be ready or work to be available** |
+| No CPU used while blocked (simply wait for a signal)       | considered and anti-pattern and should be avoided (could use processor power on a different task) |
+| requires more understanding of how Events/Signals are used |                                                              |
+
+* You design an event-driven application by setting up events for controls in the interface
+* event handlers are just functions in your code

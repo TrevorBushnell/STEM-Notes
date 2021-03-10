@@ -197,6 +197,21 @@ While we have an equation for the work if we know the applied forces, if we know
 \end{definition}
 
 
+\begin{definition}[Instantaneous Power]{def4.6:label}
+    If power is rewritten as a function of time $P(t)$, then:
+
+    $$
+    E = \int_{t_1}^{t_2} P(t)dt 
+    $$
+
+    Likewise, if you want to find the instantaneous power, then:
+
+    $$
+    P(t) = \frac{dE}{dt}
+    $$
+\end{definition}
+
+
 \begin{problem}
     A block of mass 1000 kg is attached to a pulley at the top of a building. The pulley is attached to a motor that uses 200 kW. What is the final velocity of the block the moment it reaches the top of the building?
 
@@ -315,7 +330,7 @@ Not all energy is conserved and remained in the system - sometimes the energy is
         0 &= \frac{1}{2}m(v_f^2-0) + mg(0-h_i) + F_f\cdot\frac{h_i}{\sin\theta}\\
         v_f^2 &= 2\left(gh_i - g\cos\theta\mu_k\frac{h_i}{\sin\theta}\right)\\
         v_f &= \sqrt{2\left(gh_i - g\cos\theta\mu_k\frac{h_i}{\sin\theta}\right)}\\
-        v_f &= \sqrt{2\left(gh_i - g\mu_k\frac{h_i}{\tan\theta}\right)}\\
+        v_f &= \sqrt{2gh_i\left(1 - \frac{\mu_k}{\tan\theta}\right)}\\
         v_f &= 36.374 \frac{\m}{\s}
     \end{aligned}
     $$
@@ -336,6 +351,40 @@ Not all energy is conserved and remained in the system - sometimes the energy is
         0 &= \frac{1}{2}m(-v_i^2)+F_fD\\
         D &= \frac{v_i^2}{2\mu_kg}\\
         D &= 240.619\m
+    \end{aligned}
+    $$
+\end{problem}
+
+
+\begin{problem}
+    A rock with mass 10kg falls 5m onto a spring with spring constant 100 N/m. What is the the distance that the spring compresses due to the rock falling onto the spring?\\
+    
+    INCLUDE FIGURE HERE\\
+
+    $$
+    \begin{aligned}
+        W &= \Delta KE + \Delta PE + \Delta E_s + E_{TH}\\
+        0 &= \Delta PE + \Delta E_s\\
+        0 &= mg(0-(h+y))+\frac{1}{2}k(y^2-0)\\
+        \text{FINISH THIS PROBLEM LATER}
+    \end{aligned}
+    $$
+\end{problem}
+
+
+\begin{problem}
+    INSERT TEXT ABOUT THE PROBLEM HERE
+
+    \begin{center}
+        \includegraphics[width=0.75\textwidth]{chapters/ch4/images/fig4_13.PNG}
+    \end{center}
+
+    $$
+    \begin{aligned}
+        W &= \Delta KE + \Delta PE +\Delta E_s + E_{TH}\\
+        E_{TH} &= W - \Delta KE - \Delta PE\\
+        E_{TH} &= Pt - \Delta KE - \Delta PE\\
+        E_{TH} &= Pt - \frac{1}{2}mv_f^2 - mgd\sin\theta
     \end{aligned}
     $$
 \end{problem}

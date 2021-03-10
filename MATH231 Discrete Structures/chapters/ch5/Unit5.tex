@@ -54,3 +54,47 @@
     10^4 \cdot 36^2 + 10^3 \cdot 26^3
     $$
 \end{problem}
+
+
+\begin{definition}[Principle of Inclusion-Exclusion]{def5.3:label}
+    Suppose that there are $n_1$ ways to do task 1 and $n_2$ ways to do task 2, and $k$ ways to do both. Then there are $n_1+n_2-k$ ways to do task 1 or task 2.
+\end{definition}
+
+\begin{problem}
+    How many positive integers less than 100\dots
+
+    \begin{itemize}
+        \item Are divisible by 5? \textbf{19}
+        \item Are divisble by 3? \textbf{33}
+        \item Are divisble by both 3 and 5? \textbf{6}
+        \item Are divisible by either 3 or 5? $19+33-6$ = \textbf{46}
+        \item Are divisble by excactly one of 3 and 5? $46-6$ = \textbf{40}
+        \item Are divisible by neither 3 nor 5? $100 - 46$ = \textbf{53}
+        \item Are divisible by 3, but not 5? $33-6$ = \textbf{27}
+    \end{itemize}
+\end{problem}
+
+
+
+\section{The Pigeonhole Principle}
+
+\begin{definition}[The Pigeonhole Principle]{def5.2.1:label}
+    Suppose that $k$ is a positive integer and $k+1$ or more obkects are placed into $k$ boxes, then at least one box contains two or more objects.
+\end{definition}
+
+\begin{problem}
+    In a room of 16 people, we know that at least two were born in the same month. What are the 'boxes' and what are the 'objects'?\\
+
+    \textbf{BOXES:} the months of the year
+    \textbf{OBJECTS:} the people that are in the room
+\end{problem}
+
+
+\begin{definition}[The GENERALIZED Pigeonhole Principle]{def5.2.2:label}
+    Suppose that $N$ is a positive integer and $N$ objects are place in $k$ boxes. Then at least one box contains at least $N/k \text{ CEILING FUNCTION}$.
+\end{definition}
+
+
+\begin{problem}
+    In a room of 16 people, at least how many were born on the same day of the week? (16/7 then round up).
+\end{problem}

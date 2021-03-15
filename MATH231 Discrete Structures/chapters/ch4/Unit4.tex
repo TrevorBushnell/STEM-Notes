@@ -45,7 +45,9 @@ To prove the statement $P(n)$ is true for all $n = 1,2,3,...$, we must show:
         \end{aligned}
         $$
 
-        Since $k\ge 4$, the factor $(k+1)>2$, the factor being added with the next term will be greater than the factor of $2$ being added on the left side, which means that the righ side will always be greater than the left side.
+        Since $k\ge 4$, the factor $(k+1)>2$, the factor being added with the next term will be greater than the factor of $2$ being added on the left side, which means that the righ side will always be greater than the left side.\\
+
+        \textbf{CONSLLUSION:} By induction, for $n\in\Z$, $2^n < n!$ for all $n > 3$.
     \end{proof}
 \end{problem}
 
@@ -66,8 +68,8 @@ To prove the statement $P(n)$ is true for all $n=1,2,3,...$, we show the followi
     \begin{proof}
         \textbf{BASE CASE:} If $n = 2$, then since $2$ is prime, it is trivially a product of two primes (being 2 and 1).\\
 
-        \textbf{INDUCTION STEP:} Suppose for some $k \in \Z$ that all integers between 2 and $k-1$ can be written as a product of primes. If $k$ is prime, then it is trivially a product of two primse (being $k$ and 1). If $k$ is not prime, then $k = ab$ where $a$ and $b$ are between $2$ and $k-1$. Then $a$ and $b$ can be written as a product of primes. Since $k=ab$, then $k$ can be written as a product of primes. 
+        \textbf{INDUCTION STEP:} Suppose for some $k \in \Z$ that all integers between 2 and $k-1$ can be written as a product of primes. If $k$ is prime, then it is trivially a product of two primse (being $k$ and 1). If $k$ is not prime, then $k = ab$ where $a$ and $b$ are between $2$ and $k-1$. Then $a$ and $b$ can be written as a product of primes. Since $k=ab$, then $k$ can be written as a product of primes. \\
 
-        Therefore by strong induction, we know that every integer greater than one can be written as the product of two primes.
+        \textbf{CONCLUSION:} Therefore by strong induction, we know that every integer greater than one can be written as the product of two primes.
     \end{proof}
 \end{problem}

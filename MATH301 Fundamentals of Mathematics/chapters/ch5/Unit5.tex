@@ -1,0 +1,19 @@
+\section{Proof By Contradiction Outline}
+
+\begin{itemize}
+    \item Suppose $\sim P$ is true
+    \item Therefore $C \wedge \sim C$
+    \item $C \wedge \sim C$ must be false so our assumption that $\sim P$ was true must be false
+    \item If $\sim P$ is false, then $P$ is true
+\end{itemize}
+
+
+\section{Proof By Contradiction Examples}
+
+\begin{proposition}{prop5.1.1:label}
+    If $a,b,\in\Z$, then $a^2-4b\ne 2$.
+\end{proposition}
+
+\begin{proof}
+    Let $a,b,\in\Z$. Suppose $a^2-wb = 2$. then we can write $a^2 = 4b+2=2(2b+1)$. In particular, $a^2$ is even, so $a$ must be even. Since $a$ is even, there is an integer $c$ such that $a=2c$. tHEN $a^2 = 4c^2 = 4b+2$ so $ac^2 = 2b+1$. This is  contradiction since $2c^2$ is even and $2b+1$ is odd. Therefore, by proof by contradiction, we conclude that $a^2-4b \ne 2$.
+\end{proof}

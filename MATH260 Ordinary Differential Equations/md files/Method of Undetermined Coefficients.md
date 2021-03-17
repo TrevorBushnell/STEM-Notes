@@ -99,6 +99,7 @@
 > A = -2, \:B=0;\:C=-\frac{1}{2}\\\text{ }\\\text{ }\\
 > \therefore y_p(t) = -2t^2 - \frac{1}{2}
 > \therefore y(t)=-2t^2 - \frac{1}{2}+C_1e^{-4t}+C_2e^{2t}
-> 
+> 
+
 > $$
 > 

@@ -712,3 +712,30 @@
 
 * You design an event-driven application by setting up events for controls in the interface
 * event handlers are just functions in your code
+
+
+
+## Observer Pattern
+
+
+
+* Defines a "one-to-many" dependency between objects so that when an object changes state, all the dependents are notified/updated automatically
+* **SUBJECT:** the object which will frequently chance its state and upon which other objects depend
+* **OBSERVER:** the object which depends on a subject and updates according to its subject's state
+* **ConcreteSubject:** Stores the state of interests and send a notif if the state changes
+* **ConcreteObserver:** Implements updating interface
+
+
+
+### Consequences
+
+* Loosely Coupled
+  * reuse subjects without reusing observers (and vice versa)
+  * add observers without modifying subjects or observers
+* Abstract coupling between subject and observer
+* Support for broadcast communication
+* Unexpected updates
+  * Can be blind to changes in system if the subject is changed
+* Dangling references to deleted subjects
+  * If subject gets deleted, objects should know that
+  * If observer gets deleted, their function reference becomes invalid 

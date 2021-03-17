@@ -98,3 +98,77 @@
 \begin{problem}
     In a room of 16 people, at least how many were born on the same day of the week? (16/7 then round up).
 \end{problem}
+
+
+
+\section{Permutations and Combinations}
+
+\begin{definition}{def6.3:label}
+    A \textbf{permutation} without repetition of a set of objects is an ordered arrangement of the objects. An \textbf{$r$-permutation} without repetition is an ordered arrangement of $r$ elements of a set. 
+\end{definition}
+
+
+\begin{problem}
+    Let $S=\{a,b,c\}$
+
+    \begin{itemize}
+        \item List all of the permutations of $S$.
+        \begin{itemize}
+            \item abc, bca, cba, acb, bac, cab
+        \end{itemize}
+        \item List all of the 1-permutations of $S$.
+        \begin{itemize}
+            \item a,b,c
+        \end{itemize}
+        \item List all of the 2-permutations of $S$.
+        \begin{itemize}
+            \item ab, bc, cb, ac, ba, ca
+        \end{itemize}
+    \end{itemize}
+\end{problem}
+
+
+\begin{theorem}{theorem5.3:label}
+    If $n$ is a positive integer and $r$ is an integer between 1 and $n$ (inclusive), then there are:
+
+    $$
+    P(n,r) = n(n-1)(n-2)\cdots(n-r+1) = \frac{n!}{(n-r)!}
+    $$
+
+    $r$-permutations of a set with $n$ distinct elements.
+\end{theorem}
+
+
+\textbf{NOTE:} There are some following unique applications of this theorem to keep in mind:
+
+\begin{itemize}
+    \item $P(n,0) = 1$ which corresponds to "one way to order zero elements"
+    \item $P(n,n) = n!$ which corresponds to "$n!$ was to order $n$ elements"
+\end{itemize}
+
+
+\begin{problem}
+    An Olympic 200m finals has 8 runners.
+
+    \begin{itemize}
+        \item In how many ways can the runners finish assumin no ties? $P(8,8) = 8!$
+        \item In how many ways can Gold, Silver, and Bronze be awarded assuming no ties? $P(8,3) = frac{8!}{5!}=8\cdot 7\cdot 6$
+        \item How many different sets of 3 medalists are there in a race with 8 runners?
+    \end{itemize}
+\end{problem}
+
+
+\begin{definition}{def5.3.2:label}
+    An \textbf{$r$-combination} (without repetition) of a set of $n$ objects is an unordered selection of $r$ of the objects from the set.
+\end{definition}
+
+
+\begin{theorem}{theorem5.3.2:label}
+    If $n$ is a non-negative integer and $r$ is an integer between 0 and $n$ (inclusive), then there are 
+    
+    $$
+    C(n,r) = \frac{P(n,r)}{r!}
+    $$
+
+    $r$-combinations in a set of $n$ elements.
+\end{theorem}

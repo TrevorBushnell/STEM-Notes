@@ -739,3 +739,19 @@
 * Dangling references to deleted subjects
   * If subject gets deleted, objects should know that
   * If observer gets deleted, their function reference becomes invalid 
+
+
+
+
+
+## Model View Controller (MVC)
+
+* Divides into three sub-classes (MODEL -> VIEW -> CONTROLLER)
+  * Implement it with three objects, named likeso
+* the *model* is the central component of the pattern
+  * expresses the applications behavior in terms of the problem domain (independent of user interface)
+  * responsible for **managing data for the application**
+* *VIEW* is any output representation
+  * responsible for **presenting data**
+* CONTROLLER
+  * responsible for **RESPONDING TO USER INPUT**

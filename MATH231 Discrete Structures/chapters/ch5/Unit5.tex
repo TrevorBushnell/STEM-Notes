@@ -172,3 +172,39 @@
 
     $r$-combinations in a set of $n$ elements.
 \end{theorem}
+
+
+\section{Binomial Coefficients and Identities}
+
+Check out this pattern:
+
+\begin{itemize}
+    \item $(x+y)^0 = 1$
+    \item $(x+y)^1 = x+y$
+    \item $(x+y)^2=x^2+2xy+y^2$
+    \item $(x+y)^3=x^3+3x^2y+3y^2x+y^3$
+\end{itemize}
+
+\begin{definition}[The Binomail Theorem]{def5.4.1:label}
+    Let $x$ an $y$ be variables and $n$ be a non-negative integer. Then:
+
+    $$
+    (x+y)^n = \sum_{k=0}^n n()kx^ky^{n-k}
+    $$
+\end{definition}
+
+\begin{problem}
+    Expand $(x+y)^5$
+
+    $$
+    \begin{aligned}
+        (x+y)^5 &= (x+y)(x+y)(x+y)(x+y)(x+y)\\
+        &= 5()5x^5+5()4x^4y+5()3x^3y^2+5()2x^2y^3+5()1xy^4+5()0y^5\\
+        &= x^5+5x^4y+10x^3y^2+10x^2y^3+5xy^4+y^5
+    \end{aligned}
+    $$
+\end{problem}
+
+\begin{center}
+    \includegraphics[width=1\textwidth]{chapters/ch5/images/fig5.4.1.PNG}
+\end{center}

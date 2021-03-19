@@ -17,3 +17,43 @@
 \begin{proof}
     Let $a,b,\in\Z$. Suppose $a^2-wb = 2$. then we can write $a^2 = 4b+2=2(2b+1)$. In particular, $a^2$ is even, so $a$ must be even. Since $a$ is even, there is an integer $c$ such that $a=2c$. tHEN $a^2 = 4c^2 = 4b+2$ so $ac^2 = 2b+1$. This is  contradiction since $2c^2$ is even and $2b+1$ is odd. Therefore, by proof by contradiction, we conclude that $a^2-4b \ne 2$.
 \end{proof}
+
+
+\section{Proof By Contradiction with Conditionals}
+
+
+
+
+\section{Proof by Contradiction with Conditionals Examples}
+
+\begin{proposition}
+    INSERT PROPOSITION HERE
+\end{proposition}
+
+\begin{proof}
+    Suppose $a^2$ is even and $a$ is odd. Then for some $k \in \Z$, then $a^2 = 2k$. Additionally for some $l \in \Z$, $a = 2l + 1$. We can make th following simplifications:
+
+    $$
+    \begin{aligned}
+        a^2 &= (2l + 1)^2\\
+        &= 4l^2 + 4l + 1\\
+        &= 2(2l^2 + 2l) + 1
+    \end{aligned}
+    $$
+
+    Since $l \in Z$, $2l^2 + 2l \in \Z$. This means that $a^2$ is odd. This contradicts the assumption that $a^2$ is evn. Hence, by contradiction, we find that if $a^2$ is even, then $a$ is even.
+\end{proof}
+
+\begin{itemize}
+    \item The above proof is a \textbf{BAD PROOF}
+    \item This proof is essentially a proof by contrapositive we just wrote extra words. 
+    \item The following are some edits to be made that could make this work as a proof by contrapositive:
+\end{itemize}
+
+\begin{proof}
+    EDITED PROOF
+\end{proof}
+
+\begin{itemize}
+    \item \textbf{IN GENERAL:} only write proofs by contradiction if it is the only way that you can write this type of proof
+\end{itemize}

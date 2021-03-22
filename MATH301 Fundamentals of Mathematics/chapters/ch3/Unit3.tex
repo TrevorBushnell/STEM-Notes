@@ -15,9 +15,7 @@ The following are definitions that will be useful when constructing direct proof
 \end{definition}
 
 \begin{definition}[Prime Numbers]{def3.3:label}
-    A natural number $n$ is \textbf{prime} if it has exactly \textit{two} positive divisors, 1 and $n$.\\
-
-    A natural number $n$ is \textbf{composite} if it factors as $n=ab$ where $a,b>1$.
+    A natural number $n$ is \textbf{prime} if it has exactly \textit{two} positive divisors, 1 and $n$. A natural number $n$ is \textbf{composite} if it factors as $n=ab$ where $a,b>1$.
 \end{definition}
 
 \textbf{NOTE:} Do not use the statements $a/b$ or $a/b \in \Z$ because without careful planning of your argument, you might be making claims about rational numbers rather than integers!
@@ -46,6 +44,16 @@ To prove the statement $P\implies Q$, go through the following outline in your p
     \item $\therefore$ Q is true
     \item $\therefore P \implies Q$ is true
     \item \textbf{End of proof.} 
+\end{itemize}
+
+\textbf{NOTE:} You may use any of the following statements without writing a proof:\\
+
+For any $a,b\in\Z$:
+
+\begin{itemize}
+    \item $a+b\in\Z$
+    \item $a-b\in\Z$
+    \item $ab \in \Z$
 \end{itemize}
 \newpage
 
@@ -92,11 +100,15 @@ To prove the statement $P\implies Q$, go through the following outline in your p
 \end{proof}
 
 \begin{proposition}{prop3.3:label}
-    If $a,b,c \in \Z^+$, then $\lcm(ca,cb) = c\lcm(a,b)$
+    If $a,b,c \in \Z^+$, then $\lcm(ca,cb) = c\:\lcm(a,b)$
 \end{proposition}
 
 \begin{proof}
-    \textbf{INSERT PROOF HERE}
+    Let $a,b,c\in\Z$ and let $d=\:\lcm(a,b)$. Then $a|d$, so for some $l\in\Z$, $d=al$. Then we have $cd = c(al) = (ca)l$, so in particular $ca|cd$. This shows us $cd$ is a common multiple of $ca$ and $cb$. \\
+
+    In fact, any multiple of $ca$ and $cb$ must in particular be divisible by $c$. So it can be written as $ck$ for $k$ a multiple of $a$ and $b$. Then since $c$ is positive, if $d$ is the smallest common multiple of $a$ and $b$, then $cd$ must be the smallest common multiple of $ca$ and $cb$ (since $d<m$ implies that $cd < cm$). \\
+
+    So $\lcm(ca,cb) = c\:\lcm(a,b)$.
 \end{proof}
 
 \section{Proof By Cases}
@@ -116,10 +128,29 @@ When you use cases, ensure that you do the following:
 \begin{proof}
     Suppose $n \in \N$. Then $n$ is either even or odd. Consider these two cases:\\
 
-    \textbf{Case 1- $n$ is even:} If $n$ is even, then there is some integer  $k$ such that $n = 2k$. \\
+    \textbf{Case 1- $n$ is even:} If $n$ is even, then there is some integer  $k$ such that $n = 2k$. Then we can make the following simplifications:
+    
+    \[
+        \begin{aligned}
+            1+(-1)^n(2n-1)&=1+(-1)^{2k}(2(2k)-1)\\
+            &= 1 + 4k -1 = 4k
+        \end{aligned}
+    \]
 
-    \textbf{Case 2- $n$ is odd:} \\
+    Therefore, we can conclude that $1+(-1)^n(2n-1)$ is a multiple of 4 if $n$ is even.\\
 
-    $\therefore$ if $n \in \N$, then $1 + (-1)^n(2n-1)$ is a multiple of 4. (\textit{finish this proof later})
+    \textbf{Case 2- $n$ is odd:} If $n$ is odd, then $n=2k+1$ such that $k\in\Z$.We can simplify in the following way:
+    
+    \[
+    \begin{aligned}
+        1+(-1)^n(2n-1) &= 1+(-1)^{2k+1}(2(2k+1)-1)\\
+        &= 1 -(4k+2-1)\\
+        &=1-(4k+1)=4k
+    \end{aligned}
+    \]
+
+    Therefore, we can conclude that $1+(-1)^n(2n-1)$ is a multiple of 4 if $n$ is odd.\\
+
+    $\therefore$ if $n \in \N$, then $1 + (-1)^n(2n-1)$ is a multiple of 4. 
 \end{proof}
 

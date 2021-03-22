@@ -27,7 +27,22 @@
 \end{itemize}
 
 \begin{theorem}[The Invertible Matrix Theorem]{theorem6.1.1:def}
-    WRITE THIS THEOREM HERE
+    Let $A$ be a square matrix. Then the following statements are equivalent:
+
+    \begin{enumerate}
+        \item $A$ is invertible
+        \item $A$ is row equivalent to the $n\times n$ identity matrix
+        \item $A$ has $n$ pivot positions
+        \item The equation $A\vec{x} = \vec{0}$ has only the trivial solution
+        \item The columns of $A$ form a linearly indepentent set
+        \item The linear transformation $\vec \rightarrow A\vec{x}$ is one-to-one
+        \item The equation $A\vec{x} = \vec{b}$ has at least one solution for each $\vec{b}$ in $\R^n$
+        \item The columns of $A$ span $\R^n$
+        \item The linear transformation $\vec{x} \rightarrow A\vec{x}$ maps $\R^n$ onto $R^n$
+        \item There is an $n\times n$ matrix $C$ such that $CA = I$
+        \item There is an $n\times n$ matrix $D$ such that $AD = I$
+        \item $A^T$ is invertible
+    \end{enumerate}
 \end{theorem}
 
     \begin{center}

@@ -219,6 +219,24 @@ Check out this pattern:
 
 \section{Generalized Permutations and Combinations}
 
-\begin{definition}
-    A \textbf{permutation} of a set of objects is an ordered arrangement of the objects. An \textbf{$r$-permutation} is an ordered arrangement of $r$ elements of a set. 
+\begin{definition}{def5.5.1:label}
+    A \textbf{permutation} of a set of objects is an ordered arrangement of the objects. An \textbf{$r$-permutation} is an ordered arrangement of $r$ elements of a set. \\
+
+    A \textbf{combination} of a set of objects is an unordered selection of objects. An \textbf{$r$-combination} of a set of $n$ objects is an unordered selection of $r$ objects from the set.
 \end{definition}
+
+\begin{theorem}{theorem5.5.2:label}
+    If $n$ is a nonnegative integer and $r$ is an integer between 0 and $n$ (inclusive), then\dots
+
+    \begin{itemize}
+        \item There are $P(n.r)=\frac{n!}{(n-r)!}$ $r$-permutations of a set with $n$ distinct elements, if repititions are not allowed. 
+    \end{itemize}
+\end{theorem}
+
+\begin{theorem}{theorem 5.5.1:label}
+    There are $C(n-1+r,r)=C(n-1+r,n-1)$ $r$-combinations of a set with $n$ distinct elements, if repititions are allowed.
+\end{theorem}
+
+\begin{theorem}{theorem5.5.3:label}
+    The number of ordered arrangements of $n$ objects, where there are $n_1$ objects of type 1, $n_2$ objects of type 2... $n_k$ objects of type $n$ is $\frac{n!}{n_1!n_2!...n_k!}$.
+\end{theorem}

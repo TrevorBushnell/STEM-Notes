@@ -18,6 +18,7 @@
 \contentsline {section}{\numberline {4.4}Power}{20}{section.4.4}%
 \contentsline {section}{\numberline {4.5}Non-Conservative Energy}{23}{section.4.5}%
 \contentsline {section}{\numberline {4.6}Center of Mass}{25}{section.4.6}%
-\contentsline {chapter}{\numberline {5}Rotational Kinematics, Torque, and Angular Momentum}{27}{chapter.5}%
-\contentsline {chapter}{\numberline {6}Statics}{28}{chapter.6}%
-\contentsline {chapter}{\numberline {7}Fluids}{29}{chapter.7}%
+\contentsline {section}{\numberline {4.7}Introduction to Momentum}{26}{section.4.7}%
+\contentsline {chapter}{\numberline {5}Rotational Kinematics, Torque, and Angular Momentum}{28}{chapter.5}%
+\contentsline {chapter}{\numberline {6}Statics}{29}{chapter.6}%
+\contentsline {chapter}{\numberline {7}Fluids}{30}{chapter.7}%

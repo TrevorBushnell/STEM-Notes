@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.12.19)  22 MAR 2021 08:50
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.12.19)  25 MAR 2021 08:47
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -762,35 +762,35 @@ Underfull \hbox (badness 10000) in paragraph at lines 65--66
  []
 
 [8]
-<chapters/ch3/images/fig3_1.PNG, id=181, 472.164pt x 409.83113pt>
+<chapters/ch3/images/fig3_1.PNG, id=186, 472.164pt x 409.83113pt>
 File: chapters/ch3/images/fig3_1.PNG Graphic file (type png)
 <use chapters/ch3/images/fig3_1.PNG>
 Package pdftex.def Info: chapters/ch3/images/fig3_1.PNG  used on input line 79.
 (pdftex.def)             Requested size: 180.67499pt x 156.8193pt.
-<chapters/ch3/images/fig3_2.PNG, id=183, 532.389pt x 330.93637pt>
+<chapters/ch3/images/fig3_2.PNG, id=188, 532.389pt x 330.93637pt>
 File: chapters/ch3/images/fig3_2.PNG Graphic file (type png)
 <use chapters/ch3/images/fig3_2.PNG>
 Package pdftex.def Info: chapters/ch3/images/fig3_2.PNG  used on input line 110.
 (pdftex.def)             Requested size: 180.67499pt x 112.30983pt.
  [9 <c:/Users/bushn/Home/Notes/STEM-Notes/PHYS103 General Physics I/chapters/ch3/images/fig3_1.PNG>]
-<chapters/ch3/images/fig3_3.PNG, id=190, 835.62187pt x 500.77087pt>
+<chapters/ch3/images/fig3_3.PNG, id=195, 835.62187pt x 500.77087pt>
 File: chapters/ch3/images/fig3_3.PNG Graphic file (type png)
 <use chapters/ch3/images/fig3_3.PNG>
 Package pdftex.def Info: chapters/ch3/images/fig3_3.PNG  used on input line 128.
 (pdftex.def)             Requested size: 180.67499pt x 108.27492pt.
  [10 <c:/Users/bushn/Home/Notes/STEM-Notes/PHYS103 General Physics I/chapters/ch3/images/fig3_2.PNG> <c:/Users/bushn/Home/Notes/STEM-Notes/PHYS103 General Physics I/chapters/ch3/images/fig3_3.PNG>]
-<chapters/ch3/images/fig3_4.PNG, id=200, 456.20438pt x 389.0535pt>
+<chapters/ch3/images/fig3_4.PNG, id=205, 456.20438pt x 389.0535pt>
 File: chapters/ch3/images/fig3_4.PNG Graphic file (type png)
 <use chapters/ch3/images/fig3_4.PNG>
 Package pdftex.def Info: chapters/ch3/images/fig3_4.PNG  used on input line 148.
 (pdftex.def)             Requested size: 180.67499pt x 154.07515pt.
  [11 <c:/Users/bushn/Home/Notes/STEM-Notes/PHYS103 General Physics I/chapters/ch3/images/fig3_4.PNG>]
-<chapters/ch3/images/fig3_5.PNG, id=206, 403.20638pt x 220.4235pt>
+<chapters/ch3/images/fig3_5.PNG, id=211, 403.20638pt x 220.4235pt>
 File: chapters/ch3/images/fig3_5.PNG Graphic file (type png)
 <use chapters/ch3/images/fig3_5.PNG>
 Package pdftex.def Info: chapters/ch3/images/fig3_5.PNG  used on input line 184.
 (pdftex.def)             Requested size: 180.67499pt x 98.76923pt.
-<chapters/ch3/images/fig3_6.PNG, id=207, 636.87938pt x 422.47838pt>
+<chapters/ch3/images/fig3_6.PNG, id=212, 636.87938pt x 422.47838pt>
 File: chapters/ch3/images/fig3_6.PNG Graphic file (type png)
 <use chapters/ch3/images/fig3_6.PNG>
 Package pdftex.def Info: chapters/ch3/images/fig3_6.PNG  used on input line 204.
@@ -817,7 +817,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 259--260
 
  []
 
-<chapters/ch3/images/fig3_8.PNG, id=218, 225.54262pt x 160.49962pt>
+<chapters/ch3/images/fig3_8.PNG, id=223, 225.54262pt x 160.49962pt>
 File: chapters/ch3/images/fig3_8.PNG Graphic file (type png)
 <use chapters/ch3/images/fig3_8.PNG>
 Package pdftex.def Info: chapters/ch3/images/fig3_8.PNG  used on input line 262.
@@ -879,18 +879,18 @@ Package mdframed Info: mdframed detected package amsthm
  changed the theorem header of amsthm
 (mdframed)              on input line 95.
 [18]
-<chapters/ch4/images/fig4_5.PNG, id=263, 834.7185pt x 347.19713pt>
+<chapters/ch4/images/fig4_5.PNG, id=268, 834.7185pt x 347.19713pt>
 File: chapters/ch4/images/fig4_5.PNG Graphic file (type png)
 <use chapters/ch4/images/fig4_5.PNG>
 Package pdftex.def Info: chapters/ch4/images/fig4_5.PNG  used on input line 112.
 (pdftex.def)             Requested size: 180.67499pt x 75.14922pt.
-<chapters/ch4/images/fig4_6.PNG, id=264, 876.27374pt x 470.9595pt>
+<chapters/ch4/images/fig4_6.PNG, id=269, 876.27374pt x 470.9595pt>
 File: chapters/ch4/images/fig4_6.PNG Graphic file (type png)
 <use chapters/ch4/images/fig4_6.PNG>
 Package pdftex.def Info: chapters/ch4/images/fig4_6.PNG  used on input line 132.
 (pdftex.def)             Requested size: 180.67499pt x 97.10066pt.
  [19 <c:/Users/bushn/Home/Notes/STEM-Notes/PHYS103 General Physics I/chapters/ch4/images/fig4_5.PNG> <c:/Users/bushn/Home/Notes/STEM-Notes/PHYS103 General Physics I/chapters/ch4/images/fig4_6.PNG>]
-<chapters/ch4/images/fig4_7.PNG, id=273, 651.03226pt x 396.88275pt>
+<chapters/ch4/images/fig4_7.PNG, id=278, 651.03226pt x 396.88275pt>
 File: chapters/ch4/images/fig4_7.PNG Graphic file (type png)
 <use chapters/ch4/images/fig4_7.PNG>
 Package pdftex.def Info: chapters/ch4/images/fig4_7.PNG  used on input line 151.
@@ -908,7 +908,7 @@ Package mdframed Info: mdframed detected package amsthm
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 212.
-<chapters/ch4/images/fig4_8.png, id=283, 707.94487pt x 369.48038pt>
+<chapters/ch4/images/fig4_8.png, id=288, 707.94487pt x 369.48038pt>
 File: chapters/ch4/images/fig4_8.png Graphic file (type png)
 <use chapters/ch4/images/fig4_8.png>
 Package pdftex.def Info: chapters/ch4/images/fig4_8.png  used on input line 219.
@@ -927,13 +927,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 251--252
 
  []
 
-<chapters/ch4/images/fig4_10.PNG, id=292, 830.50275pt x 407.42212pt>
+<chapters/ch4/images/fig4_10.PNG, id=297, 830.50275pt x 407.42212pt>
 File: chapters/ch4/images/fig4_10.PNG Graphic file (type png)
 <use chapters/ch4/images/fig4_10.PNG>
 Package pdftex.def Info: chapters/ch4/images/fig4_10.PNG  used on input line 256.
 (pdftex.def)             Requested size: 271.01248pt x 132.95146pt.
 [22 <c:/Users/bushn/Home/Notes/STEM-Notes/PHYS103 General Physics I/chapters/ch4/images/fig4_10.PNG>]
-<chapters/ch4/images/fig4_11.PNG, id=299, 696.50212pt x 364.66237pt>
+<chapters/ch4/images/fig4_11.PNG, id=304, 696.50212pt x 364.66237pt>
 File: chapters/ch4/images/fig4_11.PNG Graphic file (type png)
 <use chapters/ch4/images/fig4_11.PNG>
 Package pdftex.def Info: chapters/ch4/images/fig4_11.PNG  used on input line 286.
@@ -973,7 +973,7 @@ Overfull \vbox (23.40196pt too high) detected at line 372
  []
 
 [24]
-<chapters/ch4/images/fig4_13.PNG, id=314, 811.53188pt x 461.62462pt>
+<chapters/ch4/images/fig4_13.PNG, id=319, 811.53188pt x 461.62462pt>
 File: chapters/ch4/images/fig4_13.PNG Graphic file (type png)
 <use chapters/ch4/images/fig4_13.PNG>
 Package pdftex.def Info: chapters/ch4/images/fig4_13.PNG  used on input line 379.
@@ -992,21 +992,37 @@ Package mdframed Info: mdframed detected package amsthm
  changed the theorem header of amsthm
 (mdframed)              on input line 425.
 Package mdframed Info: Not enough space on this page on input line 425.
-) [26]
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 430.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 436.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 448.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 454.
+
+Overfull \vbox (7.5146pt too high) detected at line 472
+ []
+
+[26]) [27]
 Chapter 5.
-(c:/Users/bushn/Home/Notes/STEM-Notes/PHYS103 General Physics I/chapters/ch5/Unit5.tex) [27
+(c:/Users/bushn/Home/Notes/STEM-Notes/PHYS103 General Physics I/chapters/ch5/Unit5.tex) [28
 
 ]
 Chapter 6.
-(c:/Users/bushn/Home/Notes/STEM-Notes/PHYS103 General Physics I/chapters/ch6/Unit6.tex) [28
+(c:/Users/bushn/Home/Notes/STEM-Notes/PHYS103 General Physics I/chapters/ch6/Unit6.tex) [29
 
 ]
 Chapter 7.
-(c:/Users/bushn/Home/Notes/STEM-Notes/PHYS103 General Physics I/chapters/ch7/Unit7.tex) [29
+(c:/Users/bushn/Home/Notes/STEM-Notes/PHYS103 General Physics I/chapters/ch7/Unit7.tex) [30
 
 ] (c:/Users/bushn/Home/Notes/STEM-Notes/PHYS103 General Physics I/PHYS103_General_Physics_I.aux)
 Package rerunfilecheck Info: File `PHYS103_General_Physics_I.out' has not changed.
-(rerunfilecheck)             Checksum: DF34F81B8E2AE969A9CA64D75AC62E98;1375.
+(rerunfilecheck)             Checksum: 31F111479615E27479083D2700AE6786;1446.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
@@ -1016,18 +1032,18 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 19649 strings out of 479382
- 367908 string characters out of 5873307
- 858630 words of memory out of 5000000
- 36217 multiletter control sequences out of 15000+600000
+ 19666 strings out of 479382
+ 368201 string characters out of 5873307
+ 861630 words of memory out of 5000000
+ 36228 multiletter control sequences out of 15000+600000
  412135 words of font info for 57 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  113i,14n,119p,890b,1011s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/texlive/2020/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmti7.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on "c:/Users/bushn/Home/Notes/STEM-Notes/PHYS103 General Physics I/PHYS103_General_Physics_I.pdf" (30 pages, 1547042 bytes).
+Output written on "c:/Users/bushn/Home/Notes/STEM-Notes/PHYS103 General Physics I/PHYS103_General_Physics_I.pdf" (31 pages, 1552705 bytes).
 PDF statistics:
- 427 PDF objects out of 1000 (max. 8388607)
- 343 compressed objects within 4 object streams
- 99 named destinations out of 1000 (max. 500000)
- 259 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 442 PDF objects out of 1000 (max. 8388607)
+ 357 compressed objects within 4 object streams
+ 105 named destinations out of 1000 (max. 500000)
+ 267 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -423,3 +423,68 @@ Not all energy is conserved and remained in the system - sometimes the energy is
 
     Where $x_i$ is the x-position of the indicated mass and $y_i$ is the y-position of the indicated mass.
 \end{definition}
+
+
+\section{Introduction to Momentum}
+
+\begin{definition}[Momentum]{def4.7.1:label}
+    \[
+    \vec p = m \vec v  
+    \]
+
+    \textbf{momentum} is a vector (it's simply a scaled version of velocity) and the SI units are $\kg \frac{\m}{\s}$.
+\end{definition}
+
+\begin{itemize}
+    \item linear momentum is \textbf{always conserved}
+    \item kinetic energy is only conserved in an \textbf{elastic collision}
+    \begin{itemize}
+        \item \textit{ELASTIC COLLISION}: Where two bodies bounce off of each other
+        \item \textit{INELASTIC COLLISION:} When two bodies stick together after the collision
+    \end{itemize}
+    \item FUN FACT: We can get Newton's second law through differentiating the definition of momentum because $\frac{d}{dt}p = \frac{d}{dt}(mv) \implies F_{net} = ma$
+\end{itemize}
+
+\begin{definition}[Impulse]{def4.7.2:label}
+    \[
+    \vec J = \vec Ft = \Delta \vec p = m(\vec v_f - \vec v_i)
+    \]
+
+    \textbf{impulse} is how much is applied to an object over a given period of time
+\end{definition}
+
+\begin{itemize}
+    \item NOTE: Impulse is the \textbf{area under a Force vs time graph}
+\end{itemize}
+
+
+\begin{problem}
+    If a baseball comes in to the left at $50 \frac{\m}{\s}$ and gets hit back to the right with a velocity of $80 \frac{\m}{\s}$ at an angle of $30^\circ$. If the right direction is positive, what is the time interval during which the collision of the ball occurred?
+
+    \[
+    \begin{aligned}
+        F_{avg}t &= m(v_f-v_i)\\
+        F_{avg} &= \frac{m(v_f-v_i)}{t}\\
+        F_{avg} &= \frac{m<v_{fx} - v_{ix}, v_{fy}-v_{iy}>}{t}\\
+        F_{avg} &= 328.6 \vec i + 80 \vec j = 251.6 \angle 18.5^\circ
+    \end{aligned}    
+    \]
+\end{problem}
+
+
+\begin{problem}
+    A cue ball comes and towards the 6-ball with a speed of $2 \frac{\m}{\s}$. The 6-ball goes down at an angle of $30^\circ$ with a velocity magnitude of $3 \frac{\m}{\s}$. What is the final velocity of the cue ball after the collision?
+    
+    \[
+    \begin{aligned}
+        \vec p_i &= \vec p_f\\
+        m\vec v_{ci} &= m\vec v_{cf} + m\vec v_6\\
+        v_{cf} &= v_{ci}-v_6\\
+        v_{cf} &= 2\vec i - (2.6 \vec i - 1.5 \vec j)\\
+        v_{cf} &= -0.6\vec i + 1.5 \vec j\\
+        v_{Cf} &= 1.62 \angle 62.5^\circ \frac{\m}{\s}
+    \end{aligned}  
+    \]
+
+    NOTE: You can also choose to solve for the momentums in each direction independently (so say that $p_{xi} = p_{xf}$ and then also $p_{yi} = p_{yf}$ and then solve both individually).
+\end{problem}

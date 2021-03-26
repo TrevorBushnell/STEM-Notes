@@ -1,0 +1,38 @@
+\section{Proving $a \in A$}
+
+If $A$ is represented in set notation, then all that is left to do is check whether $a$ satisfies the the rule stated in the set builder notation. 
+
+
+\begin{proposition}{ex1:label}
+    The number 13 is in the set $\{n \in \Z \::\: 11 | 5n+1\}$.
+\end{proposition}
+
+\begin{proof}
+    If $n=13$, then $5(13)+1 = 66$. Since $6\cdot 11 = 66$, $11|66$ which means that 11 divides 66. This means that 13 is in the set $\{n \in \Z \::\: 11 | 5n+1\}$.
+\end{proof}
+
+
+\section{Proving $A \subseteq B$}
+
+If $A \subseteq B$, then every element in $A$ must also be in $B$, so we can write a proof that verifies this fact. This means we can translate the statement $A \subseteq B$ to the statement "If $a\in A$, then $a\in B$".
+
+
+\begin{proposition}{ex2:label}
+    For any sets $A$ and $B$, $\P(A) \cup \P(B) \subseteq \P(A \cup B)$.
+\end{proposition}
+
+\begin{proof}
+    Suppose $X \in \P(A) \cup \P(B)$. Then $X \in \P(A)$ or $X \in \P(B)$. This must mean that $X \subseteq A$ or $X \subseteq B$. Since $A$ is a subset of $A \cup B$, if $X \subseteq A$, then $X \subseteq A \cup B$. Likewise, Since $B$ is a subset of $A \cup B$, if $X \subseteq B$, then $X \subseteq A \cup B$. Then $A \subseteq A \cup B$, so $X \in \P(A \cup B)$. Therefore, $\P(A) \cup \P(B) \subseteq \P(A \cup B)$.
+\end{proof}
+
+
+
+\section{Proving $A=B$}
+
+If two sets are equal, then they must be subsets of each other. This means that we can write a proof for any of the following statements:
+
+\begin{itemize}
+    \item $A \subseteq B$ and $B \subseteq A$
+    \item If $x \in A$ then $x \in B$, and if $x \in B$ then $x \in A$. 
+    \item $ x\in A$ if and only if $x \in B$
+\end{itemize}

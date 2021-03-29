@@ -1,0 +1,106 @@
+\section{Rotational Kinematics}
+
+\begin{itemize}
+    \item While objects can move in a straight line, objects can ALSO move in a circle
+    \begin{itemize}
+        \item Either an object is orbiting some point or something spins around some center
+    \end{itemize}
+    
+    \item Instead of having position, velocity, and acceleration, we will have \textit{new} terms for moving in a circle instead
+    \begin{itemize}
+        \item \textbf{Angular position ($\theta$):} How much the object has rotated around the positive $x$-axis
+        \item \textbf{Angular velocity ($\omega$):} How fast an object is going in a given direction at any point in the circle
+        \begin{itemize}
+            \item $\frac{d\theta}{dt} = \omega(t)$
+            \item $\theta(t) = \int \omega \: dt$
+        \end{itemize}
+        \item \textbf{Angular acceleration ($\alpha$):} How fast an object changes it's velocity at any point in the circle of motion
+        \begin{itemize}
+            \item $\frac{d\omega}{dt} = \alpha(t)$
+            \item $\omega(t) = \int \alpha \: dt$
+        \end{itemize}
+    \end{itemize}
+
+    \item the kinematics equations from translational (standard) motion are the EXACT SAME equations in rotational kinematics, but we simply use the rotational kinematics variables instead of the translational kinematics variables
+    
+    \newpage
+    \begin{definition}[Rotational Kinematics Equations]{def5.1.1:label}
+        To calculate different values of 
+
+        \[
+        \begin{aligned}
+            \omega_f &= \omega_i + \alpha t\\
+            \Delta\theta &= \omega_it + \frac{1}{2}\alpha t^2\\
+            \omega_f^2 &= \omega_i^2 + 2\alpha\Delta\theta
+        \end{aligned}    
+        \]
+    \end{definition}
+
+    \item it is important to note that values are \textbf{positive} if things move \textit{in the counterclockwise direction} and values are \textbf{negative} if things move \textit{in the clockwise direction}
+    \item If you know the distance between the object moving in rotation and the center of rotation (in other words: the radius of the circle of rotation), then you can relate the rotational kinematics values with the translational kinematics values
+    
+    \begin{definition}[Rotational Kinematics $\leftrightarrow$ Translational Kinematics]{def5.1.2:label}
+        \[
+        S = \Delta\theta R    
+        \]
+
+        Where $S$ is the arc that the object travels around through a given angle $\theta$ and $R$ is the radius (the distance between the object and the center of rotation).
+
+        \[
+        v = \omega R    
+        \]
+
+        Where $R$ is the radius (the distance between the object and the center of rotation).
+
+        \[
+        a_{tangential} = \alpha R    
+        \]
+
+        Where $R$ is the radius (the distance between the object and the center of rotation). Note that this is the acceleration that is PENPENDICULAR to the acceleration that points towards the center of the circle.
+
+        \[
+        a_{centripetal} = \frac{v^2}{R} = \frac{\omega^2 R^2}{R} = \omega^2 R    
+        \]
+
+        Where $R$ is the radius (the distance between the object and the center of rotation). Note that this is the acceleration that points towards the CENTER of the circle. 
+    \end{definition}
+\end{itemize}
+
+
+\begin{problem}
+    A grinder rotates at 850RPM. Once the grinder turns off, it stops 3 minutes later. What is the angular acceleration and what is the final anglular position of the grinder?\\
+
+    First, convert RPM to radians/second:
+
+    \[
+    850 \frac{\text{rev}}{\text{min}}\cdot\frac{2\pi \text{ radians}}{1 \text{ rev}}\cdot\frac{1 \text{ minute}}{60 \text{ seconds}} = 28.\bar{3} \frac{\text{radians}}{\s}   
+    \]
+
+    Now find angular acceleration:
+    \[
+    \alpha = \frac{\Delta \omega}{t} = \frac{\omega_f - \omega_i}{t} = \frac{- 28.3 \frac{\rad}{\s}}{60 \s} = -0.49 \frac{\rad}{\s^2}   
+    \]
+
+    Now find the final angular position:
+    \[
+    \begin{aligned}
+        \omega_f^2 &= \omega_i^2 + 2\alpha\Delta\theta\\
+        \theta_f &= \frac{\omega_f^2 - \omega_i^2}{2\alpha} + \theta_i\\
+        \theta_f &= \frac{-(28.\bar{3} \frac{\rad}{\s})^2}{2(-0.49 \frac{\rad}{\s^2})}\\
+        \theta_f &= 817.235 \rad
+    \end{aligned}    
+    \]
+\end{problem}
+
+
+\begin{problem}
+    An object rotates and has a function that defines the angluar acceleration to be $\alpha(t) = 5t^3 - 4t$. You know that the initial rotational velocity is 5 $\frac{\rad}{\s}$ and the initial angular position is 2 radians. 
+
+    \[
+    \begin{aligned}
+        \omega(t) &= \int_0^t \alpha(t)\:dt\\
+        \omega(t) &= \int_0^t 5t^3 - 4t \: dt\\
+        \omega(t) &= \frac{5}{4}t^4 - 2t^2 + 2
+    \end{aligned}    
+    \]
+\end{problem}

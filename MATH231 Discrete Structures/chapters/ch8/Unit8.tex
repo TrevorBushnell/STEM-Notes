@@ -1,5 +1,80 @@
 \section{Graphs and Terminology}
 
-\begin{definition}
-    A \textbf{graph} $G=(V,E)$ consists of a nonempty set of vertices and a set $E$ of edges. Each edge has either one or two vertices associated with it, called its \textit{endpoints}. A \textbf{loop} is an edge between a vertex and itself. A \textbf{multiple edge} is one in which the same pair of vertices is assigned to the more than one edge.  
+\begin{definition}[Graphs]{def8.1.1:label}
+    \begin{itemize}
+        \item A \textbf{graph} $G=(V,E)$ consists of a nonempty set of vertices and a set $E$ of edges. Each edge has either one or two vertices associated with it, called its \textit{endpoints}. 
+        \item A \textbf{loop} is an edge between a vertex and itself. 
+        \item A \textbf{multiple edge} is one in which the same pair of vertices is assigned to the more than one edge.  
+        \item an \textbf{unordered edge} is denoted by an unordered pair of vertices
+        \item a \textbf{directed edge} is denoted by an ordered pair of vertices
+    \end{itemize}
 \end{definition}
+
+
+\subsection{Types of Graphs}
+
+\begin{itemize}
+    \item \textbf{UNDIRECTED GRAPHS} have undirected edges. The \textit{degree} of a vertex $v$ in an undirected graph is the number of edges which have $v$ as an endpoint (loops count twice)
+    \item \textbf{SIMPLE GRAPHS} are undirected graphs with no loops or multiple edges
+\end{itemize}
+
+\textbf{INCLUDE PROBLEM HERE}
+
+\begin{itemize}
+    \item \textbf{MULTIGRAPHS} are undirected graphs which allow multiple edges but no loops
+\end{itemize}
+
+\textbf{INCLUDE PROBLEM HERE}
+
+\begin{itemize}
+    \item \textbf{PSEUDOGRAPHS} are undirected graphs that allow both multiple edges and loops
+\end{itemize}
+
+\textbf{INCLUDE PROBLEM HERE}
+
+\begin{itemize}
+    \item \textbf{DIRECTED GRAPHS} have \textit{directed edges}. The \textit{in-degree} of a vertex in a directed graph, denoted by $\deg^-(v)$ is the number of edges that terminate at $v$. The \textit{out-degree} of $v$, denoted by $\deg^+(v)$ is the number of edges starting at $v$
+    \item \textbf{SIMPLE DIRECTED GRAPHS} are directed graphs with no loops or multiple edges
+\end{itemize}
+
+\textbf{INCLUDE PROBLEM HERE}
+
+\begin{itemize}
+    \item \textbf{DIRECTED MULTIGRAPHS} are directed graphs which allow both loops and multiple edges
+\end{itemize}
+
+
+\begin{theorem}[The Handshake Theorem]{th8.1.2:label}
+    \begin{itemize}
+        \item For \textit{undirected graphs}, $2|E| = \sum_{v\in V} \deg(v)$
+        \item For \textit{directed graphs}, $|E| = \sum_{v\in V} \deg^-(v) = \sum_{v\in V} \deg^+(v)$
+    \end{itemize}
+\end{theorem}
+
+
+\subsection{Families of Graphs}
+
+\begin{itemize}
+    \item The \textbf{COMPLETE GRAPH} on $n$ vertices, denoted $K_n$, consists of $n$ vertices and edges between every pair of distinct vertices.
+    \item In general, $K_n$ has...
+    \begin{itemize}
+        \item $|V_n| = n$
+        \item $|E_n| = |E_{n-1}| + (n-1) \sum_{i=0}^{n-1}i = \frac{n(n-1)}{2}$
+    \end{itemize} 
+    \item CIRCLE GRAPH
+    \item WHEEL RGAPH
+    \item \textbf{$n$-CUBES (HYPERCUBES)} denoted $Q_n(n\ge 1)$ consists of a set of vertices which correspond to all bit strnig of length $n$ along with a set of edges connecting vertices exactly when the corresponding bit strings differ in exactly one bit.
+    \item In general, $Q_n$ has\dots
+    \begin{itemize}
+        \item $|V_n| = $
+        \item $|E_n| = $
+    \end{itemize}
+\end{itemize}
+
+
+
+\seubsection{Even More Terminology}
+
+\begin{itemize}
+    \item Two vertices are \textbf{adjacent} 
+\end{itemize}

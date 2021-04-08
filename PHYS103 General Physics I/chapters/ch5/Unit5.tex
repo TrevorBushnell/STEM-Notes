@@ -123,3 +123,99 @@
     \item In the \textbf{linear world}, $P = Fv$, but in the \textbf{rotational world} $P = \tau\omega$
     \item In the \textbf{linear world}, $p = mv$, but in the \textbf{rotational world} $L = I\omega$
 \end{itemize}
+
+\begin{problem}
+    \begin{center}
+        \includegraphics[width=0.75\textwidth]{chapters/ch5/images/fig5_1.PNG}
+    \end{center}
+\end{problem}
+
+\begin{problem}
+    \begin{center}
+        \includegraphics[width=0.75\textwidth]{chapters/ch5/images/fig5_2.PNG}
+    \end{center}
+\end{problem}
+
+
+\section{Smooth Rolling Motion}
+
+\[
+\begin{aligned}
+    \sum F_x  &= ma_{COM} = F_f\\
+    \sum \tau_{NET} &= I\alpha = \tau_{APP} - \tau_f = \tau_{APP} - F_fR
+\end{aligned}    
+\]
+
+
+
+\section{Newton's Second Law for Rotation}
+
+\[
+\begin{aligned}
+    \tau &= I\alpha\\
+    F_fR &= I\alpha\\
+\end{aligned}    
+\]
+
+
+\section{Angular Momentum and Impulse}
+
+\begin{itemize}
+    \item We've been used to \textit{linear momentum} but there is also \textbf{angular momentum} that functions under the same properties
+    
+    \begin{definition}[Angular Momentum]{def5.6.1:label}
+        \[
+        L = I\omega     
+        \]
+
+        In every case in this class, \textbf{angular momentum will always be conserved}
+    \end{definition}
+
+    \item Angular momentum is the reason that an ice skater changes their speed
+    \begin{itemize}
+        \item When the skater holds out their arms, then the 
+    \end{itemize}
+\end{itemize}
+
+\begin{problem}[Merry Go Round]
+    \[
+    \begin{aligned}
+        L_i &= L_f\\
+        I_m\omega_i &= I_m\omega_f + I_\parallel\omega_f\\
+        \omega_f &= \frac{I_m\omega_i}{I_m + I_\parallel}
+    \end{aligned}    
+    \]
+\end{problem}
+
+
+\begin{problem}[Merry Go Round with Dog]
+    \[
+    \begin{aligned}
+        L_i &= L_f\\
+        I_m\omega_i + I_D\omega_i &= I_m\omega_f + I_D(\omega_f - \omega_D)
+    \end{aligned}    
+    \]
+\end{problem}
+
+\begin{itemize}
+    \item Additionally, we can get an angular impulse similarly to how we get a linear impulse
+    
+    \begin{definition}[Angular Impulse]{def5.6.2:label}
+        \[
+        J_\angle = \tau_{AVG}\Delta T = I \Delta \omega      
+        \]
+    \end{definition}
+\end{itemize}
+
+
+\begin{problem}[Grindstone Problem]
+    \[
+    \begin{aligned}
+        L_i &= L_f\\
+        I_1\omega_i &= I_1\omega_f + I_2\omega_f\\
+        I_1\omega_i &= \omega_f(I_1 + I_2)\\
+        \omega_f &= \frac{I_1}{I_1+I_2}\omega_i\\
+        \omega_f &= \frac{0.5M_1R_1^2}{0.5M_1R_1^2+0.5M_2R_2^2}\omega_i\\
+    \end{aligned}    
+    \]
+\end{problem}

@@ -1,0 +1,61 @@
+\begin{itemize}
+    \item Induction is like climbing an infinite ladder
+    \item \textbf{GOAL:} Prove that $P(n)$ is true for all $n\in\N$
+    \begin{itemize}
+        \item NOTE: Starting at 0 isn't anything special, we can start anywhere and move upwards from there
+    \end{itemize}
+\end{itemize}
+
+\section{Outline for Proof By Induction}
+
+\begin{enumerate}
+    \item Show that $P(0)$ is true
+    \item Show that for any $k \ge 0$, $P(k) \implies P(k+1)$
+    \item Then for any $n\in\N$, we know $P(0) \implies P(1) \implies P(2) \implies \cdots \implies P(n)$. Since we know $P(0)$ is true, then $P(n)$ must also be true
+\end{enumerate}
+
+\section{Proof by Induction Examples}
+
+\begin{proposition}{prop9.2.1:label}
+    If $n\in\Z^+$, then $1+3+5+7+...+(2n-1)=n^2$
+\end{proposition}
+
+\begin{proof}
+    Suppose $n=1$. Then $1=1^2$ which is a true statement. \\
+
+    Now suppose that for some $k\in\Z^+$ that $1+3+5+7+...+(2k-1) = k^2$. Then, 
+    \[
+    \begin{aligned}
+        1+3+5+7+...+(2k-1)+(2(k+1)-1) &= k^2 + (2(k+1)-1)\\
+        &= k^2 + 2k + 2 - 1\\
+        &= k^2+2k+1\\
+        &= (k+1)^2
+    \end{aligned}    
+    \]
+    
+    Therefore, by induction, we know that for all $n\in\Z^+$, we have $1+3+...+(2n-1)=n^2$.
+\end{proof}
+
+\newpage
+\begin{proposition}{prop9.2.2:label}
+    If $n\in\N$, then $5|n^5-n$.
+\end{proposition}
+
+
+\begin{proof}
+    Suppose that $n=0$. Then $(0)^5 - 0 = 0$ and $5|0$. \\
+
+    Now suppose that $k \in\N$ such that $5|k^5-k$. 
+
+    Then, 
+
+    \[
+    \begin{aligned}
+        &(k+1)^5 - (k+1)\\
+        &k^5+5k^4+10k^3+10k^2+5k+1-k-1\\
+        &(k^5-k) + 5k^4+10k^3+10k^2+5k
+    \end{aligned}    
+    \]
+
+    We already know that $(k^5-k)$ is divisble by 5. Since we can factor out a 5 from $5k^4+10k^3+10k^2+5k$, we also know that $5k^4+10k^3+10k^2+5k$ is divisible by 5. Since two multiples of 5 added together are still divible by 5, we know that $5|(k+1)^5 - (k+1)$. Therefore, by proof by induction, we know that for all $n\in\N$, $5|n^5-n$.
+\end{proof}

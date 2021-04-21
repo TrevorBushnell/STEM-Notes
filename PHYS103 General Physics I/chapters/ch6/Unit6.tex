@@ -1,0 +1,70 @@
+\begin{itemize}
+    \item In reality, you can sum forces but you can't really sum torques, so instead we sum \textit{moments} of torque at a given point
+    \begin{itemize}
+        \item This is all about statics
+    \end{itemize}
+\end{itemize}
+
+\begin{problem}[Beeg Statics Problem]
+    \[
+    \begin{aligned}
+        \sum F_x &= 0 = T_2 - T_{1x}\\
+        \sum F_y &= 0 = T_1y - mg + N - W\\   
+    \end{aligned}
+    \]
+
+    \[
+        \begin{aligned}
+            \sum M_P &= 0 = -mg\frac{L}{2} + N\frac{3}{4}L + - WL\\
+            \sum M_P &= 0 = -mg\frac{1}{2} + N\frac{3}{4} + - W\\
+            N &= \frac{4}{3}(mg+N)
+        \end{aligned}      
+    \]
+
+    \[
+      T_{1y} = mg - N + W  
+    \]
+\end{problem}
+
+\begin{itemize}
+    \item \textbf{INDETERMINANT STRUCTURE:} Has more supports than it needs to be stable
+    \item \textbf{NEWTON PHAPSON:}
+    \item \textbf{GUASS-DIEDEL:}
+    \item \textbf{SHEAR:} There is a cutting motion occuring (you may not actually cut through something)
+    \item \textbf{COMPRESSION:} Push (opposite of tension which is pull)
+    \item \textbf{ELASTIC DEFORMATION:} We bend something, but when we let go of it then it comes back to its original shape (example: rubber band)
+    \item \textbf{INELSATIC DEFORMATION:} You start off with a shape and when you stretch it the object does not return to its oroginal shape (permanently longer)
+    \begin{itemize}
+        \item The distance that the object gets stretched by is called the "creep"
+    \end{itemize}
+\end{itemize}
+
+\begin{problem}[The Two Scales Problem]
+    \[
+    \begin{aligned}
+        \sum F_x &= 0 = 0\\
+        \sum F_y &= 0 = N_1+N_2-m_1g-m_2g    
+    \end{aligned}
+    \]
+
+    \[
+        \begin{aligned}
+            \sum M_{N_1} &= 0 = -m_1g\frac{L}{4} - m_2g\frac{L}{2} + N_2L\\
+            \sum M_{N_1} &= 0 = -m_1g\frac{1}{4} - m_2g\frac{1}{2} + N_2\\
+            N_2 &= \frac{m_1g}{4} + \frac{m_2g}{2}
+        \end{aligned}
+    \]
+\end{problem}
+
+
+\begin{problem}[Tom on the Ladder]
+    \[
+    \begin{aligned}
+        \sum F_x &= R_W  -F_f\\
+        \sum F_y &= N_g - mg - W_T\\
+        \sum M_g &= 0 = R_WL\sin\theta + W_TL \frac{2}{3} \cos\theta + mg \frac{L}{2} \cos\theta\\
+        \sum M_g &= 0 = R_W\sin\theta + W_T \frac{2}{3} \cos\theta + mg \frac{1}{2} \cos\theta\\
+        R_W &= \frac{\frac{2}{3}W_T\cos\theta + \frac{mg}{2}\cos\theta}{\sin\theta}
+    \end{aligned}    
+    \]
+\end{problem}

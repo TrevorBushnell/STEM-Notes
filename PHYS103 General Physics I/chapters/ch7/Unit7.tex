@@ -1,0 +1,65 @@
+\section{General Fluid Statics Terms}
+
+\begin{itemize}
+    \item \textbf{FLUID:} A substance that accompanies chips and salsa
+    \item \textbf{DENSITY:} $m = \rho V$
+    \begin{itemize}
+        \item The denisity of water is $\rho_{water} = 1000 \frac{\kg}{\m^3} = 1 \frac{\g}{\cm^3}$
+    \end{itemize}
+    \item \textbf{COMMON VOLUME UNITS:} Liter, Cubic Meter
+    \begin{itemize}
+        \item $1 \text{ Liter } = 1000 \text{ cm}^3$
+        \item $1000 \text{ Liter } = 1 \text{ m}^3$
+    \end{itemize}
+    \item \textbf{PRESSURE:} $P = \frac{F}{A_\perp}$
+    \begin{itemize}
+        \item PRESSURE AT SEA LEVEL: $14.7 \psii = 1.01 \times 10^5 \pa = 101 \text{ KPa}$
+    \end{itemize}
+\end{itemize}
+
+\begin{problem}[Basic Pressure Problem]
+    A room is $3.5\m \times 4.2\m \times 2.4\m$. If the density of air is $1.21 \frac{\kg}{\m^3}$, what is the force weight in the room and the pressure at the floor of the room?
+
+    \[
+    \begin{aligned}
+        W &= mg\\
+        W &= \rho_{air}V_{room}g\\
+        W &= (1.21)(3.5)(4.2)(2.4)(9.81)\\
+        W &= 418 \N 
+    \end{aligned}    
+    \]
+
+    \[
+    \begin{aligned}
+        P &= \frac{F}{A}\\
+        P &= \frac{\rho_{air}lwhg}{wl}\\
+        P &= \rho_{air}hg\\
+        P &= (1.21)(2.4)(9.81)\\
+        P &= 28.44 \pa
+    \end{aligned}    
+    \]
+\end{problem}\newpage
+
+\begin{definition}[General Pressure Equations]{def7.1.1:label}
+    The pressure at a given reference point $R$ is given by the following equation:
+
+    \[
+    \begin{aligned}
+        P = P_R \pm \rho Hg
+    \end{aligned}    
+    \]
+
+    If you want to find the \textbf{absolute pressure} at a point $R$, then you can use the following equation:
+
+    \[
+    P = P_{atm} \pm \rho Hg    
+    \]
+
+    The \textbf{guage pressure} is the pressure experience without considering atmospheric pressure, which is given by the following equation:
+
+    \[
+    \begin{aligned}
+        P - P_{atm} = \rho Hg
+    \end{aligned}    
+    \]
+\end{definition}

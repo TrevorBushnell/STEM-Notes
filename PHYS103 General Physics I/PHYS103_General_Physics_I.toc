@@ -28,3 +28,4 @@
 \contentsline {section}{\numberline {5.6}Angular Momentum and Impulse}{32}{section.5.6}%
 \contentsline {chapter}{\numberline {6}Statics}{33}{chapter.6}%
 \contentsline {chapter}{\numberline {7}Fluids}{35}{chapter.7}%
+\contentsline {section}{\numberline {7.1}General Fluid Statics Terms}{35}{section.7.1}%

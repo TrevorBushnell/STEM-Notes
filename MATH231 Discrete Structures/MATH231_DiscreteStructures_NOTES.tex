@@ -1,17 +1,10 @@
+
 \documentclass{package/notes}
 \usepackage[english]{babel}
 \usepackage{amssymb,amsmath,amsfonts}  %%% for maths
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \usepackage{package/color-env}
 \usepackage{lipsum}
-\usepackage{longtable,booktabs,calc}
-
-\newcommand{\Z}{\mathbb{Z}}
-\newcommand{\R}{\mathbb{R}}
-\newcommand{\N}{\mathbb{N}}
-\newcommand{\C}{\mathbb{C}}
-\newcommand{\Q}{\mathbb{Q}}
-\newcommand{\lcm}{\text{ lcm}}
 \renewcommand\qedsymbol{$\blacksquare$}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -34,7 +27,7 @@
 		
 		\vspace{0.75\baselineskip} % Whitespace above the title
 		
-		{\huge MATH231 Discrete Structures Notes\\} % Title
+		{\huge MATH 231: Discrete Mathematics Notes\\} % Title
 		
 		\vspace{0.75\baselineskip} % Whitespace below the title
 		
@@ -47,7 +40,7 @@
 		%	Subtitle
 		%------------------------------------------------
 		
-		
+		\LARGE{} 
 		
 		\vspace*{3\baselineskip} % Whitespace under the subtitle
 		
@@ -55,11 +48,11 @@
 		
 		\vspace{0.5\baselineskip} 
 		
-		
+		{\scshape  } % Editor list
 		
 		\vspace{0.5\baselineskip} 
 		
-		
+		\textit{} % affiliation
 		
 		\vfill 
 		
@@ -91,38 +84,30 @@ Thank you so much for using these notes. I hope that the information is provided
 
 
 \chapter{Logic and Proofs}
+\input{chapters/ch1/Unit1.tex}
 
 
+\chapter{Sets \& Functions}
+\input{chapters/ch2/Unit2.tex}
 
-\chapter{Basic Structures}
-
-
-
-\chapter{Number Theory and Cryptography}
+\chapter{Number Theory}
 \input{chapters/ch3/Unit3.tex}
 
-
-\chapter{Induction and Reasoning}
+\chapter{Induction, Recursion, and Recurrence Relations}
 \input{chapters/ch4/Unit4.tex}
 
-
-\chapter{Counting}
-\input{chapters/ch5/Unit5.tex}
-
-
-\chapter{Advanced Counting}
-
-
+\chapter{Combinatorics}
+\input{chapters/ch5 Unit5.tex}
 
 \chapter{Relations}
-\input{chapters/ch7/Unit7.tex}
-
+\input{chapters/ch6/Unit6.tex}
 
 \chapter{Graphs}
+\input{chapters/ch7/Unit7.tex}
+
+\chapter{Trees}
 \input{chapters/ch8/Unit8.tex}
 
 
-
-\chapter{Trees}
 
 \end{document}

@@ -1,0 +1,100 @@
+\documentclass{package/notes}
+\usepackage[english]{babel}
+\usepackage{amssymb,amsmath,amsfonts}  %%% for maths
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{package/color-env}
+\usepackage{lipsum}
+\usepackage{graphicx}
+\renewcommand\qedsymbol{$\blacksquare$}
+
+\renewcommand{\bf}[1]{\textbf{#1}}
+\renewcommand{\it}[1]{\textit{#1}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+	\begin{titlepage} % Suppresses headers and footers on the title page
+		
+		\centering % Centre everything on the title page
+		
+		\scshape % Use small caps for all text on the title page
+		
+		\vspace*{\baselineskip} % White space at the top of the page
+		
+		%------------------------------------------------
+		%	Title
+		%------------------------------------------------
+		
+		\rule{\textwidth}{1.6pt}\vspace*{-\baselineskip}\vspace*{2pt} % Thick horizontal rule
+		\rule{\textwidth}{0.4pt} % Thin horizontal rule
+		
+		\vspace{0.75\baselineskip} % Whitespace above the title
+		
+		{\huge AP STATISTICS NOTES\\} % Title
+		
+		\vspace{0.75\baselineskip} % Whitespace below the title
+		
+		\rule{\textwidth}{0.4pt}\vspace*{-\baselineskip}\vspace{3.2pt} % Thin horizontal rule
+		\rule{\textwidth}{1.6pt} % Thick horizontal rule
+		
+		\vspace{2\baselineskip} % Whitespace after the title block
+		
+		%------------------------------------------------
+		%	Subtitle
+		%------------------------------------------------
+		
+		
+		\vspace*{3\baselineskip} % Whitespace under the subtitle
+		
+		
+		
+		\vspace{0.5\baselineskip} 
+		
+		\vspace{0.5\baselineskip} 
+		
+		\vfill 
+		
+		%------------------------------------------------
+		% Author
+		%------------------------------------------------
+		
+		
+		\vspace{0.3\baselineskip} 
+		
+		
+		{\large Edited by\\  Trevor Bushnell} 
+		
+	\end{titlepage}
+	\tableofcontents
+%\newpage
+\chapter{One-Variable Data Analysis}
+\input{chapters/unit1/unit1.tex}
+
+
+\chapter{Two-Variable Data Analysis}
+\input{chapters/unit2/unit2.tex}
+
+\chapter{Design of a Study: Sampling, Surveys, and Experiments}
+\input{chapters/unit3/unit3.tex}
+
+\chapter{Probability and Random Variables}
+\input{chapters/unit4/unit4.tex}
+
+\chapter{Binomial Distributions, Geometric Distributions, and Sampling Distributions}
+\input{chapters/unit5/unit5.tex}
+
+\chapter{Inference: Estimating with Confidence Intervals}
+\input{chapters/unit6/unit6.tex}
+
+\chapter{Inference: Hypothesis Testing}
+\input{chapters/unit7/unit7.tex}
+
+\chapter{Inference for Regression}
+\input{chapters/unit8/unit8.tex}
+
+\chapter{Inference for Categorical Data: Chi-Squared Tests}
+\input{chapters/unit9/unit9.tex}
+
+
+\end{document}
+.

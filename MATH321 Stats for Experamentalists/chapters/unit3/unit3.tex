@@ -1,0 +1,84 @@
+\section{What Is Probability?}
+
+\begin{itemize}
+    \item probability is \it{the science of uncertainty}. When we run an experiment, we are unsure of what the outcome will be.
+    \item the definition of probability is \bf{the chance of the event occurring}
+    \item probability is a numerical value between 0 and 1 (inclusive) describing how likely an event is to occur - the larger the number, the more likely the event will occur.
+\end{itemize}
+
+
+\section{Events and the Sample Space}
+
+\begin{itemize}
+    \item \bf{experiment:} the process by which an observation is obtained
+    \item a \bf{simple event} is the outcome that is observed on a single repitition of the experiment
+    \begin{itemize}
+        \item one and only one simple event can occur when the experiement is performed
+        \item A simple event is denoted by $E$ with some subscript
+        \item each simple event has some probability
+    \end{itemize}
+
+    \item \bf{sample space $S$:} the set of all simple events of an experiment
+    \begin{itemize}
+        \item \it{discrete sample space:} a sample space that contains a finite or countable infinite number of elements
+        \item \it{continuous sample space:} a sample space that contains all or a subset of all real numbers
+    \end{itemize}
+
+    \item \bf{event:} a collection of one or more simple events (aka a subset of the sample space)
+    \begin{itemize}
+        \item EX: If the values on a 6-sided die are our sample space, then an example event would be getting an odd number
+    \end{itemize}
+
+    \item \bf{mutually exclusive:} a way to describe two events where if one event occurs, the other event cannot occur (same goes in reverse order)
+\end{itemize}
+
+
+\section{Set Theory Review}
+
+\begin{itemize}
+    \item Since events are just sets, we can compare relations between events by talking about relations between sets (aka using set theory)
+    \item \bf{union $A \cup B$:} the event that occurs when either $A$ or $B$ occur
+    \begin{itemize}
+        \item $A \cup B = \{x : x \in A $ OR $x \in B\}$
+    \end{itemize}
+    \item \bf{intersection $A \cap B$:} the event that occurs when both $A$ and $B$ occur
+    \begin{itemize}
+        \item $A \cap B = \{x : x \in A $ AND $x \in B\}$
+    \end{itemize}
+    \item \bf{complement $A^C$ or $A'$ or $\bar A$:} means that we care about all the elements in the sample space that are NOT also in $A$. 
+    \begin{itemize}
+        \item $A^C = \{x : x \notin A\}$
+    \end{itemize}
+\end{itemize}
+
+\begin{definition}[The Axioms of Probability]{def3.1:label}
+    \begin{enumerate}
+        \item For any event $A$, $P(A) \ge 0$
+        \item $P(S) = 1$
+        \item If $A_1, A_2, A_3, \cdots$ is a finite or countably infinite sequence of mutually exclusive events of $S$, then $P(A_1 \cup A_2 \cup A_3) = P(A_1)+P(A_2)+P(A_3)$
+    \end{enumerate}
+\end{definition}
+
+Using the axioms above, then you can come up with these theorems:
+
+\begin{theorem}[Consequences of the Axioms of Probability]{th3.1:label}
+    \begin{enumerate}
+        \item If $A$ and $A^C$ are complementary events in a sample space $S$, then $P(A^C) = 1 - P(A)$
+        \item $P(\varnothing) = 0$ for any sample space $S$
+        \item If $A$ and $B$ are events in a sample space $S$ and $A \subset B$, then $P(A) \le P(B)$
+        \item If $A$ and $B$ are any two events in a sample space $S$, then $P(A \cup B) = P(A) + P(B) - P(A \cap B)$
+    \end{enumerate}
+\end{theorem}
+
+
+\section{Calculate Probabilities Using Simple Events}
+
+\begin{definition}[Probability of a Simple Event]{def3.2:label}
+    The probability of event $A$ is equal to 
+
+    $$
+    \frac{n}{N}
+    $$
+
+    where $n = |A|$ and $N = |S|$. In other words, the probability of a simple event is equal to the number of possible outcomes for the desired event divided by the total number of outcomes
+\end{definition}

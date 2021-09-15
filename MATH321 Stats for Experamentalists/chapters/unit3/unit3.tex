@@ -71,6 +71,31 @@ Using the axioms above, then you can come up with these theorems:
 \end{theorem}
 
 
+\section{Permutations and Combinations}
+
+\begin{definition}[The Counting Rule (Multiplication Rule)]{def3.4:label}
+    If an experiment is performed in two stages with $m$ ways to accomplish the first way and $n$ ways to accomplish the second way, then there are $mn$ ways to accomplish the experiment.\\
+
+    If you have up to $k$ different steps/stages, then you can multiply the number of ways to accomplish each step/stage, so $n_1n_2n_3\cdots n_k$.
+\end{definition}
+
+\begin{definition}[Permutations]{def3.5:label}
+    The number of ways to arrange $n$ distinct objects where the order is important and you are taking $r$ objects at a time, then this is called the \bf{permutation} and can be computed using:
+
+    $$
+        \frac{n!}{(n-r)!} 
+    $$
+\end{definition}
+
+\begin{definition}[Combinations]{def3.6:label}
+    The number of ways to arrange $n$ distinct objects where the order is NOT important and you are taking $r$ objects at a time, then this is called the \bf{permutation} and can be computed using:
+
+    $$
+        \frac{n!}{r!(n-r)!} 
+    $$
+\end{definition}
+
+
 \section{Calculate Probabilities Using Simple Events}
 
 \begin{definition}[Probability of a Simple Event]{def3.2:label}
@@ -82,3 +107,21 @@ Using the axioms above, then you can come up with these theorems:
 
     where $n = |A|$ and $N = |S|$. In other words, the probability of a simple event is equal to the number of possible outcomes for the desired event divided by the total number of outcomes
 \end{definition}
+
+\begin{theorem}[The Law of Large Numbers]{th3.3:label}
+    As the number of times an experiment is repeated increases, the relative frequency of a particular outcome will approach the probability of the outcome. \\
+
+    This means that the sample mean $\bar{x}$ will approach the population mean $\mu$.
+\end{theorem}
+
+\begin{proposition}[How to Calculate the Probability of an Event]{prop1.1:label}
+    \begin{enumerate}
+        \item List all the simple events in the sample space $S$
+        \item Assign a probability to each simple event
+        \item Determine which simple events result in the event of interest
+        \item Sum the probabilities of the simple events that result in the event of interest
+    \end{enumerate}
+\end{proposition}
+
+
+\section{Calculating }

@@ -1,0 +1,56 @@
+\section{Definition of Random Variables}
+
+\begin{itemize}
+    \item If we have an experiment with a sample space $S$, then a \bf{random variable} $X$ is a set function that assigns unique real numbers $X(s)=x$ to each element $s \in S$
+    \begin{itemize}
+        \item IN OTHER WORDS: This variable $X$ takes on some value based on the random outcome from the experiment
+    \end{itemize}
+
+    \item The \bf{space} of $X$ is the set of all real numbers: $\{x:X(s) = x, s \in S\}$
+    \item We typically represent random variables with capital letters while the lowercase letters are your typical variables that you encounter in algebra/calculus that can take on any possible value
+\end{itemize}
+
+
+\section{Discrete VS Continuous Random Variables}
+
+\begin{itemize}
+    \item \bf{discrete random variables:} random variables whose set of possible values is either finite or countably finite (can only take on whole number values)
+    \item \bf{continuous random variables:} random variables whose set of values is uncountable (can take on whole value and decimal values)
+\end{itemize}
+
+
+\section{Probability Functions}
+
+\begin{definition}[Probability Mass Function (pmf)]{def4.1:label}
+    The \bf{probability mass function} is a function that describes a \it{discrete random variable} that satisfies the following properties:
+
+    \begin{enumerate}
+        \item $P(X = x) = f(x) > 0$ if $x \in S$
+        \item $\sum_{x \in S} f(x) = 1$
+        \item $P(A) = \sum_{x \in A} f(x)$ where $A \in S$
+    \end{enumerate}
+\end{definition}
+
+\begin{definition}[Cumulative Distribution]{def4.2:label}
+    If $X$ is a discrete random variable, then the function given by:
+
+    $$
+    F(x) = P(X \le x) = \sum_{t \le x} f(t)
+    $$
+
+    for $-\infty < x < \infty$ is called the \bf{cumulative distribution function (cdf)}. The cumulative distribution satisfies the following properties:
+
+    \begin{enumerate}
+        \item $F(-\infty) = 0$ and $F(\infty) = 1$
+        \item if $a < b$, then $F(a) \le F(b)$ for any real numbers $a$ and $b$
+    \end{enumerate}
+
+    \begin{itemize}
+        \item Random variables are defined in terms of functions which in turn must have distributions.
+        \item This means that we can find the mean and the standard deviation
+        \item the \it{mean} is also called the \bf{expected value} and is calculated using $\mu = E(x) = \sum xf(x)$
+        \item the \it{variance} is calculated using: $\sigma = \sum (x-\mu)^2f(x)$
+        \item you can also calculate variance using: $\sigma^2 =E(X)^2 - [E(X)]^2$
+        \item The \it{standard deviation} can be calculated using $\sigma = \sqrt{\sigma^2}$
+    \end{itemize}
+\end{definition}

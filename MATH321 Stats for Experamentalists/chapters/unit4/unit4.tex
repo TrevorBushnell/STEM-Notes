@@ -54,3 +54,92 @@
         \item The \it{standard deviation} can be calculated using $\sigma = \sqrt{\sigma^2}$
     \end{itemize}
 \end{definition}
+
+    \begin{itemize}
+        \item The above only works for discrete random variables. For continuous random variables, we can't assign nonzero probabilities to every value or else the function will not sum to 1
+        \item This means that for continuous random variables we care about the probability that the value is within a specific \it{range of values}   
+        \item A smooth curve defines the probability density function of a continuous random variable 
+    \end{itemize}
+
+\begin{definition}[Probability Density Function (pdf) for Continuous Random Variables]{def4.3:label}
+    The \bf{probability density function (pdf)} of a continuous random variable is an \it{integrable} function $f(x)$ that satisfies the following properties:
+
+    \begin{enumerate}
+        \item $f(x) > 0, x \in S$
+        \item $\int_S f(x)\:dx = 1$
+        \item If $(a,b) \subseteq S$, then the probability of the event $\{a < X < b\}$ is\\ $P(a < X < b) = \int_a^b f(x)\:dx$
+    \end{enumerate}
+
+    Some other important things to note:
+
+    \begin{itemize}
+        \item The total area under the curve should be 1
+        \item The area of an exact point is always 0 because $a=a, \int_a^a f(x)\:dx = 0$
+        \item For continuous random variables, comparison operators can be interchanged and we still get the same probability (NOTE THAT THIS IS NOT TRUE FOR DISCRETE VARIABLES)
+    \end{itemize}
+\end{definition}
+
+\begin{definition}[Cumulative Distribution Function (cdf)]{def4.4:label}
+    A \bf{cumulative distribution function (cdf)} of a random variable $X$ that is continuous is defined in terms of the pdf of $X$ and is given by:
+
+    $$
+    F(x) = P(X \le x) = \int_{-\infty^x}f(t)\:dt, -\infty < x < \infty
+    $$
+
+    where $F(-\infty) = 0, F(\infty) = 1, F(a) \le F(b)$ when $a<b$.
+\end{definition}
+
+\begin{theorem}[Relating pdf and cdf]{th4.5:label}
+    If $f(x)$ and $F(x)$ are the values of the probability density and distribution of $X$ and $x$, then:
+
+    $$
+    P(a < X < b) = F(b) - F(a)
+    $$
+
+    for any constants $a$ and $b$, and:
+
+    $$
+    f(x) = \frac{dF(x)}{dx}
+    $$
+
+    where the derivative exists.
+\end{theorem}
+
+
+\section{Percentile}
+
+\begin{itemize}
+    \item The \bf({(100$p$})th percentile) is a number $\pi_p$ such that the area under $f(x)$ to the left of $\pi_p$ is $p$.
+    \item Another way to phrase this: $P(X \le \pi_p) = \int_{-\infty}^{\pi_p}f(x)\:dx = p$
+    \item We can use this fact to find the position where this percentile occurs
+    \item Recall that Q1 is 25\% percentile, Q3 is 75\% percentile, median is 50\% percentile 
+\end{itemize}
+
+\section{Expected Value and Variance of Continuous Random Variables}
+
+If $X$ is a continuous random variable, then:\\
+
+Expected Value:
+
+$$
+    \mu = E(X) = \int_{-\infty}^ x\:f(x)\:dx
+$$
+
+Variance:
+$$
+    \sigma^2 = Var(X) = E[(X - \mu)^2] = E[(X - E(X))^2] = E[X^2] - (E[X])^2
+$$
+
+
+\section{Properties of Mean and Variance}
+
+For any discrete or continuous random variable $X$ and constants $a$ and $b$, then\dots
+
+$$
+    \begin{aligned}
+        E[aX + b] &= aE[x]+b\\
+        Var(aX+b) &= a^2\:Var(X)
+    \end{aligned}
+$$
+
+Similarly, since $E[X] = \mu$ and $Var(X) = \sigma^2$, then for any z-score $z = \frac{X-\mu}{\sigma}$, then $E[z] = 0$ and $Var(z) = 1$.

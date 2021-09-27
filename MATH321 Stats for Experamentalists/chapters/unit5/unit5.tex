@@ -1,0 +1,37 @@
+\section{Introduction}
+
+\begin{itemize}
+    \item Discrete random variables take on only a finite or countable infinite number of values
+    \item There are three discrete probability distributions which will serve as modes for a large number of stats models/applications, which are as follows:
+    \begin{enumerate}
+        \item \bf{binomial} distribution
+        \item \bf{poisson} distribution
+        \item \bf{hypergeometric} distribution
+    \end{enumerate}
+\end{itemize}
+
+\section{Binomial Distribution}
+
+\begin{itemize}
+    \item Bernoulli trial is an experiment with only two possible outcomes (success and failure)
+    \item These have probabilities $p$ and $1-p$
+    \item A coin tossing experiment is an example that uses this distribution 
+\end{itemize}
+
+\subsection{The Binomial Experiment}
+
+\begin{enumerate}
+    \item Consists of $n$ identical trials
+    \item Each trial has one of two outcomes, success or failure
+    \item The probability for each trial remains constant
+    \item the trials are independent
+    \item We are interested in $X$, the number of successes in $n$ trials
+\end{enumerate}\newpage
+
+\begin{definition}[The Binomial Prbability Distribution]{def5.1:label}
+    For a binomial experiment that has $n$ trials and probability $p$ of a success, then the probability of $k$ successes in $n$ trials is:
+
+    $$
+    P(X = k) = \binom{n}{k}p^kq^{n-k} \text{ for } 0 \le k \le n
+    $$
+\end{definition}

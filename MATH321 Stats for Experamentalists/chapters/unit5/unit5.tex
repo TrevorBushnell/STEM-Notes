@@ -35,3 +35,70 @@
     P(X = k) = \binom{n}{k}p^kq^{n-k} \text{ for } 0 \le k \le n
     $$
 \end{definition}
+
+Here are some formulas for the basic stats of the Binomial Bistribution:
+
+\begin{itemize}
+    \item \bf{MEAN (Expected Value):} $\mu = np$
+    \item \bf{VARIANCE:} $\sigma^2 = npq$
+    \item \bf{STD. DEV.:} $\sigma = \sqrt{npq}$
+\end{itemize}
+
+
+\section{Poisson Random Variable}
+
+The Poisson random variable is a probability distribution which represents the total number of occurrences of a specified event in a given unit of time/space.
+
+Some examples of a Poisson distribution:
+
+\begin{itemize}
+    \item \# of calls received by a switchboard during a given period of time
+    \item \# of machine breakdowns in a day
+    \item \# of traffic intersection accidencts during a specific time interval
+\end{itemize}
+
+\begin{definition}[The Poisson Probability Distribution]{def5.3:label}
+    If $X$ is the number of events that occur in a given space/time and $\mu$ is the average number of events that can be expected to occur, then:
+
+    $$
+    P(X = k) = \frac{\mu^ke^{-\mu}}{k!}
+    $$
+\end{definition}
+
+Here are some formulas for the basic stats of the Binomial Bistribution:
+
+\begin{itemize}
+    \item \bf{MEAN (Expected Value):} $\mu$
+    \item \bf{VARIANCE:} $\sigma^2 = \mu$
+    \item \bf{STD. DEV.:} $\sigma = \sqrt{\mu}$
+\end{itemize}
+
+
+\section{Hypergeometric Distribution}
+
+\subsection{The Process/Idea}
+
+\begin{enumerate}
+    \item Consists of $n$ trials
+    \item Each trial is either a \it{success} or \it{failure}
+    \item The probability of success is not the same on each trial, $\therefore$ the events are \bf{dependent}
+\end{enumerate}
+
+
+\begin{definition}[The Hypergeometric Distribution]{def5.4:label}
+    If we have $M$ objects and $N-M$ of some other object. If we select $n$ objects and record the number of objects that are of type $M$ (quantify this as $k$), then:
+
+    $$
+    P(X = k) = \frac{\binom{M}{k}\binom{N-M}{n-k}}{\binom{N}{n}}
+    $$
+\end{definition}
+
+Here are some formulas for the basic stats of the Binomial Bistribution:
+
+\begin{itemize}
+    \item \bf{MEAN (Expected Value):} $\mu = n \left(\frac{M}{N}\right)$
+    \item \bf{VARIANCE:} $\sigma^2 = n\left(\frac{M}{N}\right)\left(\frac{N-M}{N}\right)\left(\frac{N-n}{N-1}\right)$
+    \item \bf{STD. DEV.:} $\sigma = \sqrt{n\left(\frac{M}{N}\right)\left(\frac{N-M}{N}\right)\left(\frac{N-n}{N-1}\right)}$
+\end{itemize}
+
+\bf{NOTE: Hypergeoemtric is for \it{dependent} events and Binomial is for \it{independent} events}

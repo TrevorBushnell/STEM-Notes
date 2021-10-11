@@ -11,3 +11,53 @@
 
 
 \section{Exponential Probability Distribution}
+
+
+
+
+\section{Normal Probability Distribution}
+
+Lots of random variables in the real world follow a sort of mound-shaped distribution, which we call a \bf{normal probability distribution}. 
+
+\begin{definition}[The Normal Probability Distribution]{def5.a:label}
+    The \bf{Normal probability distribution} follows the following pdf:
+
+    $$
+    f(x) = \frac{1}{\sigma\sqrt{2\pi}}e^{\frac{-(x-\mu)^2}{2\sigma^2}}, \:\: -\infty < x < \infty
+    $$
+
+    Where $\pi, e$ are the traditional mathematical constants, $\mu$ is the population mean and $\sigma$ is the population standard deviation.
+\end{definition}
+
+\begin{itemize}
+    \item In a Normal distribution, $\mu$ is the center of the graph and $\sigma$ determines the shape of the graph (smaller $\sigma$ means a more narrow mound-shaped graph, while a larger $\sigma$ means a more spread out/flatter mound-shaped graph)
+    \item The distribution is \it{symmetric} about $\mu$ which means half the area is below $\mu$ and half the area is above $\mu$. 
+\end{itemize}
+
+
+\section{Standard Normal Random Variable}
+
+We can \bf{standardize} a value $x$ as the number of standard deviations $\sigma$ it lies from the mean $\mu$. \\
+
+The \bf{standardized Normal random variable} $z$ is defined as:
+
+$$
+    \begin{aligned}
+        z &= \frac{x-\mu}{\sigma}\\
+        x &= \mu + z\sigma
+    \end{aligned}
+$$
+
+This is the same as the z-score used earlier in the course to determine outliers. We can notice the following patterns
+
+\begin{itemize}
+    \item If $x < \mu$, then $z < 0$
+    \item If $x > \mu$, then $z < 0$
+    \item If $x = \mu$, then $z=0$
+\end{itemize}
+
+The area under the standard normal curve to the left of a specific value of $z$ - say $b$ - is the probability $P(z \le b)$.\\
+
+Likewise, the area under the standard normal curve to the right of a specific value of $z$ - say $b$ - is the probability $P(z \ge b) = 1 - P(z < b)$\\
+
+Finally, the area between two possible values of $z$ - say $a$ and $b$ - is probability $P(a \le z \le b) = P(z \le b) - P(z \le a)$

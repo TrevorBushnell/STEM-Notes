@@ -60,4 +60,37 @@ The area under the standard normal curve to the left of a specific value of $z$ 
 
 Likewise, the area under the standard normal curve to the right of a specific value of $z$ - say $b$ - is the probability $P(z \ge b) = 1 - P(z < b)$\\
 
-Finally, the area between two possible values of $z$ - say $a$ and $b$ - is probability $P(a \le z \le b) = P(z \le b) - P(z \le a)$
+Finally, the area between two possible values of $z$ - say $a$ and $b$ - is probability $P(a \le z \le b) = P(z \le b) - P(z \le a)$\\
+
+You can use Table 3 in the Appendix of these notes to find these probability values (you can also use your calculator to compute these values).
+
+
+\section{The Normal Approximation to the Binomial Probability Distribution}
+
+You can approximate binomial distributions with a Normal distribution where the mean of your Normal distribution would be the mean of the binomial distribution ($\mu = np$) and the standard deviation of the Normal distribution would be the standard deviation of the binomial distribution ($\sigma = \sqrt{npq}$). This approximation will be adequate \bf{as long as $n$ is sufficiently large and $p$ is not very close to 0 or 1}.\\
+
+You might recall that the area under the bars in a binomial histogram is the same as $P(X=a)$. Because of this, we can approximate this area using the area under the Normal curve over the same region (because we are approximating our binomial distribution with a Normal distribution).\\
+
+The Normal approximation works well when the binomial distribution is roughly symmetric. This will happen when we can spread out at least two standard deviations without exceeding the limits $0$ and $n$. As such, we can check that \bf{the Normal approximation will be adequate if $np > 5$ and $nq > 5$}.
+
+\newpage
+\begin{definition}[How to Calculate Binomial Probabilities Using Normal Approximations]{def5.b:label}
+    \begin{enumerate}
+        \item Find the values of $n$ and $p$
+        \item Calculate $\mu = np$ and $\sigma = \sqrt{npq}$
+        \item Write out the probability you need in terms of $x$ to find the area under the curve
+        \item Correct the value of $x$ by $\pm 0.5$ to include the continuity correction
+        \item Convert the $x$ values to $z$ values using $\frac{x \pm 0.5 - np}{\sqrt{npq}}$
+        \item Use Table 3 to calculate the approximate probability
+    \end{enumerate}
+
+    You can use these following continuity corrections:
+
+    $$
+    \begin{aligned}
+        a \le x \le b &\implies (a-0.5) \le x \le (b+0.5)\\
+        x = a & \implies a-0.5 \le x \le a + 0.5
+    \end{aligned}
+    $$
+\end{definition}
+

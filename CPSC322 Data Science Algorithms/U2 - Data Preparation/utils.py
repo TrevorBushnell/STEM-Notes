@@ -1,3 +1,5 @@
+import numpy as np
+
 def get_column(table, header, col_name):
     col_index = header.index(col_name)
     col = []
@@ -40,3 +42,25 @@ def groupby(table, header, groupby_col_name):
         group_subtables[groupby_val_subtable_index].append(row.copy())
 
     return group_names, group_subtables
+
+def compute_equal_width_cutoffs(values, num_bins):
+    values_range = max(values) - min(values)
+    bin_width = values_range / num_bins # this is a float!
+    # since bin_width is a float, we should use np.arange() instead
+    cutoffs = list(np.arange(min(values), max(values), bin_width))
+    cutoffs.append(max(values)) # this eliminates the propagation of round-off error
+    # if app allows, we should convert to int or optionally round them
+    cutoffs = [round(cutoff, 2) for cutoff in cutoffs]
+    return cutoffs
+
+def compute_bin_frequencies(values, cutoffs):
+    freqs = [0 for _ in range(len(cutoffs) - 1)] # because N+1 cutoffs
+
+    for value in values:
+        if value == max(values):
+            freqs[-1] += 1 # add 1 to the last bin count
+        else:
+            for i in range(len(cutoffs) - 1):
+                if cutoffs[i] <= value < cutoffs[i + 1]:
+                    freqs[i] += i # add 1 to this bin defined by [cutoffs[i], cutoffs[i+1])
+    return freqs

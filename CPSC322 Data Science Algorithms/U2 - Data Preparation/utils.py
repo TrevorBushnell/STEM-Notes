@@ -64,3 +64,15 @@ def compute_bin_frequencies(values, cutoffs):
                 if cutoffs[i] <= value < cutoffs[i + 1]:
                     freqs[i] += i # add 1 to this bin defined by [cutoffs[i], cutoffs[i+1])
     return freqs
+
+def compute_linear_regression(x, y):
+    mean_x = np.mean(x)
+    mean_y = np.mean(y)
+
+    num = sum([(x[i] - mean_x) * (y[i] - mean_y) for i in range(len(x))])
+    den = sum([(x[i] - mean_x)**2 for i in range(len(x))])
+    m = num / den
+
+    b = mean_y - m * mean_x
+
+    return m, b

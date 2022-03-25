@@ -1,0 +1,6 @@
+graph g {
+    level [shape=box];
+    phd[shape=box];
+    level -- phd [label="Junior"]
+    // task: finish the tree!!!!
+}

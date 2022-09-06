@@ -10,6 +10,11 @@
 - [CPSC321: Database Management Systems](#cpsc321-database-management-systems)
   - [Basic Concepts](#basic-concepts)
   - [Relational Model](#relational-model)
+    - [Relations](#relations)
+    - [Arity VS Cardinality](#arity-vs-cardinality)
+    - [Attribute Domains](#attribute-domains)
+    - [Attribute Keys](#attribute-keys)
+    - [More on Keys](#more-on-keys)
   - [SQL: Data Definition](#sql-data-definition)
   - [SQL: Data Manipulation](#sql-data-manipulation)
   - [SQL: Basic Queries](#sql-basic-queries)
@@ -62,6 +67,69 @@
 
 ## Relational Model
 
+### Relations
+
+* In the relational model, a database is simply a set of various **relations**, where a relation is simply a table with data in it
+* An example relation:
+
+**VehicleType**
+|`vt_id`|`make`|`model`|
+|-|-|-|
+|1|Segway|Ninebot|
+|2|Lime-S|Gen4|
+
+
+* A relation's **schema** includes the following information:
+  * The *name* of the relation
+  * The set of named *attributes/columns*
+  * Data types and contraints - also called the *domain*
+* We often write a relation's schema like $R(a_1, a_2, ..., a_n)$
+  * ex: `VehicleType(vt_id, make, model)`
+* A relation's **instance** is the data that makes up the table - a set of tuples/rows/records (many instances may be possible for a given schema)
+* A **database schema** is the set of relation schemas of the database
+* A **database instance** is the set of relation instances of the database
+
+### Arity VS Cardinality
+
+RECALL THE TABLE FROM THE PREVIOUS SECTION
+
+* **arity** (degree): the number of attributes/columns (for `VehicleType` its 3)
+* **cardinality**: the number of instances/rows/tuples (for `VehicleType` its 2)
+
+
+### Attribute Domains
+
+* A **domain** is both the storage type of the attribute and the set of allowable values of an attribute (constraint)
+* We assume that domains are *atomic*
+  * vs collection based
+  * non-atomic attribute: vehicles attribute with vehicle ids of the type
+  * typical domain data types are int, double, string, date, etc.
+  * domains can also restrict allowable values (e.g. ages from 0 to 110)
+* `NULL` values in the database are special...
+  * usually denotes that a value is unknown or does not exist
+  * e.g. some vehicle types might not have an "alternative_name" value
+
+
+### Attribute Keys
+
+* A **key** is an attribute (or set of attributes) with unique values
+  * Each row in the table MUST have a unique key value (cannot be NULL)
+  * We typically <u>underline</u> the key attribute(s)
+  * You can have more than one attribute work together to be the key
+    * these *composite keys* of sorts are written in parentheses
+
+
+
+### More on Keys
+
+* Relations can have more than one set of key attributes, where each possible keys are a candidate
+* Designing an attribute(s) as a key is a type of (operational) constraint
+  * DBMS will not allow duplicate row values to be inserted
+  * we say the DBMS *enforces* a (designated) key constraint
+* A **primary key** is the designated key the DBMS enforces
+  * DBMSs typically enforce only the *primary* key (chosen by the designer)
+  * if multiple candidate keys, only one selected as primary
+  * primary keys also imply a certain physical representation (more later)
 
 
 ## SQL: Data Definition

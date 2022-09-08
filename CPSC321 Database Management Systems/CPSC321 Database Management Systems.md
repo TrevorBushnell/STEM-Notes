@@ -15,6 +15,9 @@
     - [Attribute Domains](#attribute-domains)
     - [Attribute Keys](#attribute-keys)
     - [More on Keys](#more-on-keys)
+    - [Foreign Keys](#foreign-keys)
+    - [Primary and Foreign Keys in Relational Design](#primary-and-foreign-keys-in-relational-design)
+    - [Surrogate Keys](#surrogate-keys)
   - [SQL: Data Definition](#sql-data-definition)
   - [SQL: Data Manipulation](#sql-data-manipulation)
   - [SQL: Basic Queries](#sql-basic-queries)
@@ -130,6 +133,47 @@ RECALL THE TABLE FROM THE PREVIOUS SECTION
   * DBMSs typically enforce only the *primary* key (chosen by the designer)
   * if multiple candidate keys, only one selected as primary
   * primary keys also imply a certain physical representation (more later)
+
+
+### Foreign Keys
+
+* **forgeign keys** state that a column's value must come from a key in another table
+  * Ex: if we have a `Vehicle` table, that vehicle table should have the `vt_id` be a forgein key because we don't want to have the id representing a vehicle type that we have not seen before
+* enforcing foreign key contraints helps maintain *referential identity*
+* A foreign key must reference *the entire* primary key
+  * they also must have compatible data types/domains
+* a foreign key must contain either `NULL` or a value of the reference primary key
+* The DBMS enforces foreign key constraints
+
+
+### Primary and Foreign Keys in Relational Design
+
+* Primary and foreign key constraints provide many modeling options for databases
+  * AllowedPlan(<u>vt_id, p_id</u>)
+    * a Vehicle Type can have multiple allowed Pricing Plans
+    * a Pricing Plan is allowed for different vehicle types
+  * AllowedPlan(<u>vt_id</u>, p_id)
+    * a Vehicle Type has at most one allowed Pricing Plan
+    * a Pricing Plan is allowed for different Vehicle Types
+  * AllowedPlan(vt_id, <u>p_id</u>)
+    * a Vehicle Type can have many different allowed Pricing Plans
+    * any particular Pricing Plan is the allowed plan for at most one Vehicle Type
+
+> Domains, PKs, and FKs are examples of *integrity constraints*
+
+
+### Surrogate Keys
+
+* "Naturally occurring" primary keys
+  * many tables have attributes that make for "natural" keys (like student id)
+  * sometimes, only candidate key is a composite key, but these are not good/ideal for foreign keys (e.g. storage space)
+* "Artificial keys" are not "naturally occurring" keys
+  * added in place of composite keys or if no candidate keys exist
+  * a **surrogate key** is an artificial key with DBMS-generated values
+* When to use surrogate keys
+  * no natural primary key but need to reference rows
+  * "shorten" composite keys
+    * can cause uniqueness/consistency issues
 
 
 ## SQL: Data Definition

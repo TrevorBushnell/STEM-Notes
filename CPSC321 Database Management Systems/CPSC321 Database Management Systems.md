@@ -19,6 +19,7 @@
     - [Primary and Foreign Keys in Relational Design](#primary-and-foreign-keys-in-relational-design)
     - [Surrogate Keys](#surrogate-keys)
   - [SQL: Data Definition](#sql-data-definition)
+    - [Data Types](#data-types)
   - [SQL: Data Manipulation](#sql-data-manipulation)
   - [SQL: Basic Queries](#sql-basic-queries)
   - [Dynamic SQL](#dynamic-sql)
@@ -178,9 +179,101 @@ RECALL THE TABLE FROM THE PREVIOUS SECTION
 
 ## SQL: Data Definition
 
+### Data Types
 
+* Integers
+  * INT
+  * MEDIUMINT
+  * SMALLINT
+  * TINYINT
+  * BIGINT
+  * can add UNSIGNED
+* Reals
+  * FLOAT
+  * DOUBLE
+  * DECIMAL(M,D)
+* Bools and Bit Vectors
+  * BOOLEAN
+  * BIT(M)
+* Strings
+  * CHAR(N)
+  * VARCHAR(N)
+  * ENUM
+  * BLOB
+  * TEXT
+  * TINYTEXT
+* Date & Time Types
+  * YEAR 'YYYY'
+  * DATE 'YYYY:MM:DD'
+  * TIME 'HH:MM:SS'
+  * DATETIME 'YYYY:MM:DD HH:MM:SS'
 
 ## SQL: Data Manipulation
+
+We are going to work with this relation:
+
+* branch(<u>branch_name</u>, address, phone)
+* account(<u>acct_id</u>, acct_num, main_branch (FK))
+* loan(<u>acct_id, barcode, checkout_date</u>, due_date, return_date)
+
+Let's create a table for the branch:
+
+```sql
+CREATE TABLE branch (
+  branch_name VARCHAR(50), -- could say NOT NULL but implied cause PK
+  address TINYTEXT NOT NULL,
+  phone CAR(12),
+  PRIMARY KEY (branch_name)
+  UNIQUE (address)
+);
+```
+
+Now let's create a table for the account, but this is going to have  a foreign key constraint. The syntax for a foreign key contraint is:
+
+`FOREIGN KEY (a1, a2, ...) REFERENCES table (a1, a2, ...)`
+
+```sql
+CREATE TABLE account (
+  acct_id INT UNSIGNED, -- NOT NULL also redundant here
+  acct_name TINYTEXT NOT NULL,
+  main_branch VARCHAR(50) NOT NULL,
+  PRIMARY KEY (acct_id),
+  FOREIGN KEY (main_branch) REFERENCES branch (branch_name)
+);
+```
+
+```sql
+create TABLE pet (
+  pet_id INT UNSIGNED AUTO_INCREMENT,
+  pet_name TINYTEXT NOT NULL,
+  pet_type INTY TEXT NOT NULL DEFAULT 'dog',
+  PRIMARY KEY (pet_id)
+);
+
+INSERT INTO pet (pet_name) VALUES ('Fido'); -- inserts (1, 'Fido', dog)
+INSERT INTO pet (pet_name, pet_type) VALUES ('bill', 'cat') -- auto-increment knows largest value and increments every insert
+```
+
+* Remove all rows with `DELETE FROM account`
+* Remove a single row with `DELETE FROM account WHERE acct_id=101`
+* `DELETE FROM account WHERE main_branch='central'`
+* `UPDATE account SET main_branch='hillyard' WHERE acc_id=102`
+
+
+```sql
+CREATE TABLE loan (
+  acct_id INT UNSIGNED,
+  barcode INT UNSIGNED,
+  checkout_date DATE,
+  due_date DATE NOT NULL,
+  return_date DATE,
+  PRIMARY KEY (acct_id, barcode, checkout_date),
+  FOREIGN KEY (acct_id) REFERENCES account (acct_id),
+  CONSTRAINT valid_due_date CHECK (checkout_date < due_date),
+  CONSTRAINT valid_return_date CHECK (return_date >= checkout_date),
+  CONSTRAINT valid_barcode CHECK (barcode >= 1000 AND barcode <= 1000000)
+);
+```
 
 
 

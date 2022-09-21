@@ -22,6 +22,7 @@
     - [Data Types](#data-types)
   - [SQL: Data Manipulation](#sql-data-manipulation)
   - [SQL: Basic Queries](#sql-basic-queries)
+    - [`SELECT` Statements](#select-statements)
   - [Dynamic SQL](#dynamic-sql)
   - [Logical Design](#logical-design)
   - [ER Modeling](#er-modeling)
@@ -279,6 +280,85 @@ CREATE TABLE loan (
 
 ## SQL: Basic Queries
 
+We will be querying data in this section from the following table:
+
+**Loan**
+|`acct_id`|`barcode`|`checkout_date`|`due_date`|`return_date`|
+|-|-|-|-|-|
+|101|4242|8/12|8/28|8/26|
+|101|4243|8/12|8/19|NULL|
+|102|4242|8/25|9/7|8/29|
+|101|4243|7/10|7/17|7/18|
+
+
+> NOTE: We will only talk about `SELECT` statements here
+
+### `SELECT` Statements
+
+* each query `Q` can be defined over one or more tables
+* the result of each query `Q` is always an "output" table that *can* have duplicates
+  * thus, queries can be viewed as functions
+
+Example: Find barcodes of books loaned to account 101
+```sql
+SELECT barcode FROM Loan WHERE acct_id = 101
+```
+
+Output:
+|`barcode`|
+|-|
+|4242|
+|4243|
+|4243|
+
+* `SELECT`: Choose what attribute(s) you want to query
+* `FROM`: The table(s) that you are querying from
+* `WHERE`: boolean condition on input rows for filtering the data
+  * `AND`, `OR`, `NOT` can be logical connectors
+  * relational comparators: `=`, `<`, `>`, `<=`, `>=`, `!=` or `<>`
+  * `BETWEEN` to see if there is a value sandwiched inside values
+  * `IS NULL` and `IS NOT NULL`
+
+Example: Find due dates of copies of book 4243 checked out by account 101
+
+```sql
+SELECT due_date FROM Loan WHERE barcode = 4243 AND acct_id = 101
+```
+
+Output:
+|`due_date`|
+|-|
+|8/19|
+|7/17|
+
+Example: Find barcodes loaned to account 101 that are either still checked out or were returned after the due date.
+
+```sql
+SELECT barcode FROM Loan WHERE acct_id = 101 AND (return_date IS NULL OR return_date > due_date)
+```
+
+Output:
+|barcode|
+|-|
+|4243|
+|4243|
+
+> NOTE: If you do a SELECT-WHERE-FROM query and there is no data that satisfies the query, then you get an *empty set* returned, which is just a table with no rows
+
+* You can also do select statements where you return multiple attributes
+  * Be careful because the order here MATTERS - whatever attribute you list first will be the first column in the resulting output table
+* You can eliminate duplicates using the `DISTINCT` keyword
+* you can us the `ORDER BY` keyword to sort the output table by a given attribute(s)
+  * add `ASC` for ascending - default
+  * add `DESC` for descending
+
+Example:
+```sql
+SELECT acct_id, barcode, due_date
+  FROM Loan
+  WHERE acct_id = 101
+  ORDER BY due_date ASC
+```
 
 
 ## Dynamic SQL

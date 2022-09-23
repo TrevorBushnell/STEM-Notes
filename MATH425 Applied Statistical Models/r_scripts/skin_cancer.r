@@ -1,14 +1,14 @@
 # load the dataset
 data = read.table('/home/tbushnell/GitHub/STEM-Notes/MATH425 Applied Statistical Models/data_files/skin_cancer_data.txt', header=T)
-x = data$Lat
-y = data$Mort
+# x = data$Lat
+# y = data$Mort
 
 # fit a simple linear regression
-data_reg = lm(x ~ y)
+data_reg = lm(data$Lat ~ data$Mort)
 summary(data_reg)
 
 # display scatterplot of the data w/ abline
-plot(x, y, xlab='Latitude', ylab='Mort', main='Latitude VS Mort')
+plot(data$Lat, data$Mort, xlab='Latitude', ylab='Mort', main='Latitude VS Mort')
 abline(data_reg)
 
 # display residual plot with fitted values

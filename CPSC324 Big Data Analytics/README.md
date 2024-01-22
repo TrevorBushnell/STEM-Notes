@@ -42,9 +42,12 @@
   * EX: using the model, delay requests to reduce demand on local grid energy
   * something similar done in Google data centers
 
-#### What Does Big Data Mean?
+## Data Architecture
+
+### What Does Big Data Mean?
 
 * **big data:** implies a relative measure of the data storage and processing
+  * implies that we can't do the "normal" approach and rather need to do something drastically different
 * WAYS THAT DATA CAN BE BIG
   * Volume: overall amount
   * Variety: different types/formats of data
@@ -52,7 +55,26 @@
 * CHARACTERISTICS OF BIG DATA
   * Value: data is useful to help your goals
   * Veracity: quality/correctness of the data
+* In this class, we will cover high-level data platform architectures and then drill down a bit to see components/tasks
 
-## Data Architecture
+### Data Platform Architectures
 
-* 
+**TRADITIONAL DATA WAREHOUSE ARCHITECTURE:**
+
+![traditional data warehouse architecture](./images/2.1.png)
+
+  * mostly for structured data sources
+  * ETL takes considerable effort
+  * systems mainly used on-premise servers
+  * scalability becomes tricky and expensive (partitioning, load-balancing, etc.)
+  * many DMBSs 20+ years ago not designed for large "scale-out"
+
+**CURRENT TWO-TIER DATA ARCHITECTURES:**
+
+![CURRENT TWO-TIER DATA ARCHITECTURES](./images/2.2.png)
+
+* supports data variety through file-based data storage (*data lake*)
+* decouples ETL transform step from extract and load
+* better supports wider range of analytical processing
+* assumes scale-out performance, decouple storage and compute
+* according to [Armbrust], widely used including Fortune 500 companies

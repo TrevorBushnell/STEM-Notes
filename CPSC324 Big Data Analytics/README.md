@@ -1,5 +1,25 @@
 # CPSC324: Big Data Analytics
 
+## How to Read Research Papers
+
+1. **READING FOR A PURPOSE**
+  * for us to understand basic idea, approach, assumptions, trade-offs
+2. **READ IN MULTIPLE PASSES** (easier to understand)
+  * First: title, section titles, figures/captions/tables
+  * Second: Abstrat (mini-paper)
+    * problem, why important, solutions/approach, results
+    * focus on approach and results
+  * Third: Full read
+    * active w/ notes (use style that you prefer)
+    * often in phases
+      * into up to (not including) evaluation
+      * checkpoint
+      * eval to conclusion
+3. **PUSH THROUGH TOUGH/CONFUSING PARTS**
+  * good skill: hold content w/o understanding
+    * usually that content will become clearer at a later time
+
+
 ## Course Introduction
 
 > **Goal #1:** Cover underlying ideas of "modern" data & analytics systems
@@ -64,10 +84,13 @@
 ![traditional data warehouse architecture](./images/2.1.png)
 
   * mostly for structured data sources
-  * ETL takes considerable effort
+  * ETL (Extrat, Transform, Load) takes considerable effort (DUDE, IT'S HARD)
   * systems mainly used on-premise servers
   * scalability becomes tricky and expensive (partitioning, load-balancing, etc.)
   * many DMBSs 20+ years ago not designed for large "scale-out"
+    * typically these designs were meant to be scsaled vertically NOT horizontally
+  * harder to use with data increases (type) & uses (ML...)
+    * you would need a different architecture for real-time/streaming data
 
 **CURRENT TWO-TIER DATA ARCHITECTURES:**
 
@@ -77,4 +100,9 @@
 * decouples ETL transform step from extract and load
 * better supports wider range of analytical processing
 * assumes scale-out performance, decouple storage and compute
+* everything is stored on the cloud, which completely takes advantage of the ability to scale-out
 * according to [Armbrust], widely used including Fortune 500 companies
+
+### An Outline of this Class and Google's Architecture
+
+![GOOGLE'S DATA ARCHITECTURE](./images/3.1.png)

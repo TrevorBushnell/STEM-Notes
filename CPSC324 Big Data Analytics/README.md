@@ -41,3 +41,18 @@
 * *proscriptive analytics:* use predictive models to take action or make decisions
   * EX: using the model, delay requests to reduce demand on local grid energy
   * something similar done in Google data centers
+
+#### What Does Big Data Mean?
+
+* **big data:** implies a relative measure of the data storage and processing
+* WAYS THAT DATA CAN BE BIG
+  * Volume: overall amount
+  * Variety: different types/formats of data
+  * Velocity: amount generated... streaming/real-time related
+* CHARACTERISTICS OF BIG DATA
+  * Value: data is useful to help your goals
+  * Veracity: quality/correctness of the data
+
+## Data Architecture
+
+* 

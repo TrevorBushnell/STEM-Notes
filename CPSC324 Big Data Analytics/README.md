@@ -77,7 +77,8 @@
   * Veracity: quality/correctness of the data
 * In this class, we will cover high-level data platform architectures and then drill down a bit to see components/tasks
 
-### Data Platform Architectures
+### Data Platform Architecturesxit
+
 
 **TRADITIONAL DATA WAREHOUSE ARCHITECTURE:**
 
@@ -106,3 +107,61 @@
 ### An Outline of this Class and Google's Architecture
 
 ![GOOGLE'S DATA ARCHITECTURE](./images/3.1.png)
+
+* Google Cloud Platform: similar to the data lake, just general file storage for throwing data into
+* Google Big Query: the data warehouse - where all the data is formalized and cleaned to be stored and queried by other data professionals
+* ETL VS ELT
+  * ETL: Extract, Transform, Load: data is transformed before it is saved anywhere
+  * ELT: Extract, Load, Transform: data is loaded into the data lake as is, then when people want the data they come back to translate the data
+* data lake: there to just batch store data, especially useful for data that is being streamed continuously over time
+
+
+## Machines, Networks, Properties
+
+### Machines
+
+* **machine abstraction:** computers as (simplified) devices containing:
+  * 1+ processors (CPU)
+  * RAM
+  * disk storage as HDD or SSD
+  * network connection
+* **server:** generally software that provides a service to clients
+  * often used interchangeably with machine running server software
+* **commodity-class:** lower-cost machines, standard "off-the-shelf" components
+* **server-class:** higher-cost machines, high speed/high-capacity components
+
+### More on Memory
+
+* **memory hierarchy:** from small-fast to large-slow
+  * registers: within CPU, smallest and fastest
+  * L1, L2, L3 Cache: within CPU, increasing size/decreasing speed
+  * RAM: on motherboard, much larger in size
+  * Flash: non-volatile, storage medium, e.g. on the motherboard
+  * Disk: non-volatile, storage device, SSD then HDD, often "removable"
+* cache memory helps reduce time from RAM to registers
+  * fetches contiguous block of memory into L1, L2, L3
+  * if CPU needs data not in cache, results in a **cache miss**
+  * exploits the notion of **data locality** (e.g. think array access)
+
+### Many Machines
+
+* **server rack:** physical rack holding multiple computers/devices
+  * devices in rack-mountable cases
+  * slot heigh in rack unit $\mu=1.75$ inches
+* **network packets:** consist of data (payload) and destination
+* **hub, switch, router:** for moving packets
+  * hub: forwards packets to all machines connected
+  * switch: forwards packets to appropriate machine
+  * router: directs traffic between networks
+* **network topology:** structure of connections, e.g. tree-like and mesh
+* **data center:** collection of racks, devices connected forming networks
+  * can be separate space in a building, an entire building, or many buildings
+* **google data centers:** 14 in US, 6 in Europe, 3 in Asia, 1 in Chile
+  * 10s of machines per rack, stacked in rows, 1 or more rows form a *cluster*
+  * a cluster contains 10k+ machines (aka cluster *nodes*)
+  * building holds multiple clusters, campus (site) has multiple buildings
+* **load balancer: distributes network traffic to balance resource use**
+  * for replicated resources (e.. same services running over many machines)
+  * a separate device or software (server) that dynamically routes to a replica
+* **remote procedure call (RPC):** a program "calls" procedure on another node
+  * protocol handles details, including data passing (serlialization)

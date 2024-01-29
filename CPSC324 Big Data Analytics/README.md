@@ -164,4 +164,63 @@
   * for replicated resources (e.. same services running over many machines)
   * a separate device or software (server) that dynamically routes to a replica
 * **remote procedure call (RPC):** a program "calls" procedure on another node
-  * protocol handles details, including data passing (serlialization)
+  * protocol handles details, including data passing (serlialization)exit
+  
+
+## GCP Basics and System Properties
+
+* To use the coupons you need to log in with your Zagmail account and choose the *Google Workspace Account* option
+  * you know it worked if you get re-directed to SSO
+
+### Main Ways to Interact with GCP Services
+
+1. **cloud console:** a GUI that lets you click and select all the options that you want
+2. **CLI:** from your local machine or through the *cloud shell*
+  * cloud shell lets you open a shell in the browser with everything installed for you
+3. **programmatically via the SDK:** we will use the Python one but there are many languages that are supported with this
+4. **Cloud REST APIs:** not the best way to interact, we will not learn how to use this tool in this class
+
+### GCP Regions & Zones
+
+* manyl cloud platforms have geolocation information that is important when managing your cloud computing
+* a **region** is a geoprahic area consisting of 3 more more zones
+  * our closest region is `us-west-1` (the Orgeon region)
+* a **zone** is hosted in one more more *clusters* (in a data center) but these zones move around and depend on your organization
+  * zones are considered *single-failure-domain* because there is a chance that zones can fail
+
+### Data Sizes
+
+* **byte:** 8 bits
+* **kilobyte (kB):** 1000 bytes
+  * kilo = $10^3$ (so 1000 in base10)
+  * kibi = $2^10$ (1024 base2)
+  * when dealing with memory it is with kibi, but when talking about volumes of data we mean traditional SI units 
+* **megabyte (MB):** 1000 kB
+  * 1MB = 1,000,000 bytes
+  * mebibyte - base 2 notion
+* **gigabyte (GB):** 1000 MB
+  * 1GB = 1,000,000,000 bytes
+  * gibibyte - base 2 notion
+* **terabyte (TB):** 1000 GB
+* **petabyte (PB):** 1000 TB
+* **exabyte (EB):** 1000 PB
+* **zetabyte (ZB):** 1000 EB
+
+### GCP Compute Engine
+
+* Provide *"on-demand"* VMs
+  * on-demand: always available and you pay $ when the VM is on
+    * this is called *provisioning*
+
+#### Classes of Google VMs
+
+* E2: 2 & 32 vCPUs
+  * each vCPU has 4 GiB of RAM
+  * no local storage
+  * costs roughly $2\cent$ per vCPU per hour
+  * costs roughly $0.003\cent$ per GiB RAM per hour
+* N2: 2 to 128 vCPUs
+  * each vCPU has 4 GiB of RAM
+  * has local SSD option
+  * costs roughly $3\cent$ per vCPU her hour
+  * costs roughly $0.004\cent$ per GIB RAM per hour

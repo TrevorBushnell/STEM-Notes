@@ -344,21 +344,27 @@
 * installs all the dependencies
 * monitors task health (is the task still running? did the task fail? etc.?)
 * restart the job upon failure
+* (...also implicitly runs the task)
 
 #### Borg Design
 
 ![Diagram of Borg Structure](./images/8.1.png)
 
-* Borgmaster: centralized control
+* Borgmaster: centralized controller
     * each cell has a borgmaster (5 replicas)
     * handles client requests
     * each replica stores state info of the cell
     * one leader (elected)
-
-
-
-
-
-
-
-
+    * accepts job requests where new jobs are added to a *pending queue* (tasks)
+* Scheduler: asynchronously scans pending queue
+    * determines how to assign tasks to machines
+    * scheduling has two parts: *feasibility* and *scoring*
+        * **feasibility checking:** find machines with enough resources to run the task; includes lower priority task eviction
+        * **scoring:** ranks the feasible machines
+            * minimizes eviction
+            * checks if the dependencies are already installed
+            * "packing" quality - need to have room for resources if jobs end up needing more compute power, but spreading out too far leads to fragmentation
+* Borglet: local "worker" agent running on each machine
+    * starts, stops, restarts tasks
+    * manages resources and does logging
+    * reports state back to the Borgmaster (plural - remember that there are duplicates!)

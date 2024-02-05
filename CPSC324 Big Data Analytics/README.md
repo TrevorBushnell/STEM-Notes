@@ -224,3 +224,141 @@
   * has local SSD option
   * costs roughly $3\cent$ per vCPU her hour
   * costs roughly $0.004\cent$ per GIB RAM per hour
+ 
+### Data Movement
+
+* Memory $\leftright$ CPU
+* Memory $\leftright$ Disk
+  * this is much more expensive!
+* machine $\leftright$ machine
+  * network cost
+
+### Throughput, Bandwidth, Latency
+
+* **throughput:** actual amount of data transmitted per time unit
+* typically bits (bps) or MB per second (Mbps)
+* analogy: stand at a point on the freeway
+  * *throughput:* number of cars that pass by you per unit time
+  * *speed:* average speed of the cars that pass you
+* $\therefore$ throughput deals with amount and NOT distance
+* **bandwidth:** maximum possible throughput
+* bandwidth improves by adding more infrastructure
+* freeway analogy: increase lanes, speed, distance between cars
+* **latency:** delay in time it takes to get from A to B
+* similar to *response time*
+* latency is measured in time
+  * software: seconds
+  * disk/network: ms
+  * memory: $\mu$s
+
+> when building applications we want high throughput and low latency
+
+> **CHECK-IN: Why can we have high bandwidth but poor latency?**
+> * physical distance
+> * congestion
+> * processing time is not optimized
+
+#### Latency Values Every Software Dev Should Know
+
+* CPU registers < 1 ns
+* L1, L2, L3 Cachee: 1-10 ns
+* RAM: 100ns
+* SSD: roughly 16,000 ns
+* HDD: roughly 2,000,000 ns
+
+#### Bandwidth (Download) Values Every Software Dev Should Know
+
+* Cable (coaxial): 1 Gbps (1 Gigabit per second)
+* 5G: typically up to 1 Gbps
+* Fiber (consumer) network: up to 10 Gbps 
+* Within a Google Data Center: 1 Tbps (1 Terabit per second)
+* Across Data Centers: 6 Pbps (1 Petabit per second)
+* Check out Jupiter for more info on how Google achieves these high speeds
+
+### General System Terms
+
+* **utilization:** percent usage
+  * the goal is high utilization - you don't want your computers sitting there doing nothing
+* **reliability (durability):** related to probability of failure over time (what is the likelihood that your system is going to fail?)
+* **fault tolerance (resiliency):** either replication or having logs so that the system can recover
+* **availability:** the fraction of time that something is available
+  * measured in terms of "Number of Nines"
+    * 1 9 = 90%
+    * 2 9s = 99%
+    * 3 9s = 99.9%
+    * 1 9-5 = 95%
+    * 2 9-5 = 99.5%
+* **error budget:** allowed downtime for your system
+  * 90% = 6 minutes
+  * 99% = 36 seconds
+  * 99.5% = 18 seconds
+  * 99.9% = 3 seconds
+  * 99.99% = 0.36 seconds
+
+## Cluster Management
+
+* **service:** functionality, used by cients, well-defined interface
+* service oriented architecture divides system into distinct services
+* *"as a service"*: a service offered by a 3rd party (in the cloud)
+  * don't have to purchase, manage, use hardware/software "on premises"
+* **fully managed:** automated privision, user, server management, pay for machine/resource usage (close to IaaS)
+* **serverless:** automated provisioning but figures out your server management and figures out how many resources you actually need based on your activity (close to PaaS)
+ 
+### Various Types of "As a Service"
+
+* IaaS: infrastructure as a service - providing access to physical resources as a service
+* PaaS: platform as a service - stuff you need for developing apps (DBMS, web servers, some machine learning tech, etc.)
+* SaaS: software as a service - software written by companies that you can access remotely as a service
+
+### GCP Building Blocks
+
+* Google internal & cloud services run on 3 main services
+  1. borg: cluster job manager
+  2. colossus (cfs): distributed file storage
+  3. spanner: distributed transactional database system
+* these systems need to have these similar patterns
+  * scalability: many machines, data partitioning (sharding), parallel execution
+  * replication: for fault tolerance and availability
+  * coordination: centralized components in the architectures to manage the parallel workers
+  * consistency: concurrency control
+  * placement: manage cost of communication
+
+ ### About Borg
+
+> **BORG:** job scheduling (cluster)
+
+* long running jobs: jobs that are never shut down
+    * short lived, latency sensitive requests
+* batch jobs: take a few seconds or days to run
+* each job consists of one or more tasks
+    * each task runs in a container
+    * supports job sequencing
+    * each job runs in a single cell (part of a cluster)
+* jobs and tasks can have resource constraints
+* jobs are assigned a priority (production and non-production - but there's 450+ priority levels!)
+
+#### Main Functions of Borg
+
+* Given a particular task, figure out which machine to run the task on
+* allocate the resources for the task to complete
+* installs all the dependencies
+* monitors task health (is the task still running? did the task fail? etc.?)
+* restart the job upon failure
+
+#### Borg Design
+
+![Diagram of Borg Structure](./images/8.1.png)
+
+* Borgmaster: centralized control
+    * each cell has a borgmaster (5 replicas)
+    * handles client requests
+    * each replica stores state info of the cell
+    * one leader (elected)
+
+
+
+
+
+
+
+

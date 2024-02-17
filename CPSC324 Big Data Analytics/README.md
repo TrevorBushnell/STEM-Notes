@@ -356,6 +356,9 @@
     * each replica stores state info of the cell
     * one leader (elected)
     * accepts job requests where new jobs are added to a *pending queue* (tasks)
+    * polls borglets every few seconds to retrieve state and send requests
+    * delegates communication to Borgmaster replicas (the "link shard")
+    * state information is aggregated (as diffs) and sent to the leader
 * Scheduler: asynchronously scans pending queue
     * determines how to assign tasks to machines
     * scheduling has two parts: *feasibility* and *scoring*
@@ -368,3 +371,190 @@
     * starts, stops, restarts tasks
     * manages resources and does logging
     * reports state back to the Borgmaster (plural - remember that there are duplicates!)
+* *Notes on task evictions:*
+    * apps on Borg expected to be designed to handle evications
+        * do this with replication, persistent state stored in distributed file systems
+        * taking (occasional) checkpoints
+        * Borg automatically reschedules evicted tasks
+* This system as 99% availability using spreading tasks around machines, racks, power domains, and keeping each cell independent
+
+## Distributed File Systems
+
+### Background Info
+
+#### File I/O
+
+* disk drives read/write data by sector (often 512 bytes)
+    * this means they read/write "chunks" of data at a time
+* OSs read/write data by block (similar to a hardware page)
+    * blocks are multiples of sector sizes (on linux, 1 block = 4 KiB)
+
+![Design for hardware disk](./images/10.1.png)
+
+#### Strong Consistency
+
+* **Consistency:** *Assumptions (the "setup up")...*
+    * assume a physically distributed, replicated data store
+    * means each machine has a copy of the entire store
+    * clients read/write data at a replicated copy
+    * write opreations are propagated to the other copies
+
+![Consistency assumptions diagram](./images/10.2.png)
+
+* **Strong Consistency:** All clients see the same data store
+    * if client reads a data item, expects result to include last write of them
+        * tricky without global clock and/or when operations overlap
+    * typically implies *lineralizability* - concurrent execution as if:
+        1. linear order of operations
+        2. if `op1` completes before `op2` begins, `op1` preceeds `op2` in linear schedule
+* EXAMPLE: Alice and Bob write at the same time: $W_A(x=0)$ and $W_B(x=1)$
+    * as if all replicas agree on operation ordering, so all replicas have the same $x$ value
+    * means subsequent reads will be consistent $R_A(x) = R_B(x)$
+    * NOTE: This is a write-write conflict, but can also have read-write conflicts
+* There are many different notions of consistency
+    * e.g. serializability in transactional databases
+    * where linearizability is a specific case for transactions having one operation
+    * also continuous, casual, etc.
+* Example of weaker consistency: **eventual consistency**
+    * one writes stop, all replicas will eventually be consistent
+* GFS has its own specific (weaker) flavors of consistency, but more on that to come ...
+
+### Google File System (GFS) Overview
+
+* GFS as a *high-level* is:
+    * A distributed storage system, read/write access to large shared files
+    * Provides support for data-intensive applications (large files)
+    * automatic fault tolerance, high performance (for main operations)
+
+* GFS *was designed for:*
+    * Google's commodity clusters where component failures are the norm
+    * large files (by traditional standards)
+    * files mostly changed by appending and NOT overwriting (e.g. `MapReduce`)
+        * multiple clients append concurrently, large sequential writes
+    * files mostly read sequentially, either
+        * large streaming reads (1MB+) from same client
+        * small random reads (few KB) often batched and sorted by apps
+
+### GFS Architecture Overview
+
+![GFS Architecture](./images/11.1.png)
+
+* **GFS Master:** single centralized control, one per cluster
+* **GFS Chunkserver:** one per machine, manages file partitions ("chunks")
+* **GFS Client:** library running on each application (app can be in cluster)
+
+### Clients and Client Operations
+
+* Applications interact with GFS through a *client library*
+    * files can be organized into directories identified by path names
+    * can create, delete, open, close, read, write files
+    * can also create a *snapshot* copy of a file or directory tree
+* We often just say **client** instead of a client library
+    * there is a fair bit of work that goes on behind the scenes
+* GFS also supports **record append** operation
+    * multiple clients can append data concurrently
+    * GFS guarantees append is atomic (atomicity)
+
+### Chunks
+
+* **chunk:** large, fixed-size partition of a file
+    * each chunk is 64 MB (similar to disk block but much larger)
+    * each chunk is assigned a unique identifier called a **chunk handle**
+* each chunk stored as a *linux file*
+    * replicated on multiple chunk servers, 3 replicas (default)
+* advantages of large chunk size:
+    * reduces network communication cost (e.g. to get chunks)
+    * reduces size of metadata stored in master
+
+### Master
+
+* Master stores 3 types of metadata
+    * file, directory, chunk info (namespaces) - logged
+    * for each file, the list of chunk handles - logged
+    * for each chunk handle, locations of each chunk's replicas
+* Read Op: client wants to read data from a dyte offset in a file
+    * client uses byte offset (with chunk size) to determine chunk index
+    * client sends master a read request with filename and chunk index
+    * master returns handle and chunkservers with replicas ... cached by client
+    * client sends request to one of the chunkservers (e.g. closest one)
+        * request has chunk handle and byte range in chunk
+    * chunkmaster returns the data to the client
+        * future requests don't need to contact master (until cache expires)
+* Heartbeats: periodically sends messages to chunkservers
+    * gives instructions and collects chunkserver state
+* operation log: historyical record of metadata changes
+    * stored locally and remotely (thus, master state replication)
+    * state changes committed only after being flushed to log and replicas
+* checkpointing: to save space in the operation log
+    * whenever log grows beyond certain size, master checkpoints internal state
+    * efficiently stored (serialized), direct "memory dump", local and remote
+    * if master fails, loads last checkpoint (efficient)
+    * then "replays" the operation log file
+    * polls chunkservers for their state (to recreate chunk mapping)
+
+### Data Append
+
+* Two cases for data mutations (updates vs append)
+    * update: client has filename, dyte range, buffer of write data
+    * append: client has filename, buffer of data to append
+* Basic Idea: Append
+    * each chunk replica is mutated (default 3 replicas per chunk)
+    * master selects one **primary** replica (others become secondary replicas)
+    * primary is granted a 60 second lease that can be extended if needed
+    * during the lease, primary manages chunk changes
+    * primary picks a serial order for all chunk mutations
+    * second replicas follow the same order when applying mutations
+
+### Record Append
+
+![Record append diagram](./images/12.1.png)
+
+APPEND PROCESS: Assume P is primary and S is secondary
+
+1. client asks master for P and S's (assigns P and lease if needed)
+2. master replies with P and Ss (cached for future mutations)
+3. client sends data to all replicas (pipelined to closest, who forwards, etc.)
+4. after client receives receipt, sends write request to P
+    * P orders all changes it receives (across clients), applies changes in order
+5. P forwrads write request to S's who apply mutations in same order as P
+    * P also tells S's where to write the data in the chunk
+6. S's reply to P indicating they completed mutation
+7. P replies to client either success or error...
+
+#### Replica Write Failures
+
+* IF one or more replicas fail, writes "stick" at P and non-failing S's
+* Client retires steps 3-7 a few times, then retires write with master
+* A successful retry can lead to repeated data at some replicas
+* Note that all append operations are at the same offset across replicas
+* On successful append, client is sent the offset of appended data
+
+![Example of appending data with replica failure](./images/13.1.png)
+
+#### Guarantees and Non-Guarantees
+
+* Between appended data, could be padding or append-data duplicates
+* the in-between regions are considered inconsistent
+* clients see same regions resulting from sequence of successful mutations
+* replicas versioned by master when granting leases (for available replicas)
+* because clients cache chunk locations, can read from stale replicas
+* concurrent non-append writes not guaranteed to be serializable
+
+## `MapReduce`
+
+### Intro
+
+* `MapReduce`: a programming model for simplifying data-intensive computing
+    * computations split into a **Map** phase and a **Reduce** phase
+    * programmers implement Map and Reduce interfaces
+* `MapReduce` framework then handles the overall execution
+    * distribution/replication, parallelization, data movement, and failures
+* `MapReduce` led to the open-source Apache Hadoop system
+    * similar ideas also still used for data-intensive systems
+    * e.g. in serverless, auto-scaling, "no-ops" systems
+* Inspired by `map()` and `reduce()` functions in functional programming
+* `map: function, list -> list` (unary function)
+    * `map(f, [a,b,c]) => [f(a), f(b), f(c)]`
+* `reduce: function, list -> value` (binary function)
+    * `reduce(+, [1,2,3,...]) => (1+2+3+...)`
+    * similar to `fold()`, which implements an accumulator pattern

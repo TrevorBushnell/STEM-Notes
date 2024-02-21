@@ -558,3 +558,32 @@ APPEND PROCESS: Assume P is primary and S is secondary
 * `reduce: function, list -> value` (binary function)
     * `reduce(+, [1,2,3,...]) => (1+2+3+...)`
     * similar to `fold()`, which implements an accumulator pattern
+* the input key-value pairs are those produced by the map workers
+* one `Reduce` instance per key
+* `Reduce` can return more than one value per key
+* EXAMPLE: Document word frequency
+    * `Map(doc_id, contents) -> (word, 1) pairs`
+    * `Reduce(word, count iterator) -> (word, sum(counts))`
+* EXAMPLE: Inverted index
+    * `Map(doc_id, contents) -> (word, doc_id) pairs`
+    * `Reduce(word, doc_id iterator) -> (word, [doc_id])`
+
+### Architecture
+
+* Application, Library, and (GFS) Input File
+    * `MapReduce` sets up the input and starts the computation
+    * library partitions the input files into $M$ splits (parameter)
+    * Notes with GFS, each split is a chunk (i.e. up to 64 MB)
+* Worker Assignment 
+    * library submits the `MapReduce` job (recall Borg)
+    * worker tasks divided into $M$ map tasks, $R$ reduce tasks, 1 master
+    * master assigns workers as mappers or reducers
+    * tries to assign mappers to same machine as split (a chunk replica)
+* Map Task Workers (execute Map function, handle input/output data)
+    * read corresponding (input file) split, parse into key-value pairs
+    * passes ecah such pair to user-defined `Map()` function
+    * intermediate key-value pairs produced stored in memory
+    * periodically stored on local disk, one file per reducer
+* Map Task Output Files
+    * output keys are partitioned across reducers using a Partition Function
+    * default uses hash codes $hash(key) \mod R$

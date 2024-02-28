@@ -578,6 +578,8 @@ APPEND PROCESS: Assume P is primary and S is secondary
     * library submits the `MapReduce` job (recall Borg)
     * worker tasks divided into $M$ map tasks, $R$ reduce tasks, 1 master
     * master assigns workers as mappers or reducers
+        * mapper = `Map()` task
+        * reducer = `Reduce()` task, can perform many reduce tasks
     * tries to assign mappers to same machine as split (a chunk replica)
 * Map Task Workers (execute Map function, handle input/output data)
     * read corresponding (input file) split, parse into key-value pairs
@@ -587,3 +589,46 @@ APPEND PROCESS: Assume P is primary and S is secondary
 * Map Task Output Files
     * output keys are partitioned across reducers using a Partition Function
     * default uses hash codes $hash(key) \mod R$
+    * you can define your own partition function if you would like!
+        * EX: to partition on a URL, weccan make our own partition function that just hashes on the domain name
+
+**NEED TO CATCH UP ON NOTES FOR LECTURES 15, 16, 17**
+
+## Looker Studio/Data Warehouses
+
+* **LOOKER STUDIO:** full featured, cloud-native visulaization tool (in GCP)
+* primarily used for creating interactive reports and dashboards
+* similar to Tableau and Power BI
+* works over BigQuery plus various other data sources
+* auto converst visualizations to real-time SQL queries
+* Looker Studio Pro: "enterprise" paid versions of Looker Studio that has additional features and support
+
+### Basic Terminology
+
+* **Measures:** (*mertics*) values of the "facts" or "observations" in a data warehouse
+    * eg: number of items sold and purchase price of each transaction
+    * the attributes that would go in a SQL aggregate query
+* **Dimensions:** provide context for the facts - the things that we are measuring
+    * e.g. customer, product, location, time
+    * attributes that would go in a `GROUP BY` clause
+
+> In Looker Studio: "*metrics* measure *dimensions*"
+
+* **Star Schema:** Every dimension that is in a fact table has its own table with foreign key relations (the shape ends up looking like a star because the fact table becomes the centroid)
+* **Snowflake Schema:** Take your star schema and normalize your dimension tables
+    * as you walk the path towards the fact table, you lose more "facts" (get finer grained)
+* **Roll Up** (*Drill Up*): Aggregating at coarser grainularity
+    * e.g.: avg sales by city to avg. sales by state
+* **Drill Down:** Aggregating at finer granularity
+    * r.g. avg sales by state to avg. sales by city
+> Roll up and Drill down are inverses - they go in the opposite directions of each other
+* **Slicing:** Filtering on a single dimension
+* **Dicing:** 2 or more dimensions
+* **Pivot:** rotating a table on an attribute
+    * basically doing a `GROUP BY` on one column, and whatever those groups are become the attributes in the new table
+    * usually the values in a pivot table are aggregate information
+* **Looks:** standalone visualization
+    * *Explorer:* build various different Looks
+* **Dashboard** (aka *Reports*): multiple visualizations, plots, formatting, text, etc.
+    * *Controls:* GUI components you can add to the dashboard to make your report more interactive
+    * any Look is automatically interactive (can hover over and click data points/bars/etc and get information)

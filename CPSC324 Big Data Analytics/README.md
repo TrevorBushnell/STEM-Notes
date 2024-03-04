@@ -590,9 +590,50 @@ APPEND PROCESS: Assume P is primary and S is secondary
     * output keys are partitioned across reducers using a Partition Function
     * default uses hash codes $hash(key) \mod R$
     * you can define your own partition function if you would like!
-        * EX: to partition on a URL, weccan make our own partition function that just hashes on the domain name
+        * EX: to partition on a URL, we can make our own partition function that just hashes on the domain name
+* **Data Shuffling:** Map worker notifies Master where its local output files are located, and the Master then notifies the Reducer on the file locations
+  * from there, Reducer uses RPC calls to read the kv-pairs in Mapper files
+* **Reduce Task Workers:** Reducer waits until all intermediate data has been read, then **sorts** all intermediate kv-pairs by key, groups kv-pairs by key, then runs the reduce function for each group
+  * each Reduce function cal''s output is appended to final output file which is stored in GFS
+  * Output files often passed as input to another MapReduce job
 
-**NEED TO CATCH UP ON NOTES FOR LECTURES 15, 16, 17**
+![MapReduce architecture](./images/15.1.png)
+
+### Fault Tolerance
+
+* The Master worker finds failures
+  * master periodically pings workers
+  * Machines (workers) that don't respond are considered "failed"
+* In-progress tasks on failed workers
+  * Map and Reduce tasks on failed workers are rescheduled
+  * Master failure requires entire job to be restarted
+* Completed tasks on failed workers
+  * reducer tasks are fine because output is stored in GFS
+  * Mapper tasks rescheduled since no access to output files
+* Reduce tasks are notified of failed workers (to read from restarted Mapper)
+
+### Data Mining and Machine Learning Examples
+
+* Many standard ML algs can be converted to MapReduce
+  * many follow statistical query pattern
+  * expressed as sums applying functions over data points
+  * also shown to scale linearly
+
+#### k-means
+
+* Goal is to divide data (rows) into $k$ clusters (partitions)
+* $k$-means compute the fixed-point of the cluster centroids
+
+![Sketch of k-means in MapReduce](./images/16.1.png)
+
+#### Naive Bayes
+
+* uses probability estimates for instance classification
+* $P(\ell | \bar x)$ is probability of a row (feature vector) $\bar x$ has class label $\ell$
+* Goal is to find the label $\ell_i$ that maximizes $P(\ell | \bar x)$
+
+![](./images/17.1.png)
+![](./images/17.2.png)
 
 ## Looker Studio/Data Warehouses
 
@@ -632,3 +673,48 @@ APPEND PROCESS: Assume P is primary and S is secondary
 * **Dashboard** (aka *Reports*): multiple visualizations, plots, formatting, text, etc.
     * *Controls:* GUI components you can add to the dashboard to make your report more interactive
     * any Look is automatically interactive (can hover over and click data points/bars/etc and get information)
+
+## Data Processing Architectures
+
+### Types of Data Systems
+
+#### Centralized Data Systems
+
+* built to run on a single machine (one CPU, memory, disk)
+* all data resides on a single machine
+* single user or multiple users
+* still used frequently in enterprise systems
+* doesn't really scale... in order to scale you really need to "juice up" your machine
+
+#### Parallel and Distributed Systems
+
+* **parallel:** machines are close together and the communication cost is fast and reliable (don't have to worry about networking speed)
+* **distributed:** nodes may not be close and the communication is slower and less reliable (you have to worry about network costs now)
+* *course-grained parallelism:* each CPU runs a different query
+  * improves throughput
+* *fine-grained parallelism:* each CPU runs a portion of the query
+  * improves latency
+
+#### Architectures based on what resources are shared
+
+* *shared everything:* same as single node centralized system
+  * CPUs, memory, disks all shared
+  * can still leverage some parallelism if multiple CPUs/cores...
+    * focus is on *course-grained parallelism*
+* *shared memory:* many processors share same memory and disks
+  * implies high-end servers
+  * most data systems are not built for this
+* *shared nothing:* each node is a separate machine with NO shared storage
+  * nodes contain partitions
+  * each node works on its own partition
+  * centralized machine (master) that manages data processing
+  * this was the prevailing model for distributed querying for 30+ years (including many commercial products)
+
+> **A Note on Partitioning:** sometimes partitioning is called "sharding"
+> 
+> * *naive partitioning:* each table fits on a different node (usually the bad approach)
+> * *vertical partitioning:* create partitions out of the columns of a table - this happens in normalization (kinda...)
+>   * queries that only focus on a single column are sped up
+> * *horizontal partitioning:* splits rows into distinct partitions in a round-robin format
+>   * can also use data ranges or hashing to figure out the partitions
+>   * PROBLEM: If we scale, we have to stop the system and re-partition everything to accommodate for having more machines

@@ -701,7 +701,7 @@ APPEND PROCESS: Assume P is primary and S is secondary
   * CPUs, memory, disks all shared
   * can still leverage some parallelism if multiple CPUs/cores...
     * focus is on *course-grained parallelism*
-* *shared memory:* many processors share same memory and disks
+* *shared memory:* many processors share same memory
   * implies high-end servers
   * most data systems are not built for this
 * *shared nothing:* each node is a separate machine with NO shared storage
@@ -709,6 +709,8 @@ APPEND PROCESS: Assume P is primary and S is secondary
   * each node works on its own partition
   * centralized machine (master) that manages data processing
   * this was the prevailing model for distributed querying for 30+ years (including many commercial products)
+* *shared disk:* machines in a cluster have access to all the same disks 
+  * local storage, but it is just used for temporary space for computation, so each machine is effectively stateless
 
 > **A Note on Partitioning:** sometimes partitioning is called "sharding"
 > 
@@ -717,4 +719,21 @@ APPEND PROCESS: Assume P is primary and S is secondary
 >   * queries that only focus on a single column are sped up
 > * *horizontal partitioning:* splits rows into distinct partitions in a round-robin format
 >   * can also use data ranges or hashing to figure out the partitions
->   * PROBLEM: If we scale, we have to stop the system and re-partition everything to accommodate for having more machines
+>   * PROBLEM: If we scale, we have to stop the system and re-partition everything to accommodate for having more machines - similar to a shuffle in MapReduce
+
+## Query Execution and Handling
+
+### Tables Stored in Files
+
+* e.g. one file per table
+* each file is divided into pages (these pages are a little bit bigger than a disk page) ... recall file i/o
+* multiple of disk pages/hardware pages
+  * Oracle uses 4KB, PorstgreSQL uses 8KB, MySQL uses 16KB
+* Heap File: has a header file with a directory page with metadata on where each page starts (in the form of pointers)
+* Clustered Index: heap file, but all the rows across all pages are sorted on a search key
+* Hash Table: search keys hashed to pages
+* B+ Tree: pages stored in a tree-like format (look up more on this in the notes)
+* Row oriented storage: have a slotted page, anytime you add a row you add it from the bottom
+  * top of the page has header and slots that have pointers showing the start of each row (helps us figure out where rows start)
+  * appending if very nice! just addd a row from the bottom and a slot pointer from the top
+  * removing a row sucks because you have to shift information around in the file
